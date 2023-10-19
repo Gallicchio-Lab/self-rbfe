@@ -1,0 +1,2756 @@
+log started: Fri Jun 30 21:05:21 2023
+
+Log file: ./leap.log
+>> #
+>> # ----- leaprc for loading the ff14SB force field
+>> # ----- NOTE: this is designed for PDB format 3!
+>> #
+>> #	load atom type hybridizations
+>> #
+>> addAtomTypes {
+>> 	{ "H"   "H" "sp3" }
+>> 	{ "HO"  "H" "sp3" }
+>> 	{ "HS"  "H" "sp3" }
+>> 	{ "H1"  "H" "sp3" }
+>> 	{ "H2"  "H" "sp3" }
+>> 	{ "H3"  "H" "sp3" }
+>> 	{ "H4"  "H" "sp3" }
+>> 	{ "H5"  "H" "sp3" }
+>> 	{ "HW"  "H" "sp3" }
+>> 	{ "HC"  "H" "sp3" }
+>> 	{ "HA"  "H" "sp3" }
+>> 	{ "HP"  "H" "sp3" }
+>> 	{ "HZ"  "H" "sp3" }
+>> 	{ "OH"  "O" "sp3" }
+>> 	{ "OS"  "O" "sp3" }
+>> 	{ "O"   "O" "sp2" }
+>> 	{ "O2"  "O" "sp2" }
+>> 	{ "OP"  "O" "sp2" }
+>> 	{ "OW"  "O" "sp3" }
+>> 	{ "CT"  "C" "sp3" }
+>> 	{ "CX"  "C" "sp3" }
+>> 	{ "C8"  "C" "sp3" }
+>> 	{ "2C"  "C" "sp3" }
+>> 	{ "3C"  "C" "sp3" }
+>> 	{ "CH"  "C" "sp3" }
+>> 	{ "CS"  "C" "sp2" }
+>> 	{ "C"   "C" "sp2" }
+>> 	{ "CO"   "C" "sp2" }
+>> 	{ "C*"  "C" "sp2" }
+>> 	{ "CA"  "C" "sp2" }
+>> 	{ "CB"  "C" "sp2" }
+>> 	{ "CC"  "C" "sp2" }
+>> 	{ "CN"  "C" "sp2" }
+>> 	{ "CM"  "C" "sp2" }
+>> 	{ "CK"  "C" "sp2" }
+>> 	{ "CQ"  "C" "sp2" }
+>> 	{ "CD"  "C" "sp2" }
+>> 	{ "C5"  "C" "sp2" }
+>> 	{ "C4"  "C" "sp2" }
+>> 	{ "CP"  "C" "sp2" }
+>> 	{ "CI"  "C" "sp3" }
+>> 	{ "CJ"  "C" "sp2" }
+>> 	{ "CW"  "C" "sp2" }
+>> 	{ "CV"  "C" "sp2" }
+>> 	{ "CR"  "C" "sp2" }
+>> 	{ "CA"  "C" "sp2" }
+>> 	{ "CY"  "C" "sp2" }
+>> 	{ "C0"  "Ca" "sp3" }
+>> 	{ "MG"  "Mg" "sp3" }
+>> 	{ "N"   "N" "sp2" }
+>> 	{ "NA"  "N" "sp2" }
+>> 	{ "N2"  "N" "sp2" }
+>> 	{ "N*"  "N" "sp2" }
+>> 	{ "NP"  "N" "sp2" }
+>> 	{ "NQ"  "N" "sp2" }
+>> 	{ "NB"  "N" "sp2" }
+>> 	{ "NC"  "N" "sp2" }
+>> 	{ "NT"  "N" "sp3" }
+>> 	{ "NY"  "N" "sp2" }
+>> 	{ "N3"  "N" "sp3" }
+>> 	{ "S"   "S" "sp3" }
+>> 	{ "SH"  "S" "sp3" }
+>> 	{ "P"   "P" "sp3" }
+>> 	{ "LP"  ""  "sp3" }
+>> 	{ "EP"  ""  "sp3" }
+>> 	{ "F"   "F" "sp3" }
+>> 	{ "Cl"  "Cl" "sp3" }
+>> 	{ "Br"  "Br" "sp3" }
+>> 	{ "I"   "I"  "sp3" }
+>> }
+>> #
+>> #	Load the main parameter set.
+>> #
+>> parm10 = loadamberparams parm10.dat
+Loading parameters: /home/users/sheenam/miniconda3/envs/atm/dat/leap/parm/parm10.dat
+Reading title:
+PARM99 + frcmod.ff99SB + frcmod.parmbsc0 + OL3 for RNA
+>> frcmod14SB = loadamberparams frcmod.ff14SB
+Loading parameters: /home/users/sheenam/miniconda3/envs/atm/dat/leap/parm/frcmod.ff14SB
+Reading force field modification type file (frcmod)
+Reading title:
+ff14SB protein backbone and sidechain parameters
+>> #
+>> #	Load main chain and terminating amino acid libraries
+>> #
+>> loadOff amino12.lib
+Loading library: /home/users/sheenam/miniconda3/envs/atm/dat/leap/lib/amino12.lib
+Loading: ALA
+Loading: ARG
+Loading: ASH
+Loading: ASN
+Loading: ASP
+Loading: CYM
+Loading: CYS
+Loading: CYX
+Loading: GLH
+Loading: GLN
+Loading: GLU
+Loading: GLY
+Loading: HID
+Loading: HIE
+Loading: HIP
+Loading: HYP
+Loading: ILE
+Loading: LEU
+Loading: LYN
+Loading: LYS
+Loading: MET
+Loading: PHE
+Loading: PRO
+Loading: SER
+Loading: THR
+Loading: TRP
+Loading: TYR
+Loading: VAL
+>> loadOff aminoct12.lib
+Loading library: /home/users/sheenam/miniconda3/envs/atm/dat/leap/lib/aminoct12.lib
+Loading: CALA
+Loading: CARG
+Loading: CASN
+Loading: CASP
+Loading: CCYS
+Loading: CCYX
+Loading: CGLN
+Loading: CGLU
+Loading: CGLY
+Loading: CHID
+Loading: CHIE
+Loading: CHIP
+Loading: CHYP
+Loading: CILE
+Loading: CLEU
+Loading: CLYS
+Loading: CMET
+Loading: CPHE
+Loading: CPRO
+Loading: CSER
+Loading: CTHR
+Loading: CTRP
+Loading: CTYR
+Loading: CVAL
+Loading: NHE
+Loading: NME
+>> loadOff aminont12.lib
+Loading library: /home/users/sheenam/miniconda3/envs/atm/dat/leap/lib/aminont12.lib
+Loading: ACE
+Loading: NALA
+Loading: NARG
+Loading: NASN
+Loading: NASP
+Loading: NCYS
+Loading: NCYX
+Loading: NGLN
+Loading: NGLU
+Loading: NGLY
+Loading: NHID
+Loading: NHIE
+Loading: NHIP
+Loading: NILE
+Loading: NLEU
+Loading: NLYS
+Loading: NMET
+Loading: NPHE
+Loading: NPRO
+Loading: NSER
+Loading: NTHR
+Loading: NTRP
+Loading: NTYR
+Loading: NVAL
+>> 
+>> #
+>> #	Define the PDB name map for the amino acids
+>> #
+>> addPdbResMap {
+>>   { 0 "HYP" "HYP" } { 1 "HYP" "CHYP" }
+>>   { 0 "ALA" "NALA" } { 1 "ALA" "CALA" }
+>>   { 0 "ARG" "NARG" } { 1 "ARG" "CARG" }
+>>   { 0 "ASN" "NASN" } { 1 "ASN" "CASN" }
+>>   { 0 "ASP" "NASP" } { 1 "ASP" "CASP" }
+>>   { 0 "CYS" "NCYS" } { 1 "CYS" "CCYS" }
+>>   { 0 "CYX" "NCYX" } { 1 "CYX" "CCYX" }
+>>   { 0 "GLN" "NGLN" } { 1 "GLN" "CGLN" }
+>>   { 0 "GLU" "NGLU" } { 1 "GLU" "CGLU" }
+>>   { 0 "GLY" "NGLY" } { 1 "GLY" "CGLY" }
+>>   { 0 "HID" "NHID" } { 1 "HID" "CHID" }
+>>   { 0 "HIE" "NHIE" } { 1 "HIE" "CHIE" }
+>>   { 0 "HIP" "NHIP" } { 1 "HIP" "CHIP" }
+>>   { 0 "ILE" "NILE" } { 1 "ILE" "CILE" }
+>>   { 0 "LEU" "NLEU" } { 1 "LEU" "CLEU" }
+>>   { 0 "LYS" "NLYS" } { 1 "LYS" "CLYS" }
+>>   { 0 "MET" "NMET" } { 1 "MET" "CMET" }
+>>   { 0 "PHE" "NPHE" } { 1 "PHE" "CPHE" }
+>>   { 0 "PRO" "NPRO" } { 1 "PRO" "CPRO" }
+>>   { 0 "SER" "NSER" } { 1 "SER" "CSER" }
+>>   { 0 "THR" "NTHR" } { 1 "THR" "CTHR" }
+>>   { 0 "TRP" "NTRP" } { 1 "TRP" "CTRP" }
+>>   { 0 "TYR" "NTYR" } { 1 "TYR" "CTYR" }
+>>   { 0 "VAL" "NVAL" } { 1 "VAL" "CVAL" }
+>>   { 0 "HIS" "NHIS" } { 1 "HIS" "CHIS" }
+>> }
+>> 
+>> #
+>> # assume that most often proteins use HIE
+>> #
+>> NHIS = NHIE
+>> HIS = HIE
+>> CHIS = CHIE
+> 
+> source leaprc.phosaa14SB
+----- Source: /home/users/sheenam/miniconda3/envs/atm/dat/leap/cmd/leaprc.phosaa14SB
+----- Source of /home/users/sheenam/miniconda3/envs/atm/dat/leap/cmd/leaprc.phosaa14SB done
+>> logFile leap.log
+log started: Fri Jun 30 21:05:21 2023
+
+Log file: ./leap.log
+>> #
+>> # ----- leaprc for loading phosphorylated amino acid residues
+>> #
+>> # This file contains optimized parameters for phosphorylated amino acids:
+>> #
+>> # PTR:   phosphotyrosine with a -2 net charge
+>> # SEP:   phosphoserine with a -2 net charge  
+>> # TPO:   phosphothreonine with a -2 net charge
+>> # Y1P:   phosphotyrosine with a -1 net charge
+>> # S1P:   phosphoserine with a -1 net charge  
+>> # T1P:   phosphothreonine with a -1 net charge
+>> # H1D:   phosphohistidine (ND1) with a 0 net charge
+>> # H2D:   phosphohistidine (ND1) with a -1 net charge
+>> # H1E:   phosphohistidine (NE2) with a 0 net charge
+>> # H2E:   phosphohistidine (NE2) with a -1 net charge
+>> #
+>> # To use these residues, load this file into leap, after the Amber-FF, e.g.:
+>> #
+>> # > source leaprc.ff14B
+>> # > source leaprc.phosaa14SB
+>> #
+>> #
+>> #	load atom type hybridizations
+>> #
+>> addAtomTypes {
+>> 	{ "OP"  "O" "sp3" }
+>> 	{ "OQ"  "O" "sp3" }
+>> 	{ "OR"  "O" "sp3" }
+>> 	{ "OT"  "O" "sp3" }
+>> 	{ "OV"  "O" "sp3" }
+>> 	{ "OX"  "O" "sp3" }
+>> 	{ "OZ"  "O" "sp3" }
+>> 	{ "CG"  "C" "sp2" }
+>> }
+>> #
+>> #	Load the phosphorylated amino acid parameter set.
+>> #
+>> phosaa = loadamberparams frcmod.phosaa14SB
+Loading parameters: /home/users/sheenam/miniconda3/envs/atm/dat/leap/parm/frcmod.phosaa14SB
+Reading force field modification type file (frcmod)
+Reading title:
+Updated dihedral parameters for phosphorylated amino acids for use with ff14SB
+>> #
+>> #       Load the phosphorylated amino acid libraries.
+>> #
+>> # load individual residues
+>> loadoff phosaa14SB.lib
+Loading library: /home/users/sheenam/miniconda3/envs/atm/dat/leap/lib/phosaa14SB.lib
+Loading: H1D
+Loading: H1E
+Loading: H2D
+Loading: H2E
+Loading: PTR
+Loading: S1P
+Loading: SEP
+Loading: T1P
+Loading: TPO
+Loading: Y1P
+> 
+> source leaprc.DNA.OL15
+----- Source: /home/users/sheenam/miniconda3/envs/atm/dat/leap/cmd/leaprc.DNA.OL15
+----- Source of /home/users/sheenam/miniconda3/envs/atm/dat/leap/cmd/leaprc.DNA.OL15 done
+>> logFile leap.log
+log started: Fri Jun 30 21:05:21 2023
+
+Log file: ./leap.log
+>> #
+>> # ----- NOTE: this is designed for PDB format 3!
+>> #        Uses ff99bsc0+OL15 for DNA
+>> #                (ff99): Wang et al. J. Comp. Chem. 21: 1049, 2000
+>> #                (bsc0): Perez et al. Biophys J. 92: 3817, 2007
+>> #                (OL15): Zgarbova et al. JCTC 11: 5723, 2015
+>> #	load atom type hybridizations
+>> #
+>> addAtomTypes {
+>> 	{ "H"   "H" "sp3" }
+>> 	{ "HO"  "H" "sp3" }
+>> 	{ "HS"  "H" "sp3" }
+>> 	{ "H1"  "H" "sp3" }
+>> 	{ "H2"  "H" "sp3" }
+>> 	{ "H3"  "H" "sp3" }
+>> 	{ "H4"  "H" "sp3" }
+>> 	{ "H5"  "H" "sp3" }
+>> 	{ "HW"  "H" "sp3" }
+>> 	{ "HC"  "H" "sp3" }
+>> 	{ "HA"  "H" "sp3" }
+>> 	{ "HP"  "H" "sp3" }
+>> 	{ "HZ"  "H" "sp3" }
+>> 	{ "OH"  "O" "sp3" }
+>> 	{ "OS"  "O" "sp3" }
+>> 	{ "O"   "O" "sp2" }
+>> 	{ "O2"  "O" "sp2" }
+>> 	{ "OP"  "O" "sp2" }
+>> 	{ "OW"  "O" "sp3" }
+>> 	{ "CT"  "C" "sp3" }
+>> 	{ "CX"  "C" "sp3" }
+>> 	{ "C8"  "C" "sp3" }
+>> 	{ "2C"  "C" "sp3" }
+>> 	{ "3C"  "C" "sp3" }
+>> 	{ "CH"  "C" "sp3" }
+>> 	{ "CS"  "C" "sp2" }
+>> 	{ "C"   "C" "sp2" }
+>> 	{ "CO"  "C" "sp2" }
+>> 	{ "C*"  "C" "sp2" }
+>> 	{ "CA"  "C" "sp2" }
+>> 	{ "CB"  "C" "sp2" }
+>> 	{ "CC"  "C" "sp2" }
+>> 	{ "CN"  "C" "sp2" }
+>> 	{ "CM"  "C" "sp2" }
+>> 	{ "CK"  "C" "sp2" }
+>> 	{ "CQ"  "C" "sp2" }
+>> 	{ "CD"  "C" "sp2" }
+>> 	{ "C5"  "C" "sp2" }
+>> 	{ "C4"  "C" "sp2" }
+>> 	{ "CP"  "C" "sp2" }
+>> 	{ "CI"  "C" "sp3" }
+>> 	{ "CJ"  "C" "sp2" }
+>> 	{ "CW"  "C" "sp2" }
+>> 	{ "CV"  "C" "sp2" }
+>> 	{ "CR"  "C" "sp2" }
+>> 	{ "CA"  "C" "sp2" }
+>> 	{ "CY"  "C" "sp2" }
+>> 	{ "C0"  "Ca" "sp3" }
+>> 	{ "MG"  "Mg" "sp3" }
+>> 	{ "N"   "N" "sp2" }
+>> 	{ "NA"  "N" "sp2" }
+>> 	{ "N2"  "N" "sp2" }
+>> 	{ "N*"  "N" "sp2" }
+>> 	{ "NP"  "N" "sp2" }
+>> 	{ "NQ"  "N" "sp2" }
+>> 	{ "NB"  "N" "sp2" }
+>> 	{ "NC"  "N" "sp2" }
+>> 	{ "NT"  "N" "sp3" }
+>> 	{ "NY"  "N" "sp2" }
+>> 	{ "N3"  "N" "sp3" }
+>> 	{ "S"   "S" "sp3" }
+>> 	{ "SH"  "S" "sp3" }
+>> 	{ "P"   "P" "sp3" }
+>> 	{ "LP"  ""  "sp3" }
+>> 	{ "EP"  ""  "sp3" }
+>> 	{ "F"   "F" "sp3" }
+>> 	{ "Cl"  "Cl" "sp3" }
+>> 	{ "Br"  "Br" "sp3" }
+>> 	{ "I"   "I"  "sp3" }
+>> 	{ "F-"   "F" "sp3" }
+>> 	{ "Cl-"  "Cl" "sp3" }
+>> 	{ "Br-"  "Br" "sp3" }
+>> 	{ "I-"   "I"  "sp3" }
+>> 	{ "Li+"  "Li"  "sp3" }
+>> 	{ "Na+"  "Na"  "sp3" }
+>> 	{ "K+"  "K"  "sp3" }
+>> 	{ "Rb+"  "Rb"  "sp3" }
+>> 	{ "Cs+"  "Cs"  "sp3" }
+>> 	{ "Mg+"  "Mg"  "sp3" }
+>>     { "Tl+"  "Tl"  "sp3" }
+>>     { "Cu+"  "Cu"  "sp3" }
+>>     { "Ag+"  "Ag"  "sp3" }
+>>     { "Be2+" "Be"  "sp3" }
+>>     { "Cu2+" "Cu"  "sp3" }
+>>     { "Ni2+" "Ni"  "sp3" }
+>>     { "Pt2+" "Pt"  "sp3" }
+>>     { "Zn2+" "Zn"  "sp3" }
+>>     { "Co2+" "Co"  "sp3" }
+>>     { "Pd2+" "Pd"  "sp3" }
+>>     { "Ag2+" "Ag"  "sp3" }
+>>     { "Cr2+" "Cr"  "sp3" }
+>>     { "Fe2+" "Fe"  "sp3" }
+>>     { "Mg2+" "Mg"  "sp3" }
+>>     { "V2+"  "V"   "sp3" }
+>>     { "Mn2+" "Mn"  "sp3" }
+>>     { "Hg2+" "Hg"  "sp3" }
+>>     { "Cd2+" "Cd"  "sp3" }
+>>     { "Yb2+" "Yb"  "sp3" }
+>>     { "Ca2+" "Ca"  "sp3" }
+>>     { "Sn2+" "Sn"  "sp3" }
+>>     { "Pb2+" "Pb"  "sp3" }
+>>     { "Eu2+" "Eu"  "sp3" }
+>>     { "Sr2+" "Sr"  "sp3" }
+>>     { "Sm2+" "Sm"  "sp3" }
+>>     { "Ba2+" "Ba"  "sp3" }
+>>     { "Ra2+" "Ra"  "sp3" }
+>>     { "Al3+" "Al"  "sp3" }
+>>     { "Fe3+" "Fe"  "sp3" }
+>>     { "Cr3+" "Cr"  "sp3" }
+>>     { "In3+" "In"  "sp3" }
+>>     { "Tl3+" "Tl"  "sp3" }
+>>     { "Y3+"  "Y"   "sp3" }
+>>     { "La3+" "La"  "sp3" }
+>>     { "Ce3+" "Ce"  "sp3" }
+>>     { "Pr3+" "Pr"  "sp3" }
+>>     { "Nd3+" "Nd"  "sp3" }
+>>     { "Sm3+" "Sm"  "sp3" }
+>>     { "Eu3+" "Eu"  "sp3" }
+>>     { "Gd3+" "Gd"  "sp3" }
+>>     { "Tb3+" "Tb"  "sp3" }
+>>     { "Dy3+" "Dy"  "sp3" }
+>>     { "Er3+" "Er"  "sp3" }
+>>     { "Tm3+" "Tm"  "sp3" }
+>>     { "Lu3+" "Lu"  "sp3" }
+>>     { "Hf4+" "Hf"  "sp3" }
+>>     { "Zr4+" "Zr"  "sp3" }
+>>     { "Ce4+" "Ce"  "sp3" }
+>>     { "U4+"  "U"   "sp3" }
+>>     { "Pu4+" "Pu"  "sp3" }
+>>     { "Th4+" "Th"  "sp3" }
+>> }
+>> #
+>> #	Define the PDB name map for the nucleic acids
+>> #
+>> addPdbResMap {
+>>   { 0 "DG" "DG5"  } { 1 "DG" "DG3"  }  
+>>   { 0 "DA" "DA5"  } { 1 "DA" "DA3"  }  
+>>   { 0 "DC" "DC5"  } { 1 "DC" "DC3"  }  
+>>   { 0 "DT" "DT5"  } { 1 "DT" "DT3"  }  
+>> #  some really old Amber residue names, assuming DNA:
+>>   { 0 "GUA" "DG5"  } { 1 "GUA" "DG3"  } { "GUA" "DG" }
+>>   { 0 "ADE" "DA5"  } { 1 "ADE" "DA3"  } { "ADE" "DA" }
+>>   { 0 "CYT" "DC5"  } { 1 "CYT" "DC3"  } { "CYT" "DC" }
+>>   { 0 "THY" "DT5"  } { 1 "THY" "DT3"  } { "THY" "DT" }
+>> 
+>> }
+>> 
+>> #  try to be good about reading in really old atom names as well:
+>> addPdbAtomMap {
+>>   { "O5*" "O5'" }
+>>   { "C5*" "C5'" }
+>>   { "C4*" "C4'" }
+>>   { "O4*" "O4'" }
+>>   { "C3*" "C3'" }
+>>   { "O3*" "O3'" }
+>>   { "C2*" "C2'" }
+>>   { "O2*" "O2'" }
+>>   { "C1*" "C1'" }
+>>   { "C5M" "C7"  }
+>>   { "H1*" "H1'" }
+>>   { "H2*1" "H2'" }
+>>   { "H2*2" "H2''" }
+>>   { "H2'1" "H2'" }
+>>   { "H2'2" "H2''" }
+>>   { "'H2'" "H2''" }
+>>   { "H3*" "H3'" }
+>>   { "H4*" "H4'" }
+>>   { "H5*1" "H5'" }
+>>   { "H5*2" "H5''" }
+>>   { "H5'1" "H5'" }
+>>   { "H5'2" "H5''" }
+>>   { "'H5'" "H5''" }
+>>   { "HO'2" "HO2'" }
+>>   { "H5T"  "HO5'" }
+>>   { "H3T"  "HO3'" }
+>>   { "O1'" "O4'" }
+>>   { "OA"  "OP1" }
+>>   { "OB"  "OP2" }
+>>   { "O1P" "OP1" }
+>>   { "O2P" "OP2" }
+>> }
+>> 
+>> #
+>> # Load the OL15 force field for DNA
+>> # 
+>> 
+>> addAtomTypes {
+>>     { "CJ"  "C" "sp3" }
+>>     { "C1"  "C" "sp2" }
+>>     { "C2"  "C" "sp2" }
+>>     { "C7"  "C" "sp3" }
+>> }
+>> 
+>> loadoff DNA.OL15.lib 
+Loading library: /home/users/sheenam/miniconda3/envs/atm/dat/leap/lib/DNA.OL15.lib
+Loading: DA
+Loading: DA3
+Loading: DA5
+Loading: DAN
+Loading: DC
+Loading: DC3
+Loading: DC5
+Loading: DCN
+Loading: DG
+Loading: DG3
+Loading: DG5
+Loading: DGN
+Loading: DT
+Loading: DT3
+Loading: DT5
+Loading: DTN
+>> parm10 = loadamberparams parm10.dat
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Note.
+Skipping parm10.dat: already loaded
+>> loadamberparams frcmod.DNA.OL15
+Loading parameters: /home/users/sheenam/miniconda3/envs/atm/dat/leap/parm/frcmod.DNA.OL15
+Reading force field modification type file (frcmod)
+Reading title:
+OL15 force field for DNA (99bsc0-betaOL1-eps-zetaOL1-chiOL4) see http://ffol.upol.cz
+> 
+> source leaprc.RNA.OL3
+----- Source: /home/users/sheenam/miniconda3/envs/atm/dat/leap/cmd/leaprc.RNA.OL3
+----- Source of /home/users/sheenam/miniconda3/envs/atm/dat/leap/cmd/leaprc.RNA.OL3 done
+>> logFile leap.log
+log started: Fri Jun 30 21:05:21 2023
+
+Log file: ./leap.log
+>> # ----- NOTE: this is designed for PDB format 3!
+>> #       Uses ff99bsc0_chiOL3 for RNA
+>> #       	(ff99): Wang et al. J. Comp. Chem. 21: 1049, 2000
+>> #       	(bsc0): Perez et al. Biophys J. 92: 3817, 2007
+>> #       	(chiOL3): Zgarbova et al. JCTC 7: 2886, 2011
+>> #           (note: all of the above are in parm10.dat, loaded below)
+>> #
+>> #	load atom type hybridizations
+>> #
+>> addAtomTypes {
+>> 	{ "H"   "H" "sp3" }
+>> 	{ "HO"  "H" "sp3" }
+>> 	{ "HS"  "H" "sp3" }
+>> 	{ "H1"  "H" "sp3" }
+>> 	{ "H2"  "H" "sp3" }
+>> 	{ "H3"  "H" "sp3" }
+>> 	{ "H4"  "H" "sp3" }
+>> 	{ "H5"  "H" "sp3" }
+>> 	{ "HW"  "H" "sp3" }
+>> 	{ "HC"  "H" "sp3" }
+>> 	{ "HA"  "H" "sp3" }
+>> 	{ "HP"  "H" "sp3" }
+>> 	{ "HZ"  "H" "sp3" }
+>> 	{ "OH"  "O" "sp3" }
+>> 	{ "OS"  "O" "sp3" }
+>> 	{ "O"   "O" "sp2" }
+>> 	{ "O2"  "O" "sp2" }
+>> 	{ "OP"  "O" "sp2" }
+>> 	{ "OW"  "O" "sp3" }
+>> 	{ "CT"  "C" "sp3" }
+>> 	{ "CX"  "C" "sp3" }
+>> 	{ "CS"  "C" "sp2" }
+>> 	{ "C"   "C" "sp2" }
+>> 	{ "C*"  "C" "sp2" }
+>> 	{ "CA"  "C" "sp2" }
+>> 	{ "CB"  "C" "sp2" }
+>> 	{ "CC"  "C" "sp2" }
+>> 	{ "CN"  "C" "sp2" }
+>> 	{ "CM"  "C" "sp2" }
+>> 	{ "CK"  "C" "sp2" }
+>> 	{ "CQ"  "C" "sp2" }
+>> 	{ "CD"  "C" "sp2" }
+>> 	{ "C5"  "C" "sp2" }
+>> 	{ "C4"  "C" "sp2" }
+>> 	{ "CP"  "C" "sp2" }
+>> 	{ "CI"  "C" "sp3" }
+>> 	{ "CW"  "C" "sp2" }
+>> 	{ "CV"  "C" "sp2" }
+>> 	{ "CR"  "C" "sp2" }
+>> 	{ "CY"  "C" "sp2" }
+>> 	{ "C0"  "Ca" "sp3" }
+>> 	{ "MG"  "Mg" "sp3" }
+>> 	{ "N"   "N" "sp2" }
+>> 	{ "NA"  "N" "sp2" }
+>> 	{ "N2"  "N" "sp2" }
+>> 	{ "N*"  "N" "sp2" }
+>> 	{ "NB"  "N" "sp2" }
+>> 	{ "NC"  "N" "sp2" }
+>> 	{ "NT"  "N" "sp3" }
+>> 	{ "NY"  "N" "sp2" }
+>> 	{ "N3"  "N" "sp3" }
+>> 	{ "S"   "S" "sp3" }
+>> 	{ "SH"  "S" "sp3" }
+>> 	{ "P"   "P" "sp3" }
+>> 	{ "LP"  ""  "sp3" }
+>> 	{ "EP"  ""  "sp3" }
+>> 	{ "F"   "F" "sp3" }
+>> 	{ "Cl"  "Cl" "sp3" }
+>> 	{ "Br"  "Br" "sp3" }
+>> 	{ "I"   "I"  "sp3" }
+>> }
+>> #
+>> #	Load the main parameter set.
+>> #
+>> parm10 = loadamberparams parm10.dat
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Note.
+Skipping parm10.dat: already loaded
+>> #
+>> #	Load main chain and terminating nucleic acids
+>> #
+>> 
+>> loadOff RNA.lib
+Loading library: /home/users/sheenam/miniconda3/envs/atm/dat/leap/lib/RNA.lib
+Loading: A
+Loading: A3
+Loading: A5
+Loading: AN
+Loading: C
+Loading: C3
+Loading: C5
+Loading: CN
+Loading: G
+Loading: G3
+Loading: G5
+Loading: GN
+Loading: OHE
+Loading: U
+Loading: U3
+Loading: U5
+Loading: UN
+>> 
+>> #
+>> #	Define the PDB name map for the nucleic acids
+>> #
+>> addPdbResMap {
+>>   { 0 "G" "G5"  } { 1 "G" "G3"  } 
+>>   { 0 "A" "A5"  } { 1 "A" "A3"  } 
+>>   { 0 "C" "C5"  } { 1 "C" "C3"  } 
+>>   { 0 "U" "U5"  } { 1 "U" "U3"  } 
+>> #  some old Amber residue names for RNA:
+>>   { 0  "RA5" "A5" } { 1 "RA3" "A3"} {"RA" "A" }
+>>   { 0  "RC5" "C5" } { 1 "RC3" "C3"} {"RC" "C" }
+>>   { 0  "RG5" "G5" } { 1 "RG3" "G3"} {"RG" "G" }
+>>   { 0  "RU5" "U5" } { 1 "RU3" "U3"} {"RU" "U" }
+>> #  uncomment out the following if you have this old style RNA files:
+>> # { 0 "GUA" "G5"  } { 1 "GUA" "G3"  } { "GUA" "G" }
+>> # { 0 "ADE" "A5"  } { 1 "ADE" "A3"  } { "ADE" "A" }
+>> # { 0 "CYT" "C5"  } { 1 "CYT" "C3"  } { "CYT" "C" }
+>> # { 0 "URA" "R5"  } { 1 "URA" "R3"  } { "URA" "R" }
+>> 
+>> }
+>> 
+>> #  try to be good about reading in really old atom names as well:
+>> addPdbAtomMap {
+>>   { "O5*" "O5'" }
+>>   { "C5*" "C5'" }
+>>   { "C4*" "C4'" }
+>>   { "O4*" "O4'" }
+>>   { "C3*" "C3'" }
+>>   { "O3*" "O3'" }
+>>   { "C2*" "C2'" }
+>>   { "O2*" "O2'" }
+>>   { "C1*" "C1'" }
+>>   { "C5M" "C7"  }
+>>   { "H1*" "H1'" }
+>>   { "H2*1" "H2'" }
+>>   { "H2*2" "H2''" }
+>>   { "H2'1" "H2'" }
+>>   { "H2'2" "H2''" }
+>>   { "H3*" "H3'" }
+>>   { "H4*" "H4'" }
+>>   { "H5*1" "H5'" }
+>>   { "H5*2" "H5''" }
+>>   { "H5'1" "H5'" }
+>>   { "H5'2" "H5''" }
+>>   { "HO'2" "HO2'" }
+>>   { "H5T"  "HO5'" }
+>>   { "H3T"  "HO3'" }
+>>   { "O1'" "O4'" }
+>>   { "OA"  "OP1" }
+>>   { "OB"  "OP2" }
+>>   { "O1P" "OP1" }
+>>   { "O2P" "OP2" }
+>>   { "O3P" "OP3" }
+>> }
+Substituting map O5* -> O5'  for  O5* -> O5'
+Substituting map C5* -> C5'  for  C5* -> C5'
+Substituting map C4* -> C4'  for  C4* -> C4'
+Substituting map O4* -> O4'  for  O4* -> O4'
+Substituting map C3* -> C3'  for  C3* -> C3'
+Substituting map O3* -> O3'  for  O3* -> O3'
+Substituting map C2* -> C2'  for  C2* -> C2'
+Substituting map O2* -> O2'  for  O2* -> O2'
+Substituting map C1* -> C1'  for  C1* -> C1'
+Substituting map C5M -> C7  for  C5M -> C7
+Substituting map H1* -> H1'  for  H1* -> H1'
+Substituting map H2*1 -> H2'  for  H2*1 -> H2'
+Substituting map H2*2 -> H2''  for  H2*2 -> H2''
+Substituting map H2'1 -> H2'  for  H2'1 -> H2'
+Substituting map H2'2 -> H2''  for  H2'2 -> H2''
+Substituting map H3* -> H3'  for  H3* -> H3'
+Substituting map H4* -> H4'  for  H4* -> H4'
+Substituting map H5*1 -> H5'  for  H5*1 -> H5'
+Substituting map H5*2 -> H5''  for  H5*2 -> H5''
+Substituting map H5'1 -> H5'  for  H5'1 -> H5'
+Substituting map H5'2 -> H5''  for  H5'2 -> H5''
+Substituting map HO'2 -> HO2'  for  HO'2 -> HO2'
+Substituting map H5T -> HO5'  for  H5T -> HO5'
+Substituting map H3T -> HO3'  for  H3T -> HO3'
+Substituting map O1' -> O4'  for  O1' -> O4'
+Substituting map OA -> OP1  for  OA -> OP1
+Substituting map OB -> OP2  for  OB -> OP2
+Substituting map O1P -> OP1  for  O1P -> OP1
+Substituting map O2P -> OP2  for  O2P -> OP2
+>> 
+> 
+> source leaprc.lipid21
+----- Source: /home/users/sheenam/miniconda3/envs/atm/dat/leap/cmd/leaprc.lipid21
+----- Source of /home/users/sheenam/miniconda3/envs/atm/dat/leap/cmd/leaprc.lipid21 done
+>> #
+>> # Set log file
+>> #
+>> logFile leap.log
+log started: Fri Jun 30 21:05:21 2023
+
+Log file: ./leap.log
+>> #
+>> # leaprc for loading the Lipid21 v1.0 force field
+>> #       of Dickson, Gould and Walker.
+>> #       
+>> #       Note this file is designed to be used in addition
+>> #       to one of the standard protein force field leaprc files
+>> #       even if you are running a pure lipid.
+>> #
+>> #       For example, you would enter in leap:
+>> #         source leaprc.ff19SB
+>> #         source leaprc.lipid21
+>> #       
+>> # Load atom type hybridizations
+>> #
+>> addAtomTypes {
+>>     { "cA"  "C" "sp3" }
+>>     { "cB"  "C" "sp2" }
+>>     { "cC"  "C" "sp2" }
+>>     { "cD"  "C" "sp3" }
+>>     { "hA"  "H" "sp3" }
+>>     { "hB"  "H" "sp3" }
+>>     { "hE"  "H" "sp3" }
+>>     { "hL"  "H" "sp3" }
+>>     { "hN"  "H" "sp3" }
+>>     { "hO"  "H" "sp3" }
+>>     { "hX"  "H" "sp3" }
+>>     { "nA"  "N" "sp3" }
+>>     { "nN"  "N" "sp2" }
+>>     { "oC"  "O" "sp2" }
+>>     { "oH"  "O" "sp3" }
+>>     { "oO"  "O" "sp2" }
+>>     { "oP"  "O" "sp2" }
+>>     { "oS"  "O" "sp3" }
+>>     { "oT"  "O" "sp3" }
+>>     { "pA"  "P" "sp3" }
+>> }
+>> #
+>> # Load the Lipid21 parameter set.
+>> #
+>> lipid21 = loadamberparams lipid21.dat 
+Loading parameters: /home/users/sheenam/miniconda3/envs/atm/dat/leap/parm/lipid21.dat
+Reading title:
+AMBER Lipid21 v1.0 C. J. Dickson, R.C. Walker, I.R. Gould.
+>> #
+>> # Load the Lipid21 master lib file.
+>> #
+>> loadoff lipid21.lib
+Loading library: /home/users/sheenam/miniconda3/envs/atm/dat/leap/lib/lipid21.lib
+Loading: AR
+Loading: CHL
+Loading: DHA
+Loading: LAL
+Loading: MY
+Loading: OL
+Loading: PA
+Loading: PC
+Loading: PE
+Loading: PGR
+Loading: PGS
+Loading: PH-
+Loading: PS
+Loading: SA
+Loading: SPM
+Loading: ST
+>> 
+> 
+> source leaprc.water.tip3p
+----- Source: /home/users/sheenam/miniconda3/envs/atm/dat/leap/cmd/leaprc.water.tip3p
+----- Source of /home/users/sheenam/miniconda3/envs/atm/dat/leap/cmd/leaprc.water.tip3p done
+>> #
+>> #       Load water and ions for TIP3P + Li/Merz monovalent ions 
+>> #       + Joung-Chetham monovalent ions
+>> #       + Li/Merz highly charged ions (+2 to +4, 12-6 normal usage set)
+>> #
+>> #       Note: the Li/Merz monovalent set is loaded only to get Tl+,
+>> #          Cu+, Ag+ NH4+, H3O+.  Since we load Joung-Cheatham second,
+>> #          the alkali halide parameters come from the Joung-Cheatham set
+>> #
+>> addAtomTypes {
+>> 	{ "HW"  "H" "sp3" }
+>> 	{ "OW"  "O" "sp3" }
+>> 	{ "F-"   "F" "sp3" }
+>> 	{ "Cl-"  "Cl" "sp3" }
+>> 	{ "Br-"  "Br" "sp3" }
+>> 	{ "I-"   "I"  "sp3" }
+>> 	{ "Li+"  "Li"  "sp3" }
+>> 	{ "Na+"  "Na"  "sp3" }
+>> 	{ "K+"  "K"  "sp3" }
+>> 	{ "Rb+"  "Rb"  "sp3" }
+>> 	{ "Cs+"  "Cs"  "sp3" }
+>> 	{ "Mg+"  "Mg"  "sp3" }
+>>     { "Tl+"  "Tl"  "sp3" }
+>>     { "Cu+"  "Cu"  "sp3" }
+>>     { "Ag+"  "Ag"  "sp3" }
+>>     { "NH4+"  "N"  "sp3" }
+>>     { "H3O+"  "O"  "sp3" }
+>>     { "Be2+" "Be"  "sp3" }
+>>     { "Cu2+" "Cu"  "sp3" }
+>>     { "Ni2+" "Ni"  "sp3" }
+>>     { "Pt2+" "Pt"  "sp3" }
+>>     { "Zn2+" "Zn"  "sp3" }
+>>     { "Co2+" "Co"  "sp3" }
+>>     { "Pd2+" "Pd"  "sp3" }
+>>     { "Ag2+" "Ag"  "sp3" }
+>>     { "Cr2+" "Cr"  "sp3" }
+>>     { "Fe2+" "Fe"  "sp3" }
+>>     { "Mg2+" "Mg"  "sp3" }
+>>     { "V2+"  "V"   "sp3" }
+>>     { "Mn2+" "Mn"  "sp3" }
+>>     { "Hg2+" "Hg"  "sp3" }
+>>     { "Cd2+" "Cd"  "sp3" }
+>>     { "Yb2+" "Yb"  "sp3" }
+>>     { "Ca2+" "Ca"  "sp3" }
+>>     { "Sn2+" "Sn"  "sp3" }
+>>     { "Pb2+" "Pb"  "sp3" }
+>>     { "Eu2+" "Eu"  "sp3" }
+>>     { "Sr2+" "Sr"  "sp3" }
+>>     { "Sm2+" "Sm"  "sp3" }
+>>     { "Ba2+" "Ba"  "sp3" }
+>>     { "Ra2+" "Ra"  "sp3" }
+>>     { "Al3+" "Al"  "sp3" }
+>>     { "Fe3+" "Fe"  "sp3" }
+>>     { "Cr3+" "Cr"  "sp3" }
+>>     { "In3+" "In"  "sp3" }
+>>     { "Tl3+" "Tl"  "sp3" }
+>>     { "Y3+"  "Y"   "sp3" }
+>>     { "La3+" "La"  "sp3" }
+>>     { "Ce3+" "Ce"  "sp3" }
+>>     { "Pr3+" "Pr"  "sp3" }
+>>     { "Nd3+" "Nd"  "sp3" }
+>>     { "Sm3+" "Sm"  "sp3" }
+>>     { "Eu3+" "Eu"  "sp3" }
+>>     { "Gd3+" "Gd"  "sp3" }
+>>     { "Tb3+" "Tb"  "sp3" }
+>>     { "Dy3+" "Dy"  "sp3" }
+>>     { "Er3+" "Er"  "sp3" }
+>>     { "Tm3+" "Tm"  "sp3" }
+>>     { "Lu3+" "Lu"  "sp3" }
+>>     { "Hf4+" "Hf"  "sp3" }
+>>     { "Zr4+" "Zr"  "sp3" }
+>>     { "Ce4+" "Ce"  "sp3" }
+>>     { "U4+"  "U"   "sp3" }
+>>     { "Pu4+" "Pu"  "sp3" }
+>>     { "Th4+" "Th"  "sp3" }
+>> }
+>> loadOff atomic_ions.lib
+Loading library: /home/users/sheenam/miniconda3/envs/atm/dat/leap/lib/atomic_ions.lib
+Loading: AG
+Loading: AL
+Loading: Ag
+Loading: BA
+Loading: BR
+Loading: Be
+Loading: CA
+Loading: CD
+Loading: CE
+Loading: CL
+Loading: CO
+Loading: CR
+Loading: CS
+Loading: CU
+Loading: CU1
+Loading: Ce
+Loading: Cl-
+Loading: Cr
+Loading: Dy
+Loading: EU
+Loading: EU3
+Loading: Er
+Loading: F
+Loading: FE
+Loading: FE2
+Loading: GD3
+Loading: H3O+
+Loading: HE+
+Loading: HG
+Loading: HZ+
+Loading: Hf
+Loading: IN
+Loading: IOD
+Loading: K
+Loading: K+
+Loading: LA
+Loading: LI
+Loading: LU
+Loading: MG
+Loading: MN
+Loading: NA
+Loading: NH4
+Loading: NI
+Loading: Na+
+Loading: Nd
+Loading: PB
+Loading: PD
+Loading: PR
+Loading: PT
+Loading: Pu
+Loading: RB
+Loading: Ra
+Loading: SM
+Loading: SR
+Loading: Sm
+Loading: Sn
+Loading: TB
+Loading: TL
+Loading: Th
+Loading: Tl
+Loading: Tm
+Loading: U4+
+Loading: V2+
+Loading: Y
+Loading: YB2
+Loading: ZN
+Loading: Zr
+>> loadOff solvents.lib
+Loading library: /home/users/sheenam/miniconda3/envs/atm/dat/leap/lib/solvents.lib
+Loading: CHCL3BOX
+Loading: DC4
+Loading: FB3
+Loading: FB3BOX
+Loading: FB4
+Loading: FB4BOX
+Loading: MEOHBOX
+Loading: NMABOX
+Loading: O3P
+Loading: OP3
+Loading: OPC
+Loading: OPC3BOX
+Loading: OPCBOX
+Loading: PL3
+Loading: POL3BOX
+Loading: QSPCFWBOX
+Loading: SPC
+Loading: SPCBOX
+Loading: SPCFWBOX
+Loading: SPF
+Loading: SPG
+Loading: T4E
+Loading: TIP3PBOX
+Loading: TIP3PFBOX
+Loading: TIP4PBOX
+Loading: TIP4PEWBOX
+Loading: TIP5PBOX
+Loading: TP3
+Loading: TP4
+Loading: TP5
+Loading: TPF
+>> HOH = TP3
+>> WAT = TP3
+>> loadAmberParams frcmod.tip3p
+Loading parameters: /home/users/sheenam/miniconda3/envs/atm/dat/leap/parm/frcmod.tip3p
+Reading force field modification type file (frcmod)
+Reading title:
+This is the additional/replacement parameter set for TIP3P water
+>> loadAmberParams frcmod.ions1lm_126_tip3p
+Loading parameters: /home/users/sheenam/miniconda3/envs/atm/dat/leap/parm/frcmod.ions1lm_126_tip3p
+Reading force field modification type file (frcmod)
+Reading title:
+Li/Merz ion parameters of monovalent ions for TIP3P water model (12-6 normal usage set)
+>> loadAmberParams frcmod.ionsjc_tip3p
+Loading parameters: /home/users/sheenam/miniconda3/envs/atm/dat/leap/parm/frcmod.ionsjc_tip3p
+Reading force field modification type file (frcmod)
+Reading title:
+Monovalent ion parameters for Ewald and TIP3P water from Joung & Cheatham JPCB (2008)
+>> loadAmberParams frcmod.ions234lm_126_tip3p
+Loading parameters: /home/users/sheenam/miniconda3/envs/atm/dat/leap/parm/frcmod.ions234lm_126_tip3p
+Reading force field modification type file (frcmod)
+Reading title:
+Li/Merz ion parameters of divalent to tetravalent ions for TIP3P water model (12-6 normal usage set)
+>> 
+> 
+> source leaprc.gaff2
+----- Source: /home/users/sheenam/miniconda3/envs/atm/dat/leap/cmd/leaprc.gaff2
+----- Source of /home/users/sheenam/miniconda3/envs/atm/dat/leap/cmd/leaprc.gaff2 done
+>> logFile leap.log
+log started: Fri Jun 30 21:05:21 2023
+
+Log file: ./leap.log
+>> #
+>> # ----- leaprc for loading the general Amber Force field.
+>> #       This file is mostly for use with Antechamber
+>> #
+>> #	load atom type hybridizations
+>> #
+>> addAtomTypes {
+>> 	{ "h1"  "H" "sp3" }
+>> 	{ "h2"  "H" "sp3" }
+>> 	{ "h3"  "H" "sp3" }
+>> 	{ "h4"  "H" "sp3" }
+>> 	{ "h5"  "H" "sp3" }
+>> 	{ "ha"  "H" "sp3" }
+>> 	{ "hc"  "H" "sp3" }
+>> 	{ "hn"  "H" "sp3" }
+>> 	{ "ho"  "H" "sp3" }
+>> 	{ "hp"  "H" "sp3" }
+>> 	{ "hs"  "H" "sp3" }
+>> 	{ "hw"  "H" "sp3" }
+>> 	{ "hx"  "H" "sp3" }
+>> 	{ "o"  "O" "sp2" }
+>> 	{ "o2"  "O" "sp2" }
+>> 	{ "oh"  "O" "sp3" }
+>> 	{ "op"  "O" "sp3" }
+>> 	{ "oq"  "O" "sp3" }
+>> 	{ "os"  "O" "sp3" }
+>> 	{ "ow"  "O" "sp3" }
+>> 	{ "c"  "C" "sp2" }
+>> 	{ "c1"  "C" "sp2" }
+>> 	{ "c2"  "C" "sp2" }
+>> 	{ "c3"  "C" "sp3" }
+>> 	{ "ca"  "C" "sp2" }
+>> 	{ "cc"  "C" "sp2" }
+>> 	{ "cd"  "C" "sp2" }
+>> 	{ "ce"  "C" "sp2" }
+>> 	{ "cf"  "C" "sp2" }
+>> 	{ "cg"  "C" "sp2" }
+>> 	{ "ch"  "C" "sp2" }
+>> 	{ "cp"  "C" "sp2" }
+>> 	{ "cs"  "C" "sp2" }
+>> 	{ "cq"  "C" "sp2" }
+>> 	{ "cu"  "C" "sp2" }
+>> 	{ "cv"  "C" "sp2" }
+>> 	{ "cx"  "C" "sp2" }
+>> 	{ "cy"  "C" "sp2" }
+>> 	{ "cz"  "C" "sp2" }
+>> 	{ "n"   "N" "sp2" }
+>> 	{ "n1"  "N" "sp2" }
+>> 	{ "n2"  "N" "sp2" }
+>> 	{ "n3"  "N" "sp3" }
+>> 	{ "n4"  "N" "sp3" }
+>> 	{ "n5"  "N" "sp3" }
+>> 	{ "n6"  "N" "sp3" }
+>> 	{ "n7"  "N" "sp3" }
+>> 	{ "n8"  "N" "sp3" }
+>> 	{ "n9"  "N" "sp3" }
+>> 	{ "na"  "N" "sp2" }
+>> 	{ "nb"  "N" "sp2" }
+>> 	{ "nc"  "N" "sp2" }
+>> 	{ "nd"  "N" "sp2" }
+>> 	{ "ne"  "N" "sp2" }
+>> 	{ "nf"  "N" "sp2" }
+>> 	{ "nh"  "N" "sp2" }
+>> 	{ "ni"  "N" "sp2" }
+>> 	{ "nj"  "N" "sp2" }
+>> 	{ "nk"  "N" "sp3" }
+>> 	{ "nl"  "N" "sp3" }
+>> 	{ "nm"  "N" "sp2" }
+>> 	{ "nn"  "N" "sp2" }
+>> 	{ "no"  "N" "sp2" }
+>> 	{ "np"  "N" "sp3" }
+>> 	{ "nq"  "N" "sp3" }
+>> 	{ "ns"  "N" "sp2" }
+>> 	{ "nt"  "N" "sp2" }
+>> 	{ "nu"  "N" "sp2" }
+>> 	{ "nv"  "N" "sp2" }
+>> 	{ "nx"  "N" "sp3" }
+>> 	{ "ny"  "N" "sp3" }
+>> 	{ "nz"  "N" "sp3" }
+>> 	{ "n+"  "N" "sp3" }
+>> 	{ "s"   "S" "sp2" }
+>> 	{ "s2"   "S" "sp2" }
+>> 	{ "s3"   "S" "sp3" }
+>> 	{ "s4"   "S" "sp3" }
+>> 	{ "s6"   "S" "sp3" }
+>> 	{ "sh"   "S" "sp3" }
+>> 	{ "sp"   "S" "sp3" }
+>> 	{ "sq"   "S" "sp3" }
+>> 	{ "ss"   "S" "sp3" }
+>> 	{ "sx"   "S" "sp3" }
+>> 	{ "sy"   "S" "sp3" }
+>> 	{ "p2"   "P" "sp2" }
+>> 	{ "p3"   "P" "sp3" }
+>> 	{ "p4"   "P" "sp3" }
+>> 	{ "p5"   "P" "sp3" }
+>> 	{ "pb"   "P" "sp3" }
+>> 	{ "pc"   "P" "sp3" }
+>> 	{ "pd"   "P" "sp3" }
+>> 	{ "pe"   "P" "sp3" }
+>> 	{ "pf"   "P" "sp3" }
+>> 	{ "px"   "P" "sp3" }
+>> 	{ "py"   "P" "sp3" }
+>> 	{ "f"   "F" "sp3" }
+>> 	{ "cl"  "Cl" "sp3" }
+>> 	{ "br"  "Br" "sp3" }
+>> 	{ "i"   "I"  "sp3" }
+>> }
+>> #
+>> #	Load the general force field parameter set.
+>> #
+>> gaff = loadamberparams gaff2.dat
+Loading parameters: /home/users/sheenam/miniconda3/envs/atm/dat/leap/parm/gaff2.dat
+Reading title:
+AMBER General Force Field for organic molecules (Version 2.11, May 2016)
+> 
+> solute_0=loadpdb /nfs/sheenam-d/self-rbfe/cmet-2/003_rism/proteins/cmet/protein.pdb
+Loading PDB file: /nfs/sheenam-d/self-rbfe/cmet-2/003_rism/proteins/cmet/protein.pdb
+ (starting new molecule for chain Z)
+Matching PDB residue names to LEaP variables.
+Mapped residue LEU, term: Terminal/beginning, seq. number: 0 to: NLEU.
+  total atoms in file: 6253
+  Leap added 3358 missing atoms according to residue templates:
+       3358 H / lone pairs
+> source /nfs/sheenam-d/self-rbfe/cmet-2/002_ffengine/forcefield/CHEMBL3402742-23/leaprc_header
+----- Source: /nfs/sheenam-d/self-rbfe/cmet-2/002_ffengine/forcefield/CHEMBL3402742-23/leaprc_header
+----- Source of /nfs/sheenam-d/self-rbfe/cmet-2/002_ffengine/forcefield/CHEMBL3402742-23/leaprc_header done
+>> addAtomTypes {
+>>     { "aa"    "C"    "sp3" }
+>>     { "ab"    "N"    "sp3" }
+>>     { "ad"    "C"    "sp3" }
+>>     { "ae"    "C"    "sp3" }
+>>     { "af"    "C"    "sp3" }
+>>     { "ah"    "C"    "sp3" }
+>>     { "ai"    "O"    "sp3" }
+>>     { "aj"    "C"    "sp2" }
+>>     { "ak"    "O"    "sp2" }
+>>     { "an"    "N"    "sp3" }
+>>     { "ao"    "C"    "sp2" }
+>>     { "ap"    "C"    "sp2" }
+>>     { "aq"    "C"    "sp2" }
+>>     { "av"    "C"    "sp2" }
+>>     { "aw"    "C"    "sp2" }
+>>     { "ax"    "C"    "sp3" }
+>>     { "ay"    "N"    "sp3" }
+>>     { "az"    "N"    "sp2" }
+>>     { "bb"    "C"    "sp2" }
+>>     { "bc"    "C"    "sp3" }
+>>     { "bd"    "S"    "sp3" }
+>>     { "bf"    "C"    "sp2" }
+>>     { "bg"    "O"    "sp2" }
+>>     { "bh"    "C"    "sp2" }
+>>     { "bj"    "C"    "sp2" }
+>>     { "bk"    "C"    "sp2" }
+>>     { "bl"    "F"    "sp3" }
+>>     { "bm"    "C"    "sp2" }
+>>     { "bn"    "C"    "sp2" }
+>>     { "bo"    "F"    "sp3" }
+>>     { "bp"    "C"    "sp2" }
+>>     { "bq"    "C"    "sp2" }
+>>     { "bs"    "H"    "sp3" }
+>>     { "bt"    "H"    "sp3" }
+>>     { "bu"    "H"    "sp3" }
+>>     { "bv"    "H"    "sp3" }
+>>     { "bw"    "H"    "sp3" }
+>>     { "bx"    "H"    "sp3" }
+>>     { "by"    "H"    "sp3" }
+>>     { "bz"    "H"    "sp3" }
+>>     { "cb"    "H"    "sp3" }
+>>     { "ci"    "H"    "sp3" }
+>>     { "cj"    "H"    "sp3" }
+>>     { "ck"    "H"    "sp3" }
+>>     { "cm"    "H"    "sp3" }
+>>     { "cn"    "H"    "sp3" }
+>>     { "ct"    "H"    "sp3" }
+>>     { "cw"    "H"    "sp3" }
+>>     { "da"    "H"    "sp3" }
+>>     { "db"    "H"    "sp3" }
+>>     { "dc"    "H"    "sp3" }
+>>     { "dd"    "H"    "sp3" }
+>>     { "de"    "H"    "sp3" }
+>>     { "df"    "H"    "sp3" }
+>>     { "dg"    "H"    "sp3" }
+>>     { "dh"    "H"    "sp3" }
+>>     { "di"    "H"    "sp3" }
+>> }
+>> 
+> 
+> loadAmberParams /nfs/sheenam-d/self-rbfe/cmet-2/002_ffengine/forcefield/CHEMBL3402742-23/L1.frcmod
+Loading parameters: /nfs/sheenam-d/self-rbfe/cmet-2/002_ffengine/forcefield/CHEMBL3402742-23/L1.frcmod
+Reading force field modification type file (frcmod)
+Reading title:
+Force Field parameters of YENMFPGGDSCGGT-UHFFFAOYSA-O from ffengine
+> solute_1=loadmol2 /nfs/sheenam-d/self-rbfe/cmet-2/002_ffengine/forcefield/CHEMBL3402742-23/L1.mol2
+Loading Mol2 file: /nfs/sheenam-d/self-rbfe/cmet-2/002_ffengine/forcefield/CHEMBL3402742-23/L1.mol2
+Reading MOLECULE named L1 
+> solute_2=loadmol2 /nfs/sheenam-d/self-rbfe/cmet-2/002_ffengine/forcefield/CHEMBL3402742-23/L1.mol2
+Loading Mol2 file: /nfs/sheenam-d/self-rbfe/cmet-2/002_ffengine/forcefield/CHEMBL3402742-23/L1.mol2
+Reading MOLECULE named L1 
+> translate solute_2 {  1.91 43.96 7.25 }
+> sys=combine {solute_0 solute_1 solute_2}
+  Sequence: default_name
+  Sequence: L1
+  Sequence: L1
+> solvateBox sys TIP3PBOX 10
+  Solute vdw bounding box:              59.725 95.906 58.537
+  Total bounding box for atom centers:  79.725 115.906 78.537
+  Solvent unit box:                     18.774 18.774 18.774
+The number of boxes:  x= 5  y= 7  z= 5
+  Total vdw box size:                   82.224 118.869 81.867 angstroms.
+  Volume: 800164.468 A^3 
+  Total mass 409653.212 amu,  Density 0.850 g/cc
+  Added 19216 residues.
+> addions sys K+ 0
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+addIons: 1st Ion & target unit have charges of the same sign:
+     unit charge = 9; ion1 charge = 1;
+     can't neutralize.
+> addions sys Cl- 0
+9 Cl- ions required to neutralize.
+Adding 9 counter ions to "sys" using 1A grid
+Total solute charge:   9.00  Max atom radius:   2.00
+Grid extends from solute vdw + 5.41  to  11.41
+Box:
+   enclosing:  -37.78 -48.07 -35.00   37.26 58.10 37.14
+   sized:			      90.22 79.93 93.00
+   edge:        128.00
+Resolution:      1.00 Angstrom.
+Tree depth: 7
+Volume =  4.18% of box, grid points 87731
+Solvent present: replacing closest with ion
+	 when steric overlaps occur
+Calculating grid charges
+(Replacing solvent molecule)
+Placed Cl- in sys at (23.46, -12.63, 11.57).
+(Replacing solvent molecule)
+Placed Cl- in sys at (10.96, -22.13, 19.57).
+(Replacing solvent molecule)
+Placed Cl- in sys at (-19.04, -14.13, 21.07).
+(No solvent overlap)
+Placed Cl- in sys at (-20.78, -0.07, 1.00).
+(Replacing solvent molecule)
+Placed Cl- in sys at (23.71, -13.34, -0.87).
+(Replacing solvent molecule)
+Placed Cl- in sys at (-0.01, -20.64, 22.87).
+(Replacing solvent molecule)
+Placed Cl- in sys at (-14.69, 6.00, -6.90).
+(Replacing solvent molecule)
+Placed Cl- in sys at (-5.83, -38.84, 11.40).
+(Replacing solvent molecule)
+Placed Cl- in sys at (4.08, 6.00, 30.65).
+
+Done adding ions.
+> check sys
+Checking 'sys'....
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 0.987 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1957>.A<H2 3> and .R<WAT 894>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.459 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1953>.A<H1 2> and .R<WAT 465>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.156 angstroms between nonbonded atoms H1 and O
+-------  .R<WAT 1942>.A<H1 2> and .R<WAT 717>.A<O 1>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.324 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1942>.A<H1 2> and .R<WAT 717>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.115 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1935>.A<H2 3> and .R<WAT 812>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.305 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1930>.A<H2 3> and .R<WAT 591>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.490 angstroms between nonbonded atoms O and H2
+-------  .R<WAT 1926>.A<O 1> and .R<WAT 1399>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.498 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1924>.A<H1 2> and .R<WAT 1104>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 0.987 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1908>.A<H1 2> and .R<WAT 805>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.423 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1903>.A<H2 3> and .R<WAT 925>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.104 angstroms between nonbonded atoms H2 and O
+-------  .R<WAT 1892>.A<H2 3> and .R<WAT 845>.A<O 1>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.280 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1892>.A<H2 3> and .R<WAT 845>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.351 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1889>.A<H1 2> and .R<WAT 927>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 0.987 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1880>.A<H1 2> and .R<WAT 1653>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.340 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1879>.A<H2 3> and .R<WAT 654>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.115 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1877>.A<H2 3> and .R<WAT 1613>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 0.987 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1871>.A<H1 2> and .R<WAT 1808>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.340 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1860>.A<H2 3> and .R<WAT 1834>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.490 angstroms between nonbonded atoms O and H2
+-------  .R<WAT 1856>.A<O 1> and .R<WAT 891>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.498 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1844>.A<H1 2> and .R<WAT 1434>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.106 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1839>.A<H1 2> and .R<WAT 1374>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.104 angstroms between nonbonded atoms H2 and O
+-------  .R<WAT 1816>.A<H2 3> and .R<WAT 956>.A<O 1>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.280 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1816>.A<H2 3> and .R<WAT 956>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.397 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1814>.A<H2 3> and .R<WAT 1588>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.445 angstroms between nonbonded atoms H1 and O
+-------  .R<WAT 1809>.A<H1 2> and .R<WAT 1418>.A<O 1>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.405 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1804>.A<H2 3> and .R<WAT 998>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.396 angstroms between nonbonded atoms H2 and O
+-------  .R<WAT 1803>.A<H2 3> and .R<WAT 496>.A<O 1>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.490 angstroms between nonbonded atoms H2 and O
+-------  .R<WAT 1800>.A<H2 3> and .R<WAT 628>.A<O 1>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.212 angstroms between nonbonded atoms H2 and O
+-------  .R<WAT 1797>.A<H2 3> and .R<WAT 1292>.A<O 1>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.374 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1797>.A<H2 3> and .R<WAT 1292>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.305 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1795>.A<H2 3> and .R<WAT 842>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.487 angstroms between nonbonded atoms H2 and O
+-------  .R<WAT 1795>.A<H2 3> and .R<WAT 683>.A<O 1>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.106 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1790>.A<H1 2> and .R<WAT 458>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.043 angstroms between nonbonded atoms O and H1
+-------  .R<WAT 1788>.A<O 1> and .R<WAT 1349>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.226 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1788>.A<H2 3> and .R<WAT 1349>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.106 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1779>.A<H2 3> and .R<WAT 1725>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.100 angstroms between nonbonded atoms H2 and O
+-------  .R<WAT 1773>.A<H2 3> and .R<WAT 606>.A<O 1>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.405 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1771>.A<H2 3> and .R<WAT 1034>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.405 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1770>.A<H1 2> and .R<WAT 1430>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.371 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1769>.A<H2 3> and .R<WAT 1282>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.222 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1767>.A<H2 3> and .R<WAT 1197>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.100 angstroms between nonbonded atoms H2 and O
+-------  .R<WAT 1764>.A<H2 3> and .R<WAT 1283>.A<O 1>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.429 angstroms between nonbonded atoms H2 and HZ3
+-------  .R<WAT 1761>.A<H2 3> and .R<LYS 262>.A<HZ3 20>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.371 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1755>.A<H1 2> and .R<WAT 476>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.260 angstroms between nonbonded atoms H1 and O
+-------  .R<WAT 1749>.A<H1 2> and .R<WAT 643>.A<O 1>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.106 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1745>.A<H1 2> and .R<WAT 1006>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.222 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1739>.A<H1 2> and .R<WAT 1477>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.260 angstroms between nonbonded atoms O and H1
+-------  .R<WAT 1738>.A<O 1> and .R<WAT 772>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.445 angstroms between nonbonded atoms H1 and O
+-------  .R<WAT 1737>.A<H1 2> and .R<WAT 1092>.A<O 1>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.222 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1736>.A<H2 3> and .R<WAT 1347>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.371 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1731>.A<H1 2> and .R<WAT 1241>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.351 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1730>.A<H2 3> and .R<WAT 882>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.487 angstroms between nonbonded atoms O and H2
+-------  .R<WAT 1719>.A<O 1> and .R<WAT 1217>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.498 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1719>.A<H2 3> and .R<WAT 1439>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.423 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1718>.A<H2 3> and .R<WAT 1582>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.284 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1716>.A<H1 2> and .R<WAT 1440>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.222 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1705>.A<H2 3> and .R<WAT 942>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.384 angstroms between nonbonded atoms H2 and O
+-------  .R<WAT 1704>.A<H2 3> and .R<WAT 853>.A<O 1>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 0.648 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1704>.A<H2 3> and .R<WAT 853>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.480 angstroms between nonbonded atoms H2 and HE22
+-------  .R<WAT 1704>.A<H2 3> and .R<GLN 62>.A<HE22 15>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.381 angstroms between nonbonded atoms O and H2
+-------  .R<WAT 1703>.A<O 1> and .R<WAT 853>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.169 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1703>.A<H1 2> and .R<WAT 853>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.498 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1685>.A<H1 2> and .R<WAT 1531>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.304 angstroms between nonbonded atoms O and H2
+-------  .R<WAT 1683>.A<O 1> and .R<WAT 613>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.340 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1680>.A<H1 2> and .R<WAT 1288>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.208 angstroms between nonbonded atoms O and H2
+-------  .R<WAT 1677>.A<O 1> and .R<WAT 436>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.115 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1660>.A<H1 2> and .R<WAT 728>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.351 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1657>.A<H2 3> and .R<WAT 731>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.106 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1656>.A<H1 2> and .R<WAT 1377>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.192 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1650>.A<H1 2> and .R<WAT 487>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.208 angstroms between nonbonded atoms O and H2
+-------  .R<WAT 1648>.A<O 1> and .R<WAT 1583>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.106 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1638>.A<H1 2> and .R<WAT 422>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.397 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1637>.A<H2 3> and .R<WAT 1443>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.208 angstroms between nonbonded atoms O and H2
+-------  .R<WAT 1635>.A<O 1> and .R<WAT 1571>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.405 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1635>.A<H2 3> and .R<WAT 1553>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.472 angstroms between nonbonded atoms H2 and O
+-------  .R<WAT 1632>.A<H2 3> and .R<WAT 545>.A<O 1>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 0.819 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1632>.A<H2 3> and .R<WAT 545>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.047 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1628>.A<H2 3> and .R<WAT 888>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.487 angstroms between nonbonded atoms H2 and O
+-------  .R<WAT 1627>.A<H2 3> and .R<WAT 878>.A<O 1>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.222 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1626>.A<H1 2> and .R<WAT 1616>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.222 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1614>.A<H2 3> and .R<WAT 775>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.405 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1609>.A<H2 3> and .R<WAT 716>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.222 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1596>.A<H2 3> and .R<WAT 857>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.423 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1591>.A<H2 3> and .R<WAT 1329>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.115 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1567>.A<H2 3> and .R<WAT 1557>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.487 angstroms between nonbonded atoms O and H2
+-------  .R<WAT 1566>.A<O 1> and .R<WAT 957>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.156 angstroms between nonbonded atoms H1 and O
+-------  .R<WAT 1561>.A<H1 2> and .R<WAT 302>.A<O 1>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.324 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1561>.A<H1 2> and .R<WAT 302>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.304 angstroms between nonbonded atoms O and H2
+-------  .R<WAT 1552>.A<O 1> and .R<WAT 1510>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.405 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1549>.A<H1 2> and .R<WAT 1379>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.047 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1531>.A<H2 3> and .R<WAT 983>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.407 angstroms between nonbonded atoms H2 and O
+-------  .R<WAT 1527>.A<H2 3> and .R<WAT 457>.A<O 1>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.200 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1527>.A<H2 3> and .R<WAT 457>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.315 angstroms between nonbonded atoms H2 and O
+-------  .R<WAT 1525>.A<H2 3> and .R<WAT 1285>.A<O 1>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.091 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1525>.A<H2 3> and .R<WAT 1285>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.431 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1517>.A<H2 3> and .R<WAT 1205>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.459 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1505>.A<H2 3> and .R<WAT 962>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.490 angstroms between nonbonded atoms O and H2
+-------  .R<WAT 1503>.A<O 1> and .R<WAT 822>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.487 angstroms between nonbonded atoms O and H2
+-------  .R<WAT 1498>.A<O 1> and .R<WAT 1105>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.498 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1485>.A<H2 3> and .R<WAT 645>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.455 angstroms between nonbonded atoms H1 and HE3
+-------  .R<WAT 1483>.A<H1 2> and .R<LYS 179>.A<HE3 16>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.106 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1482>.A<H1 2> and .R<WAT 609>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.459 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1474>.A<H2 3> and .R<WAT 574>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.431 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1473>.A<H1 2> and .R<WAT 1458>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.381 angstroms between nonbonded atoms O and H2
+-------  .R<WAT 1469>.A<O 1> and .R<WAT 766>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.169 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1469>.A<H1 2> and .R<WAT 766>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.371 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1467>.A<H1 2> and .R<WAT 1158>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.166 angstroms between nonbonded atoms H1 and HZ3
+-------  .R<WAT 1466>.A<H1 2> and .R<LYS 171>.A<HZ3 20>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.459 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1462>.A<H1 2> and .R<WAT 601>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.381 angstroms between nonbonded atoms H2 and O
+-------  .R<WAT 1462>.A<H2 3> and .R<WAT 620>.A<O 1>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.169 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1462>.A<H2 3> and .R<WAT 620>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.305 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1449>.A<H2 3> and .R<WAT 1305>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.405 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1433>.A<H2 3> and .R<WAT 1275>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.333 angstroms between nonbonded atoms H2 and HE3
+-------  .R<WAT 1425>.A<H2 3> and .R<LYS 262>.A<HE3 16>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.351 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1423>.A<H1 2> and .R<WAT 1349>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.106 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1423>.A<H2 3> and .R<WAT 584>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.118 angstroms between nonbonded atoms H1 and HH12
+-------  .R<WAT 1417>.A<H1 2> and .R<ARG 142>.A<HH12 19>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.208 angstroms between nonbonded atoms H2 and O
+-------  .R<WAT 1414>.A<H2 3> and .R<WAT 976>.A<O 1>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.423 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1413>.A<H1 2> and .R<WAT 1148>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.498 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1412>.A<H2 3> and .R<WAT 619>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.405 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1409>.A<H1 2> and .R<WAT 953>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.431 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1404>.A<H1 2> and .R<WAT 1112>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.156 angstroms between nonbonded atoms O and H1
+-------  .R<WAT 1384>.A<O 1> and .R<WAT 506>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.324 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1384>.A<H2 3> and .R<WAT 506>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.315 angstroms between nonbonded atoms O and H2
+-------  .R<WAT 1366>.A<O 1> and .R<WAT 620>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.091 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1366>.A<H1 2> and .R<WAT 620>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.222 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1364>.A<H1 2> and .R<WAT 657>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.498 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1363>.A<H1 2> and .R<WAT 959>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.407 angstroms between nonbonded atoms O and H2
+-------  .R<WAT 1362>.A<O 1> and .R<WAT 643>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.200 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1362>.A<H1 2> and .R<WAT 643>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.459 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1361>.A<H1 2> and .R<WAT 1240>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.487 angstroms between nonbonded atoms H2 and O
+-------  .R<WAT 1361>.A<H2 3> and .R<WAT 698>.A<O 1>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.115 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1359>.A<H2 3> and .R<WAT 1241>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.047 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1358>.A<H1 2> and .R<WAT 1073>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.212 angstroms between nonbonded atoms H2 and O
+-------  .R<WAT 1355>.A<H2 3> and .R<WAT 396>.A<O 1>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.374 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1355>.A<H2 3> and .R<WAT 396>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.459 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1346>.A<H1 2> and .R<WAT 629>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.156 angstroms between nonbonded atoms H1 and O
+-------  .R<WAT 1345>.A<H1 2> and .R<WAT 1110>.A<O 1>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 0.909 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1345>.A<H1 2> and .R<WAT 1110>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.260 angstroms between nonbonded atoms O and H1
+-------  .R<WAT 1339>.A<O 1> and .R<WAT 336>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.304 angstroms between nonbonded atoms O and H2
+-------  .R<WAT 1337>.A<O 1> and .R<WAT 816>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.106 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1332>.A<H2 3> and .R<WAT 520>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.252 angstroms between nonbonded atoms H2 and HE2
+-------  .R<WAT 1330>.A<H2 3> and .R<HIE 260>.A<HE2 13>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.305 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1320>.A<H2 3> and .R<WAT 509>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.371 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1315>.A<H1 2> and .R<WAT 591>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.445 angstroms between nonbonded atoms H1 and O
+-------  .R<WAT 1310>.A<H1 2> and .R<WAT 956>.A<O 1>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 0.806 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1310>.A<H1 2> and .R<WAT 956>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.106 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1300>.A<H1 2> and .R<WAT 1056>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.423 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1290>.A<H2 3> and .R<WAT 879>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.115 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1278>.A<H1 2> and .R<WAT 793>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.459 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1262>.A<H1 2> and .R<WAT 807>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.431 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1254>.A<H1 2> and .R<WAT 751>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.431 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1239>.A<H1 2> and .R<WAT 873>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 0.987 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1238>.A<H1 2> and .R<WAT 1121>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.304 angstroms between nonbonded atoms H2 and O
+-------  .R<WAT 1237>.A<H2 3> and .R<WAT 927>.A<O 1>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.208 angstroms between nonbonded atoms H2 and O
+-------  .R<WAT 1231>.A<H2 3> and .R<WAT 832>.A<O 1>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.340 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1230>.A<H2 3> and .R<WAT 352>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.106 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1226>.A<H1 2> and .R<WAT 1016>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.106 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1223>.A<H1 2> and .R<WAT 1118>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.397 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1216>.A<H2 3> and .R<WAT 724>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.043 angstroms between nonbonded atoms H1 and O
+-------  .R<WAT 1215>.A<H1 2> and .R<WAT 1052>.A<O 1>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.226 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1215>.A<H1 2> and .R<WAT 1052>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.472 angstroms between nonbonded atoms H2 and O
+-------  .R<WAT 1215>.A<H2 3> and .R<WAT 1019>.A<O 1>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 0.819 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1215>.A<H2 3> and .R<WAT 1019>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.490 angstroms between nonbonded atoms O and H2
+-------  .R<WAT 1202>.A<O 1> and .R<WAT 747>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.431 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1199>.A<H1 2> and .R<WAT 922>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.351 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1189>.A<H1 2> and .R<WAT 983>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.371 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1188>.A<H1 2> and .R<WAT 539>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.305 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1186>.A<H2 3> and .R<WAT 715>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.459 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1178>.A<H1 2> and .R<WAT 790>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.222 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1171>.A<H2 3> and .R<WAT 714>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.405 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1167>.A<H1 2> and .R<WAT 815>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.106 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1151>.A<H2 3> and .R<WAT 411>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.397 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1149>.A<H2 3> and .R<WAT 840>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.405 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1139>.A<H2 3> and .R<WAT 560>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.115 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1128>.A<H2 3> and .R<WAT 901>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.222 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1113>.A<H2 3> and .R<WAT 390>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.445 angstroms between nonbonded atoms H1 and O
+-------  .R<WAT 1111>.A<H1 2> and .R<WAT 928>.A<O 1>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.100 angstroms between nonbonded atoms O and H2
+-------  .R<WAT 1108>.A<O 1> and .R<WAT 875>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.441 angstroms between nonbonded atoms H1 and HZ2
+-------  .R<WAT 1108>.A<H1 2> and .R<LYS 262>.A<HZ2 19>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.407 angstroms between nonbonded atoms H2 and O
+-------  .R<WAT 1107>.A<H2 3> and .R<WAT 644>.A<O 1>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.200 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1107>.A<H2 3> and .R<WAT 644>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.260 angstroms between nonbonded atoms H1 and O
+-------  .R<WAT 1104>.A<H1 2> and .R<WAT 625>.A<O 1>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.340 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1100>.A<H2 3> and .R<WAT 387>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.222 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1098>.A<H1 2> and .R<WAT 543>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.100 angstroms between nonbonded atoms O and H2
+-------  .R<WAT 1094>.A<O 1> and .R<WAT 423>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.376 angstroms between nonbonded atoms H1 and HH22
+-------  .R<WAT 1091>.A<H1 2> and .R<ARG 87>.A<HH22 22>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.293 angstroms between nonbonded atoms H1 and H
+-------  .R<WAT 1087>.A<H1 2> and .R<VAL 176>.A<H 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.384 angstroms between nonbonded atoms H2 and O
+-------  .R<WAT 1085>.A<H2 3> and .R<WAT 624>.A<O 1>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 0.648 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1085>.A<H2 3> and .R<WAT 624>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.487 angstroms between nonbonded atoms H2 and HA
+-------  .R<WAT 1082>.A<H2 3> and .R<ARG 275>.A<HA 4>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.260 angstroms between nonbonded atoms O and H1
+-------  .R<WAT 1079>.A<O 1> and .R<WAT 455>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.038 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1079>.A<H2 3> and .R<WAT 455>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.208 angstroms between nonbonded atoms O and H2
+-------  .R<WAT 1078>.A<O 1> and .R<WAT 662>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.106 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1075>.A<H2 3> and .R<WAT 721>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.418 angstroms between nonbonded atoms H2 and HZ3
+-------  .R<WAT 1064>.A<H2 3> and .R<LYS 137>.A<HZ3 20>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.265 angstroms between nonbonded atoms H2 and HH12
+-------  .R<WAT 1061>.A<H2 3> and .R<ARG 275>.A<HH12 19>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.129 angstroms between nonbonded atoms H1 and HZ2
+-------  .R<WAT 1058>.A<H1 2> and .R<LYS 179>.A<HZ2 19>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.396 angstroms between nonbonded atoms H2 and O
+-------  .R<WAT 1058>.A<H2 3> and .R<WAT 911>.A<O 1>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.260 angstroms between nonbonded atoms H1 and O
+-------  .R<WAT 1055>.A<H1 2> and .R<WAT 499>.A<O 1>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.304 angstroms between nonbonded atoms O and H2
+-------  .R<WAT 1053>.A<O 1> and .R<WAT 600>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.381 angstroms between nonbonded atoms O and H2
+-------  .R<WAT 1033>.A<O 1> and .R<WAT 976>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.169 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1033>.A<H1 2> and .R<WAT 976>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.381 angstroms between nonbonded atoms O and H2
+-------  .R<WAT 1031>.A<O 1> and .R<WAT 889>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.169 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 1031>.A<H1 2> and .R<WAT 889>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.276 angstroms between nonbonded atoms H2 and HH22
+-------  .R<WAT 1028>.A<H2 3> and .R<ARG 275>.A<HH22 22>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.473 angstroms between nonbonded atoms H1 and HE2
+-------  .R<WAT 1016>.A<H1 2> and .R<LYS 138>.A<HE2 15>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.396 angstroms between nonbonded atoms O and H2
+-------  .R<WAT 1014>.A<O 1> and .R<WAT 710>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.405 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1010>.A<H2 3> and .R<WAT 517>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.047 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1007>.A<H2 3> and .R<WAT 957>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.043 angstroms between nonbonded atoms O and H1
+-------  .R<WAT 1004>.A<O 1> and .R<WAT 625>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.226 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 1004>.A<H2 3> and .R<WAT 625>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.029 angstroms between nonbonded atoms H2 and HH22
+-------  .R<WAT 1004>.A<H2 3> and .R<ARG 239>.A<HH22 22>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.471 angstroms between nonbonded atoms H2 and HE
+-------  .R<WAT 997>.A<H2 3> and .R<ARG 25>.A<HE 15>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.156 angstroms between nonbonded atoms O and H1
+-------  .R<WAT 988>.A<O 1> and .R<WAT 571>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.222 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 988>.A<H1 2> and .R<WAT 413>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.324 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 988>.A<H2 3> and .R<WAT 571>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.351 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 980>.A<H1 2> and .R<WAT 571>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.400 angstroms between nonbonded atoms H1 and HZ3
+-------  .R<WAT 980>.A<H1 2> and .R<LYS 183>.A<HZ3 20>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.498 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 977>.A<H2 3> and .R<WAT 494>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.405 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 971>.A<H1 2> and .R<WAT 610>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.305 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 954>.A<H1 2> and .R<WAT 692>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.047 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 949>.A<H1 2> and .R<WAT 548>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.431 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 942>.A<H2 3> and .R<WAT 910>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.222 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 940>.A<H2 3> and .R<WAT 349>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.258 angstroms between nonbonded atoms H1 and H9
+-------  .R<WAT 938>.A<H1 2> and .R<L1 1965>.A<H9 41>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.262 angstroms between nonbonded atoms H2 and H9
+-------  .R<WAT 938>.A<H2 3> and .R<L1 1965>.A<H9 41>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.351 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 906>.A<H2 3> and .R<WAT 484>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.106 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 904>.A<H1 2> and .R<WAT 518>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.115 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 900>.A<H2 3> and .R<WAT 340>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.050 angstroms between nonbonded atoms H2 and HZ1
+-------  .R<WAT 895>.A<H2 3> and .R<LYS 138>.A<HZ1 18>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.349 angstroms between nonbonded atoms H1 and HD21
+-------  .R<WAT 890>.A<H1 2> and .R<ASN 110>.A<HD21 11>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.405 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 876>.A<H1 2> and .R<WAT 792>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.128 angstroms between nonbonded atoms H1 and HZ2
+-------  .R<WAT 875>.A<H1 2> and .R<LYS 262>.A<HZ2 19>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 0.987 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 868>.A<H1 2> and .R<WAT 569>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.405 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 867>.A<H1 2> and .R<WAT 634>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.306 angstroms between nonbonded atoms H2 and HD22
+-------  .R<WAT 865>.A<H2 3> and .R<ASN 114>.A<HD22 12>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.222 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 859>.A<H2 3> and .R<WAT 518>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.148 angstroms between nonbonded atoms H1 and HE22
+-------  .R<WAT 853>.A<H1 2> and .R<GLN 62>.A<HE22 15>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.431 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 843>.A<H2 3> and .R<WAT 482>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.208 angstroms between nonbonded atoms H2 and O
+-------  .R<WAT 841>.A<H2 3> and .R<WAT 623>.A<O 1>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.222 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 833>.A<H2 3> and .R<WAT 640>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.452 angstroms between nonbonded atoms H1 and HH22
+-------  .R<WAT 824>.A<H1 2> and .R<ARG 109>.A<HH22 22>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.323 angstroms between nonbonded atoms H2 and HH22
+-------  .R<WAT 824>.A<H2 3> and .R<ARG 109>.A<HH22 22>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.260 angstroms between nonbonded atoms H1 and O
+-------  .R<WAT 821>.A<H1 2> and .R<WAT 725>.A<O 1>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.038 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 821>.A<H1 2> and .R<WAT 725>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.340 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 820>.A<H2 3> and .R<WAT 329>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.406 angstroms between nonbonded atoms H2 and HH22
+-------  .R<WAT 820>.A<H2 3> and .R<ARG 240>.A<HH22 22>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.397 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 809>.A<H2 3> and .R<WAT 449>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.222 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 799>.A<H2 3> and .R<WAT 752>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.459 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 788>.A<H1 2> and .R<WAT 557>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.498 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 782>.A<H1 2> and .R<WAT 689>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.405 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 778>.A<H2 3> and .R<WAT 502>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.485 angstroms between nonbonded atoms H1 and HD22
+-------  .R<WAT 770>.A<H1 2> and .R<ASN 106>.A<HD22 12>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.498 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 767>.A<H1 2> and .R<WAT 676>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.222 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 750>.A<H1 2> and .R<WAT 664>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.208 angstroms between nonbonded atoms O and H2
+-------  .R<WAT 745>.A<O 1> and .R<WAT 447>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.222 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 745>.A<H2 3> and .R<WAT 742>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 0.864 angstroms between nonbonded atoms H2 and HZ2
+-------  .R<WAT 743>.A<H2 3> and .R<LYS 257>.A<HZ2 19>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.407 angstroms between nonbonded atoms O and H2
+-------  .R<WAT 740>.A<O 1> and .R<WAT 427>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.200 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 740>.A<H1 2> and .R<WAT 427>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.050 angstroms between nonbonded atoms H2 and HZ3
+-------  .R<WAT 727>.A<H2 3> and .R<LYS 179>.A<HZ3 20>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 0.987 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 712>.A<H2 3> and .R<WAT 327>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.478 angstroms between nonbonded atoms H1 and HH12
+-------  .R<WAT 710>.A<H1 2> and .R<ARG 87>.A<HH12 19>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.272 angstroms between nonbonded atoms H1 and HH22
+-------  .R<WAT 710>.A<H1 2> and .R<ARG 87>.A<HH22 22>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.345 angstroms between nonbonded atoms H1 and HZ1
+-------  .R<WAT 699>.A<H1 2> and .R<LYS 154>.A<HZ1 18>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.043 angstroms between nonbonded atoms O and H1
+-------  .R<WAT 696>.A<O 1> and .R<WAT 548>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.226 angstroms between nonbonded atoms H2 and H1
+-------  .R<WAT 696>.A<H2 3> and .R<WAT 548>.A<H1 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.115 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 681>.A<H1 2> and .R<WAT 340>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.445 angstroms between nonbonded atoms H1 and O
+-------  .R<WAT 680>.A<H1 2> and .R<WAT 562>.A<O 1>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.441 angstroms between nonbonded atoms H2 and HB3
+-------  .R<WAT 678>.A<H2 3> and .R<SER 61>.A<HB3 7>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.037 angstroms between nonbonded atoms H1 and HD21
+-------  .R<WAT 676>.A<H1 2> and .R<ASN 178>.A<HD21 11>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.473 angstroms between nonbonded atoms H1 and HE21
+-------  .R<WAT 669>.A<H1 2> and .R<GLN 6>.A<HE21 14>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.407 angstroms between nonbonded atoms H1 and HB2
+-------  .R<WAT 658>.A<H1 2> and .R<SER 88>.A<HB2 6>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.444 angstroms between nonbonded atoms H2 and HE
+-------  .R<WAT 648>.A<H2 3> and .R<ARG 25>.A<HE 15>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.004 angstroms between nonbonded atoms H2 and HZ2
+-------  .R<WAT 641>.A<H2 3> and .R<LYS 42>.A<HZ2 19>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.322 angstroms between nonbonded atoms H2 and HZ1
+-------  .R<WAT 634>.A<H2 3> and .R<LYS 100>.A<HZ1 18>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.407 angstroms between nonbonded atoms H1 and H
+-------  .R<WAT 631>.A<H1 2> and .R<CYS 30>.A<H 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 0.861 angstroms between nonbonded atoms H2 and HZ2
+-------  .R<WAT 630>.A<H2 3> and .R<LYS 154>.A<HZ2 19>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.418 angstroms between nonbonded atoms H2 and HH12
+-------  .R<WAT 625>.A<H2 3> and .R<ARG 239>.A<HH12 19>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.469 angstroms between nonbonded atoms H1 and H22
+-------  .R<WAT 610>.A<H1 2> and .R<L1 1965>.A<H22 54>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.276 angstroms between nonbonded atoms H1 and C20
+-------  .R<WAT 610>.A<H1 2> and .R<L1 1965>.A<C20 29>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.240 angstroms between nonbonded atoms H1 and C19
+-------  .R<WAT 610>.A<H1 2> and .R<L1 1965>.A<C19 28>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.195 angstroms between nonbonded atoms H2 and HZ3
+-------  .R<WAT 607>.A<H2 3> and .R<LYS 262>.A<HZ3 20>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.265 angstroms between nonbonded atoms H2 and HH12
+-------  .R<WAT 604>.A<H2 3> and .R<ARG 275>.A<HH12 19>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.421 angstroms between nonbonded atoms H2 and HH22
+-------  .R<WAT 604>.A<H2 3> and .R<ARG 275>.A<HH22 22>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 0.926 angstroms between nonbonded atoms H1 and HZ3
+-------  .R<WAT 600>.A<H1 2> and .R<LYS 138>.A<HZ3 20>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.390 angstroms between nonbonded atoms H1 and HH22
+-------  .R<WAT 595>.A<H1 2> and .R<ARG 53>.A<HH22 22>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.445 angstroms between nonbonded atoms H2 and HD3
+-------  .R<WAT 585>.A<H2 3> and .R<PRO 267>.A<HD3 4>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.498 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 583>.A<H1 2> and .R<WAT 445>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.426 angstroms between nonbonded atoms H2 and HZ3
+-------  .R<WAT 582>.A<H2 3> and .R<LYS 118>.A<HZ3 20>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.405 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 576>.A<H1 2> and .R<WAT 341>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.236 angstroms between nonbonded atoms H2 and HZ2
+-------  .R<WAT 574>.A<H2 3> and .R<LYS 198>.A<HZ2 19>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.405 angstroms between nonbonded atoms H2 and HE21
+-------  .R<WAT 558>.A<H2 3> and .R<GLN 6>.A<HE21 14>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.095 angstroms between nonbonded atoms H1 and H
+-------  .R<WAT 542>.A<H1 2> and .R<GLY 163>.A<H 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 0.913 angstroms between nonbonded atoms H1 and H
+-------  .R<WAT 531>.A<H1 2> and .R<GLU 111>.A<H 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.380 angstroms between nonbonded atoms H2 and HE21
+-------  .R<WAT 530>.A<H2 3> and .R<GLN 197>.A<HE21 14>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.161 angstroms between nonbonded atoms H2 and HE
+-------  .R<WAT 528>.A<H2 3> and .R<ARG 166>.A<HE 15>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.120 angstroms between nonbonded atoms H2 and HG
+-------  .R<WAT 519>.A<H2 3> and .R<SER 270>.A<HG 9>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.410 angstroms between nonbonded atoms H1 and HG22
+-------  .R<WAT 513>.A<H1 2> and .R<THR 180>.A<HG22 9>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.099 angstroms between nonbonded atoms H2 and HE22
+-------  .R<WAT 507>.A<H2 3> and .R<GLN 195>.A<HE22 15>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.463 angstroms between nonbonded atoms H2 and HB3
+-------  .R<WAT 497>.A<H2 3> and .R<SER 80>.A<HB3 7>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.481 angstroms between nonbonded atoms H2 and HG
+-------  .R<WAT 492>.A<H2 3> and .R<SER 61>.A<HG 9>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.387 angstroms between nonbonded atoms H2 and H
+-------  .R<WAT 488>.A<H2 3> and .R<HID 45>.A<H 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.065 angstroms between nonbonded atoms H2 and HZ3
+-------  .R<WAT 480>.A<H2 3> and .R<LYS 202>.A<HZ3 20>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.450 angstroms between nonbonded atoms H1 and H
+-------  .R<WAT 477>.A<H1 2> and .R<ILE 284>.A<H 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.018 angstroms between nonbonded atoms H1 and HH11
+-------  .R<WAT 476>.A<H1 2> and .R<ARG 239>.A<HH11 18>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.421 angstroms between nonbonded atoms H2 and H
+-------  .R<WAT 475>.A<H2 3> and .R<GLN 243>.A<H 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.430 angstroms between nonbonded atoms H2 and HA
+-------  .R<WAT 475>.A<H2 3> and .R<LEU 242>.A<HA 4>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.131 angstroms between nonbonded atoms O and H2
+-------  .R<WAT 459>.A<O 1> and .R<L1 1965>.A<H2 34>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.175 angstroms between nonbonded atoms O and H1
+-------  .R<WAT 459>.A<O 1> and .R<L1 1965>.A<H1 33>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.354 angstroms between nonbonded atoms O and C1
+-------  .R<WAT 459>.A<O 1> and .R<L1 1965>.A<C1 1>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 0.382 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 459>.A<H1 2> and .R<L1 1965>.A<H2 34>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 0.932 angstroms between nonbonded atoms H1 and C1
+-------  .R<WAT 459>.A<H1 2> and .R<L1 1965>.A<C1 1>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.160 angstroms between nonbonded atoms H1 and HZ2
+-------  .R<WAT 449>.A<H1 2> and .R<LYS 43>.A<HZ2 19>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.222 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 444>.A<H1 2> and .R<WAT 383>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.375 angstroms between nonbonded atoms H1 and HE
+-------  .R<WAT 444>.A<H1 2> and .R<ARG 53>.A<HE 15>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.385 angstroms between nonbonded atoms H1 and HH21
+-------  .R<WAT 444>.A<H1 2> and .R<ARG 53>.A<HH21 21>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.457 angstroms between nonbonded atoms H2 and HB3
+-------  .R<WAT 440>.A<H2 3> and .R<ARG 275>.A<HB3 7>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.208 angstroms between nonbonded atoms H1 and HE21
+-------  .R<WAT 434>.A<H1 2> and .R<GLN 197>.A<HE21 14>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.371 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 430>.A<H1 2> and .R<WAT 421>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.291 angstroms between nonbonded atoms H2 and HZ3
+-------  .R<WAT 428>.A<H2 3> and .R<LYS 71>.A<HZ3 20>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.293 angstroms between nonbonded atoms H2 and HE2
+-------  .R<WAT 410>.A<H2 3> and .R<LYS 129>.A<HE2 15>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.372 angstroms between nonbonded atoms H1 and HZ2
+-------  .R<WAT 407>.A<H1 2> and .R<LYS 198>.A<HZ2 19>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.080 angstroms between nonbonded atoms H2 and HG1
+-------  .R<WAT 405>.A<H2 3> and .R<THR 65>.A<HG1 12>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.358 angstroms between nonbonded atoms H1 and HH22
+-------  .R<WAT 404>.A<H1 2> and .R<ARG 142>.A<HH22 22>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.183 angstroms between nonbonded atoms H2 and HZ2
+-------  .R<WAT 403>.A<H2 3> and .R<LYS 129>.A<HZ2 19>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.436 angstroms between nonbonded atoms H1 and H
+-------  .R<WAT 400>.A<H1 2> and .R<ASN 227>.A<H 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.232 angstroms between nonbonded atoms H2 and HH12
+-------  .R<WAT 399>.A<H2 3> and .R<ARG 109>.A<HH12 19>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.226 angstroms between nonbonded atoms H2 and HH11
+-------  .R<WAT 392>.A<H2 3> and .R<ARG 142>.A<HH11 18>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.420 angstroms between nonbonded atoms O and H23
+-------  .R<WAT 389>.A<O 1> and .R<L1 1965>.A<H23 55>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.179 angstroms between nonbonded atoms H1 and H23
+-------  .R<WAT 389>.A<H1 2> and .R<L1 1965>.A<H23 55>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.402 angstroms between nonbonded atoms H1 and HH12
+-------  .R<WAT 384>.A<H1 2> and .R<ARG 105>.A<HH12 19>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.227 angstroms between nonbonded atoms H2 and HE
+-------  .R<WAT 383>.A<H2 3> and .R<ARG 53>.A<HE 15>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 0.927 angstroms between nonbonded atoms H2 and HH11
+-------  .R<WAT 380>.A<H2 3> and .R<ARG 218>.A<HH11 18>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.419 angstroms between nonbonded atoms H2 and HE
+-------  .R<WAT 376>.A<H2 3> and .R<ARG 240>.A<HE 15>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.265 angstroms between nonbonded atoms H2 and HE
+-------  .R<WAT 374>.A<H2 3> and .R<ARG 87>.A<HE 15>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.393 angstroms between nonbonded atoms H1 and HH
+-------  .R<WAT 364>.A<H1 2> and .R<TYR 173>.A<HH 15>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.371 angstroms between nonbonded atoms H1 and HD21
+-------  .R<WAT 358>.A<H1 2> and .R<ASN 110>.A<HD21 11>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.341 angstroms between nonbonded atoms H1 and H
+-------  .R<WAT 356>.A<H1 2> and .R<ALA 263>.A<H 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 0.882 angstroms between nonbonded atoms O and H12
+-------  .R<WAT 353>.A<O 1> and .R<L1 1965>.A<H12 44>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 0.384 angstroms between nonbonded atoms H1 and H12
+-------  .R<WAT 353>.A<H1 2> and .R<L1 1965>.A<H12 44>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.199 angstroms between nonbonded atoms H1 and C5
+-------  .R<WAT 353>.A<H1 2> and .R<L1 1965>.A<C5 6>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.195 angstroms between nonbonded atoms H2 and H12
+-------  .R<WAT 353>.A<H2 3> and .R<L1 1965>.A<H12 44>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.222 angstroms between nonbonded atoms H1 and H2
+-------  .R<WAT 347>.A<H1 2> and .R<WAT 336>.A<H2 3>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.291 angstroms between nonbonded atoms H2 and HG
+-------  .R<WAT 347>.A<H2 3> and .R<SER 80>.A<HG 9>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.328 angstroms between nonbonded atoms H1 and H
+-------  .R<WAT 344>.A<H1 2> and .R<LYS 43>.A<H 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.301 angstroms between nonbonded atoms H1 and HZ3
+-------  .R<WAT 338>.A<H1 2> and .R<LYS 129>.A<HZ3 20>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.370 angstroms between nonbonded atoms H2 and HA
+-------  .R<WAT 335>.A<H2 3> and .R<NLEU 1>.A<HA 6>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 0.983 angstroms between nonbonded atoms H1 and HH22
+-------  .R<WAT 329>.A<H1 2> and .R<ARG 240>.A<HH22 22>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.344 angstroms between nonbonded atoms H2 and H
+-------  .R<WAT 326>.A<H2 3> and .R<VAL 60>.A<H 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.264 angstroms between nonbonded atoms H1 and HD23
+-------  .R<WAT 316>.A<H1 2> and .R<LEU 215>.A<HD23 17>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.145 angstroms between nonbonded atoms H2 and HZ3
+-------  .R<WAT 311>.A<H2 3> and .R<LYS 132>.A<HZ3 20>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.384 angstroms between nonbonded atoms H1 and HA
+-------  .R<WAT 308>.A<H1 2> and .R<ALA 128>.A<HA 4>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.457 angstroms between nonbonded atoms H1 and HE3
+-------  .R<WAT 303>.A<H1 2> and .R<LYS 42>.A<HE3 16>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.207 angstroms between nonbonded atoms H2 and H
+-------  .R<WAT 302>.A<H2 3> and .R<SER 268>.A<H 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.496 angstroms between nonbonded atoms H2 and HG
+-------  .R<WAT 302>.A<H2 3> and .R<SER 268>.A<HG 9>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.232 angstroms between nonbonded atoms H1 and HD2
+-------  .R<WAT 299>.A<H1 2> and .R<ARG 275>.A<HD2 12>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.370 angstroms between nonbonded atoms H1 and HD12
+-------  .R<WAT 298>.A<H1 2> and .R<LEU 93>.A<HD12 12>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.072 angstroms between nonbonded atoms H1 and HZ1
+-------  .R<WAT 297>.A<H1 2> and .R<LYS 71>.A<HZ1 18>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.154 angstroms between nonbonded atoms H1 and H
+-------  .R<WAT 291>.A<H1 2> and .R<ARG 147>.A<H 2>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.457 angstroms between nonbonded atoms H2 and HZ1
+-------  .R<WAT 289>.A<H2 3> and .R<LYS 49>.A<HZ1 18>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.489 angstroms between nonbonded atoms H1 and HE3
+-------  .R<WAT 288>.A<H1 2> and .R<TRP 188>.A<HE3 21>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 0.994 angstroms between nonbonded atoms H2 and HE
+-------  .R<WAT 287>.A<H2 3> and .R<ARG 105>.A<HE 15>
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+Close contact of 1.488 angstroms between nonbonded atoms H and H
+-------  .R<THR 180>.A<H 2> and .R<LYS 179>.A<H 2>
+Checking parameters for unit 'sys'.
+Checking for bond parameters.
+Checking for angle parameters.
+check:  Warnings: 365
+Unit is OK.
+> saveamberparm sys protein-CHEMBL3402742-23-CHEMBL3402742-23.prmtop protein-CHEMBL3402742-23-CHEMBL3402742-23.inpcrd
+Checking Unit.
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Building angle parameters.
+Building proper torsion parameters.
+Building improper torsion parameters.
+ total 946 improper torsions applied
+Building H-Bond parameters.
+Incorporating Non-Bonded adjustments.
+Not Marking per-residue atom chain types.
+Marking per-residue atom chain types.
+  (Residues lacking connect0/connect1 - 
+   these don't have chain types marked:
+
+	res	total affected
+
+	L1	2
+	NLEU	1
+	WAT	20886
+  )
+ (no restraints)
+> savePdb sys protein-CHEMBL3402742-23-CHEMBL3402742-23.pdb
+Writing pdb file: protein-CHEMBL3402742-23-CHEMBL3402742-23.pdb
+   printing CRYST1 record to PDB file with box info
+
+/home/users/sheenam/miniconda3/envs/atm/bin/teLeap: Warning!
+ Converting N-terminal residue name to PDB format: NLEU -> LEU
+> quit
+	Quit
+
+Exiting LEaP: Errors = 0; Warnings = 367; Notes = 2.

@@ -1,0 +1,27 @@
+menu graphics on
+
+mol modselect 0 0 protein and noh
+mol color Name
+mol representation Lines 1.000000
+mol selection protein and noh
+mol material Opaque
+
+mol addrep 0
+mol modselect 1 0 residue 286 and noh
+mol modstyle 1 0 Licorice 0.300000 12.000000 12.000000
+
+mol addrep 0
+mol modselect 2 0 residue 287 and noh
+mol modstyle 2 0 Licorice 0.300000 12.000000 12.000000
+mol modcolor 2 0 Type
+color Type C green
+
+#pbc wrap -center com -centersel "index 13754" -compound res -all
+
+for {set i 0} {$i < [molinfo top get numframes]} {incr i} {
+  set sel [atomselect top "residue 287" frame $i ]
+  $sel moveby { -1.91 -43.96 -7.25 }
+}
+
+#same residue as water within 8 of index 13754
+
