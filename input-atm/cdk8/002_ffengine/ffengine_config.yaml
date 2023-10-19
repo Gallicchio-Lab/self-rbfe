@@ -1,0 +1,30 @@
+common:
+  debug: false
+  max_submit_count: 500
+  opt_group: 20
+  task_log: true
+input:
+  gaff_type: rbfe
+  input_type: sdf
+  quick: true
+  vs_mode: false
+slurm_parameter:
+  Conformation:
+    cpus-per-task: 2
+    exclude: ''
+    gres: gpu:1
+    nodes: 1
+    ntasks: 1
+    oversubscribe: true
+    partition: project-gpu
+    qos: maxjobs
+    time: '12:00:00'
+  default:
+    cpus-per-task: 2
+    exclude: ''
+    nodes: 1
+    ntasks: 1
+    oversubscribe: true
+    partition: project-cpu
+    qos: maxjobs
+    time: '12:00:00'

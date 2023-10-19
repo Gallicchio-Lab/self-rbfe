@@ -1,0 +1,8 @@
+#makes the list of ligands
+/bin/ls -1 > ~/Dropbox/Merck_ATM_validation/self-rbfe/cmet/scripts/ligands.list
+
+#finds the reference atoms
+( cd ~/Dropbox/Merck_ATM_validation/cmet/005_atm/free_energy && for i in `cat ~/Dropbox/Merck_ATM_validation/self-rbfe/cmet/scripts/ligands.list` ; do python ~/Dropbox/Merck_ATM_validation/self-rbfe/scripts/getrefatoms.py $i ; done ) > refatoms.list
+
+#some ligands do not have a L1.mol2 file
+cd ~/Dropbox/Merck_ATM_validation/self-rbfe/cmet/002_ffengine/forcefield ; for i in `cat ~/Dropbox/Merck_ATM_validation/self-rbfe/cmet/scripts/ligands.list` ; do if [ ! -f ${i}/L1.mol2 ] ; then  (cd $i && ln -s L2.frcmod L1.frcmod && ln -s L2.mol2 L1.mol2 ) ; fi ; done 

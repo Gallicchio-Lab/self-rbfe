@@ -1,0 +1,160 @@
+combination_rule  LB
+special_bond  None None 0.833 None None 0.5
+qmodel  None
+equ_table no
+
+
+
+atomtype bq_ LJ12_6 0.000 0.0000 0.0000 G nan nan
+atomtype x_ LJ12_6 0.000 0.0000 0.0000 G nan nan
+
+
+atomtype cc LJ12_6 12.010 3.3152 0.0988 gaff nan nan
+atomtype cd LJ12_6 12.010 3.3152 0.0988 gaff nan nan
+atomtype na LJ12_6 14.010 3.2058 0.2042 gaff nan nan
+atomtype nc LJ12_6 14.010 3.3842 0.0941 gaff nan nan
+atomtype ca LJ12_6 12.010 3.3152 0.0988 gaff nan nan
+atomtype c3 LJ12_6 12.010 3.3977 0.1078 gaff nan nan
+atomtype n LJ12_6 14.010 3.1809 0.1636 gaff nan nan
+atomtype c LJ12_6 12.010 3.3152 0.0988 gaff nan nan
+atomtype o LJ12_6 16.000 3.0481 0.1463 gaff nan nan
+atomtype f LJ12_6 19.000 3.0342 0.0832 gaff nan nan
+atomtype hn LJ12_6 1.008 1.1065 0.0100 gaff nan nan
+atomtype ha LJ12_6 1.008 2.6255 0.0161 gaff nan nan
+atomtype h1 LJ12_6 1.008 2.4220 0.0208 gaff nan nan
+atomtype h4 LJ12_6 1.008 2.5364 0.0161 gaff nan nan
+atomtype hc LJ12_6 1.008 2.6002 0.0208 gaff nan nan
+
+bondterm cc cd harmonic 1.373 416.10 gaff nan nan
+bondterm cc nc harmonic 1.369 369.10 gaff nan nan
+bondterm cc h4 harmonic 1.082 403.90 gaff nan nan
+bondterm cd na harmonic 1.380 354.50 gaff nan nan
+bondterm c3 cd harmonic 1.502 262.60 gaff nan nan
+bondterm hn na harmonic 1.010 535.10 gaff nan nan
+bondterm cd nc harmonic 1.317 450.70 gaff nan nan
+bondterm ca cd harmonic 1.456 308.20 gaff nan nan
+bondterm ca ca harmonic 1.398 378.60 gaff nan nan
+bondterm ca ha harmonic 1.086 395.70 gaff nan nan
+bondterm c3 ca harmonic 1.516 250.30 gaff nan nan
+bondterm c3 n harmonic 1.462 263.80 gaff nan nan
+bondterm c3 h1 harmonic 1.097 375.90 gaff nan nan
+bondterm n nc harmonic 1.360 295.90 gaff nan nan
+bondterm c n harmonic 1.379 356.20 gaff nan nan
+bondterm cd cd harmonic 1.428 340.20 gaff nan nan
+bondterm cd ha harmonic 1.084 400.10 gaff nan nan
+bondterm c cc harmonic 1.468 295.40 gaff nan nan
+bondterm cc ha harmonic 1.084 400.10 gaff nan nan
+bondterm c o harmonic 1.218 652.60 gaff nan nan
+bondterm ca f harmonic 1.349 353.60 gaff nan nan
+bondterm c3 hc harmonic 1.097 375.90 gaff nan nan
+
+angleterm cc cd na harmonic 106.990 92.700 gaff nan nan
+angleterm c3 cd cc harmonic 119.450 66.800 gaff nan nan
+angleterm cc nc cd harmonic 105.490 73.900 gaff nan nan
+angleterm cd cc nc harmonic 111.650 91.100 gaff nan nan
+angleterm cd cc h4 harmonic 128.480 47.800 gaff nan nan
+angleterm cd na cd harmonic 109.900 70.500 gaff nan nan
+angleterm cd na hn harmonic 125.500 47.100 gaff nan nan
+angleterm cd c3 hc harmonic 110.490 47.700 gaff nan nan
+angleterm c3 cd na harmonic 122.730 82.400 gaff nan nan
+angleterm na cd nc harmonic 112.220 115.500 gaff nan nan
+angleterm ca cd na harmonic 123.450 83.600 gaff nan nan
+angleterm ca ca cd harmonic 120.790 67.100 gaff nan nan
+angleterm h4 cc nc harmonic 121.140 61.700 gaff nan nan
+angleterm ca cd nc harmonic 123.240 85.300 gaff nan nan
+angleterm ca ca ca harmonic 120.020 68.800 gaff nan nan
+angleterm ca ca ha harmonic 119.880 48.700 gaff nan nan
+angleterm c3 ca ca harmonic 120.770 65.600 gaff nan nan
+angleterm ca c3 n harmonic 112.380 83.500 gaff nan nan
+angleterm ca c3 h1 harmonic 109.560 47.500 gaff nan nan
+angleterm c3 n nc harmonic 115.280 84.100 gaff nan nan
+angleterm c n c3 harmonic 120.690 65.300 gaff nan nan
+angleterm h1 c3 n harmonic 108.880 61.500 gaff nan nan
+angleterm cd nc n harmonic 117.190 88.100 gaff nan nan
+angleterm cc c n harmonic 112.700 87.100 gaff nan nan
+angleterm n c o harmonic 123.050 113.800 gaff nan nan
+angleterm c n nc harmonic 124.860 83.500 gaff nan nan
+angleterm cd cd nc harmonic 112.560 90.300 gaff nan nan
+angleterm cc cd cd harmonic 114.190 70.300 gaff nan nan
+angleterm cd cd ha harmonic 121.070 47.600 gaff nan nan
+angleterm ca cd cd harmonic 111.040 69.300 gaff nan nan
+angleterm c cc cd harmonic 121.350 67.200 gaff nan nan
+angleterm cd cc ha harmonic 121.760 49.000 gaff nan nan
+angleterm cc cd ha harmonic 121.760 49.000 gaff nan nan
+angleterm cc c o harmonic 123.930 86.700 gaff nan nan
+angleterm c cc ha harmonic 116.640 47.400 gaff nan nan
+angleterm ca ca f harmonic 118.960 89.300 gaff nan nan
+angleterm h1 c3 h1 harmonic 108.460 38.800 gaff nan nan
+angleterm hc c3 hc harmonic 107.580 39.000 gaff nan nan
+
+dihedralterm cc cd na cd amber 0.0000 1.7000 0.0000 0.0000 gaff nan nan
+dihedralterm cc cd na hn amber 0.0000 1.7000 0.0000 0.0000 gaff nan nan
+dihedralterm hc c3 cd cc amber 0.0000 0.0000 0.0000 0.0000 gaff nan nan
+dihedralterm cd cc nc cd amber 0.0000 4.7500 0.0000 0.0000 gaff nan nan
+dihedralterm nc cd na cd amber 0.0000 1.7000 0.0000 0.0000 gaff nan nan
+dihedralterm ca cd na cd amber 0.0000 1.7000 0.0000 0.0000 gaff nan nan
+dihedralterm hc c3 cd na amber 0.0000 0.0000 0.0000 0.0000 gaff nan nan
+dihedralterm na cd nc cc amber 0.0000 4.7500 0.0000 0.0000 gaff nan nan
+dihedralterm ca ca cd na amber 0.0000 0.7000 0.0000 0.0000 gaff nan nan
+dihedralterm ca ca ca cd amber 0.0000 3.6250 0.0000 0.0000 gaff nan nan
+dihedralterm cd ca ca ha amber 0.0000 3.6250 0.0000 0.0000 gaff nan nan
+dihedralterm nc cc cd na amber 0.0000 4.0000 0.0000 0.0000 gaff nan nan
+dihedralterm nc cc cd c3 amber 0.0000 4.0000 0.0000 0.0000 gaff nan nan
+dihedralterm ca ca cd nc amber 0.0000 0.7000 0.0000 0.0000 gaff nan nan
+dihedralterm ca cd nc cc amber 0.0000 4.7500 0.0000 0.0000 gaff nan nan
+dihedralterm ca ca ca ca amber 0.0000 3.6250 0.0000 0.0000 gaff nan nan
+dihedralterm ca ca ca ha amber 0.0000 3.6250 0.0000 0.0000 gaff nan nan
+dihedralterm c3 ca ca ca amber 0.0000 3.6250 0.0000 0.0000 gaff nan nan
+dihedralterm n c3 ca ca amber 0.0000 -0.0000 0.0000 0.0000 gaff nan nan
+dihedralterm h1 c3 ca ca amber 0.0000 -0.0000 0.0000 0.0000 gaff nan nan
+dihedralterm ca c3 n nc amber 0.0000 -0.0000 0.0000 0.0000 gaff nan nan
+dihedralterm ca c3 n c amber 0.0000 -0.0000 0.0000 0.0000 gaff nan nan
+dihedralterm c3 ca ca ha amber 0.0000 3.6250 0.0000 0.0000 gaff nan nan
+dihedralterm c3 n nc cd amber 0.0000 4.8000 0.0000 0.0000 gaff nan nan
+dihedralterm cc c n c3 amber 0.0000 2.5000 0.0000 0.0000 gaff nan nan
+dihedralterm o c n c3 amber 0.0000 2.5000 0.0000 0.0000 gaff nan nan
+dihedralterm cd cd nc n amber 0.0000 4.7500 0.0000 0.0000 gaff nan nan
+dihedralterm ca cd nc n amber 0.0000 4.7500 0.0000 0.0000 gaff nan nan
+dihedralterm cc c n nc amber 0.0000 2.5000 0.0000 0.0000 gaff nan nan
+dihedralterm o c n nc amber 0.0000 2.5000 0.0000 0.0000 gaff nan nan
+dihedralterm cc cd cd nc amber 0.0000 4.0000 0.0000 0.0000 gaff nan nan
+dihedralterm ha cd cd nc amber 0.0000 4.0000 0.0000 0.0000 gaff nan nan
+dihedralterm c cc cd cd amber 0.0000 4.0000 0.0000 0.0000 gaff nan nan
+dihedralterm ha cc cd cd amber 0.0000 4.0000 0.0000 0.0000 gaff nan nan
+dihedralterm ca ca cd cd amber 0.0000 0.5050 0.0000 0.0000 gaff nan nan
+dihedralterm n c cc cd amber 0.0000 2.8750 0.0000 0.0000 gaff nan nan
+dihedralterm o c cc cd amber 0.0000 2.8750 0.0000 0.0000 gaff nan nan
+dihedralterm c n nc cd amber 0.0000 4.8000 0.0000 0.0000 gaff nan nan
+dihedralterm ca cd cd cc amber 0.0000 4.0000 0.0000 0.0000 gaff nan nan
+dihedralterm ca cd cd ha amber 0.0000 4.0000 0.0000 0.0000 gaff nan nan
+dihedralterm ca ca ca f amber 0.0000 3.6250 0.0000 0.0000 gaff nan nan
+dihedralterm f ca ca ha amber 0.0000 3.6250 0.0000 0.0000 gaff nan nan
+dihedralterm c3 cd na cd amber 0.0000 1.7000 0.0000 0.0000 gaff nan nan
+dihedralterm c3 cd na hn amber 0.0000 1.7000 0.0000 0.0000 gaff nan nan
+dihedralterm nc cd na hn amber 0.0000 1.7000 0.0000 0.0000 gaff nan nan
+dihedralterm ca cd na hn amber 0.0000 1.7000 0.0000 0.0000 gaff nan nan
+dihedralterm ha ca ca ha amber 0.0000 3.6250 0.0000 0.0000 gaff nan nan
+dihedralterm h1 c3 n nc amber 0.0000 -0.0000 0.0000 0.0000 gaff nan nan
+dihedralterm h1 c3 n c amber 0.0000 0.0000 0.0000 0.0000 gaff nan nan
+dihedralterm c cc cd ha amber 0.0000 4.0000 0.0000 0.0000 gaff nan nan
+dihedralterm ha cc cd ha amber 0.0000 4.0000 0.0000 0.0000 gaff nan nan
+dihedralterm n c cc ha amber 0.0000 2.8750 0.0000 0.0000 gaff nan nan
+dihedralterm o c cc ha amber 0.0000 2.8750 0.0000 0.0000 gaff nan nan
+dihedralterm h4 cc cd na amber 0.0000 4.0000 0.0000 0.0000 gaff nan nan
+dihedralterm h4 cc cd c3 amber 0.0000 4.0000 0.0000 0.0000 gaff nan nan
+dihedralterm h4 cc nc cd amber 0.0000 4.7500 0.0000 0.0000 gaff nan nan
+
+improperterm cd h4 cc nc amber 1.1 gaff nan nan
+improperterm c3 cc cd na amber 1.1 gaff nan nan
+improperterm cd cd na hn amber 1.1 gaff nan nan
+improperterm ca na cd nc amber 1.1 gaff nan nan
+improperterm ca ca ca cd amber 1.1 gaff nan nan
+improperterm ca ca ca ha amber 1.1 gaff nan nan
+improperterm c3 ca ca ca amber 1.1 gaff nan nan
+improperterm c c3 n nc amber 1.1 gaff nan nan
+improperterm ca cd cd nc amber 1.1 gaff nan nan
+improperterm cc cd cd ha amber 1.1 gaff nan nan
+improperterm c cd cc ha amber 1.1 gaff nan nan
+improperterm cc n c o amber 10.5 gaff nan nan
+improperterm ca ca ca f amber 1.1 gaff nan nan
+

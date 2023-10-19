@@ -1,0 +1,3 @@
+/bin/ls -1 > /home/emiliogallicchio35/Dropbox/Merck_ATM_validation/self-rbfe/cmet/scripts/ligands.list
+( cd /home/emiliogallicchio35/Dropbox/Merck_ATM_validation/cmet/005_atm/free_energy && for i in `cat /home/emiliogallicchio35/Dropbox/Merck_ATM_validation/self-rbfe/cmet/scripts/ligands.list` ; do python /home/emiliogallicchio35/Dropbox/Merck_ATM_validation/self-rbfe/scripts/getrefatoms.py $i ; done ) > refatoms.list
+cd ~/Dropbox/Merck_ATM_validation/self-rbfe/cmet/002_ffengine/forcefield ; for i in `cat ~/Dropbox/Merck_ATM_validation/self-rbfe/cmet/scripts/ligands.list` ; do if [ ! -f ${i}/L1.mol2 ] ; then  (cd $i && ln -s L2.frcmod L1.frcmod && ln -s L2.mol2 L1.mol2 ) ; fi ; done 

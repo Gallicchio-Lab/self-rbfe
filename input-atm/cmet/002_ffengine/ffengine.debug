@@ -1,0 +1,920 @@
+12-10-2022 10:02:18 - INFO: ffengine_master, print_version
+	ffengine.FFEngineWorkflow: Running ffengine master on host stxcompute018
+12-10-2022 10:02:18 - INFO: ffengine_master, print_version
+	ffengine.FFEngineWorkflow: Versions:
+12-10-2022 10:02:18 - INFO: ffengine_master, print_version
+	ffengine.FFEngineWorkflow:         ffengine:       v1.2.3-0-g32fb0fb8-dirty
+
+12-10-2022 10:02:18 - INFO: ffengine_master, __read_input
+	ffengine.FFEngineWorkflow: Ligand to be parameterized: CHEMBL3402742-23
+12-10-2022 10:02:18 - INFO: ffengine_master, __read_input
+	ffengine.FFEngineWorkflow: Ligand to be parameterized: CHEMBL3402759-5.7
+12-10-2022 10:02:18 - INFO: ffengine_master, __read_input
+	ffengine.FFEngineWorkflow: Ligand to be parameterized: CHEMBL3402749-500
+12-10-2022 10:02:18 - INFO: ffengine_master, __read_input
+	ffengine.FFEngineWorkflow: Ligand to be parameterized: CHEMBL3402745-200
+12-10-2022 10:02:18 - INFO: ffengine_master, __read_input
+	ffengine.FFEngineWorkflow: Ligand to be parameterized: CHEMBL3402763-90
+12-10-2022 10:02:18 - INFO: ffengine_master, __read_input
+	ffengine.FFEngineWorkflow: Ligand to be parameterized: CHEMBL3402758-10
+12-10-2022 10:02:18 - INFO: ffengine_master, __read_input
+	ffengine.FFEngineWorkflow: Ligand to be parameterized: CHEMBL3402753-200
+12-10-2022 10:02:18 - INFO: ffengine_master, __read_input
+	ffengine.FFEngineWorkflow: Ligand to be parameterized: CHEMBL3402748-5300
+12-10-2022 10:02:18 - INFO: ffengine_master, __read_input
+	ffengine.FFEngineWorkflow: Ligand to be parameterized: CHEMBL3402754-40
+12-10-2022 10:02:18 - INFO: ffengine_master, __read_input
+	ffengine.FFEngineWorkflow: Ligand to be parameterized: CHEMBL3402762-1
+12-10-2022 10:02:18 - INFO: ffengine_master, __read_input
+	ffengine.FFEngineWorkflow: Ligand to be parameterized: CHEMBL3402752-30000
+12-10-2022 10:02:18 - INFO: ffengine_master, __read_input
+	ffengine.FFEngineWorkflow: Ligand to be parameterized: CHEMBL3402750-400
+12-10-2022 10:02:18 - INFO: ffengine_master, __read_input
+	ffengine.FFEngineWorkflow: Ligand to be parameterized: CHEMBL3402760-1
+12-10-2022 10:02:18 - INFO: ffengine_master, __read_input
+	ffengine.FFEngineWorkflow: Ligand to be parameterized: CHEMBL3402747-3400
+12-10-2022 10:02:18 - INFO: ffengine_master, __read_input
+	ffengine.FFEngineWorkflow: Ligand to be parameterized: CHEMBL3402764-90
+12-10-2022 10:02:18 - INFO: ffengine_master, __read_input
+	ffengine.FFEngineWorkflow: Ligand to be parameterized: CHEMBL3402751-2100
+12-10-2022 10:02:18 - INFO: ffengine_master, __read_input
+	ffengine.FFEngineWorkflow: Ligand to be parameterized: CHEMBL3402755-4200
+12-10-2022 10:02:18 - INFO: ffengine_master, __read_input
+	ffengine.FFEngineWorkflow: Ligand to be parameterized: CHEMBL3402761-1
+12-10-2022 10:02:18 - INFO: ffengine_master, __read_input
+	ffengine.FFEngineWorkflow: Ligand to be parameterized: CHEMBL3402744-300
+12-10-2022 10:02:18 - INFO: ffengine_master, __read_input
+	ffengine.FFEngineWorkflow: Ligand to be parameterized: CHEMBL3402741-400
+12-10-2022 10:02:18 - INFO: ffengine_master, __read_input
+	ffengine.FFEngineWorkflow: Ligand to be parameterized: CHEMBL3402757-6.5
+12-10-2022 10:02:19 - INFO: ffengine_master, __read_input
+	ffengine.FFEngineWorkflow: Ligand to be parameterized: CHEMBL3402765-11-charged-pKa-8.1
+12-10-2022 10:02:19 - INFO: ffengine_master, __read_input
+	ffengine.FFEngineWorkflow: Ligand to be parameterized: CHEMBL3402743-42
+12-10-2022 10:02:19 - INFO: ffengine_master, __read_input
+	ffengine.FFEngineWorkflow: Ligand to be parameterized: CHEMBL3402756-2.7
+12-10-2022 10:02:19 - INFO: ffengine_master, create_tasks
+	ffengine.FFEngineWorkflow: Using charge fitter(s) {'xtb', 'bci'}
+
+12-10-2022 10:02:24 - INFO: workflow_manager, submit_task
+	ffengine.FragmentationWorkflow: Submitting task: frag_CHEMBL3402742-23
+12-10-2022 10:02:24 - INFO: workflow_manager, submit_task
+	ffengine.FragmentationWorkflow: Submitting task: frag_CHEMBL3402759-5.7
+12-10-2022 10:02:25 - INFO: workflow_manager, submit_task
+	ffengine.FragmentationWorkflow: Submitting task: frag_CHEMBL3402749-500
+12-10-2022 10:02:25 - INFO: workflow_manager, submit_task
+	ffengine.FragmentationWorkflow: Submitting task: frag_CHEMBL3402745-200
+12-10-2022 10:02:25 - INFO: workflow_manager, submit_task
+	ffengine.FragmentationWorkflow: Submitting task: frag_CHEMBL3402763-90
+12-10-2022 10:02:26 - INFO: workflow_manager, submit_task
+	ffengine.FragmentationWorkflow: Submitting task: frag_CHEMBL3402758-10
+12-10-2022 10:02:26 - INFO: workflow_manager, submit_task
+	ffengine.FragmentationWorkflow: Submitting task: frag_CHEMBL3402753-200
+12-10-2022 10:02:26 - INFO: workflow_manager, submit_task
+	ffengine.FragmentationWorkflow: Submitting task: frag_CHEMBL3402748-5300
+12-10-2022 10:02:27 - INFO: workflow_manager, submit_task
+	ffengine.FragmentationWorkflow: Submitting task: frag_CHEMBL3402754-40
+12-10-2022 10:02:27 - INFO: workflow_manager, submit_task
+	ffengine.FragmentationWorkflow: Submitting task: frag_CHEMBL3402762-1
+12-10-2022 10:02:27 - INFO: workflow_manager, submit_task
+	ffengine.FragmentationWorkflow: Submitting task: frag_CHEMBL3402752-30000
+12-10-2022 10:02:28 - INFO: workflow_manager, submit_task
+	ffengine.FragmentationWorkflow: Submitting task: frag_CHEMBL3402750-400
+12-10-2022 10:02:28 - INFO: workflow_manager, submit_task
+	ffengine.FragmentationWorkflow: Submitting task: frag_CHEMBL3402760-1
+12-10-2022 10:02:29 - INFO: workflow_manager, submit_task
+	ffengine.FragmentationWorkflow: Submitting task: frag_CHEMBL3402747-3400
+12-10-2022 10:02:29 - INFO: workflow_manager, write_running_task_log
+	ffengine.FragmentationWorkflow: RUNNING: Fragmentation - frag_CHEMBL3402742-23, SLURM ID: 5085828
+12-10-2022 10:02:29 - INFO: workflow_manager, write_running_task_log
+	ffengine.FragmentationWorkflow: RUNNING: Fragmentation - frag_CHEMBL3402759-5.7, SLURM ID: 5085829
+12-10-2022 10:02:29 - INFO: workflow_manager, write_running_task_log
+	ffengine.FragmentationWorkflow: RUNNING: Fragmentation - frag_CHEMBL3402749-500, SLURM ID: 5085830
+12-10-2022 10:02:29 - INFO: workflow_manager, write_running_task_log
+	ffengine.FragmentationWorkflow: RUNNING: Fragmentation - frag_CHEMBL3402745-200, SLURM ID: 5085831
+12-10-2022 10:02:29 - INFO: workflow_manager, write_running_task_log
+	ffengine.FragmentationWorkflow: RUNNING: Fragmentation - frag_CHEMBL3402763-90, SLURM ID: 5085832
+12-10-2022 10:02:29 - INFO: workflow_manager, write_running_task_log
+	ffengine.FragmentationWorkflow: RUNNING: Fragmentation - frag_CHEMBL3402758-10, SLURM ID: 5085833
+12-10-2022 10:02:29 - INFO: workflow_manager, write_running_task_log
+	ffengine.FragmentationWorkflow: RUNNING: Fragmentation - frag_CHEMBL3402753-200, SLURM ID: 5085834
+12-10-2022 10:02:29 - INFO: workflow_manager, write_running_task_log
+	ffengine.FragmentationWorkflow: RUNNING: Fragmentation - frag_CHEMBL3402748-5300, SLURM ID: 5085835
+12-10-2022 10:02:29 - INFO: workflow_manager, write_running_task_log
+	ffengine.FragmentationWorkflow: RUNNING: Fragmentation - frag_CHEMBL3402754-40, SLURM ID: 5085836
+12-10-2022 10:02:29 - INFO: workflow_manager, write_running_task_log
+	ffengine.FragmentationWorkflow: RUNNING: Fragmentation - frag_CHEMBL3402762-1, SLURM ID: 5085837
+12-10-2022 10:02:29 - INFO: workflow_manager, write_running_task_log
+	ffengine.FragmentationWorkflow: RUNNING: Fragmentation - frag_CHEMBL3402752-30000, SLURM ID: 5085838
+12-10-2022 10:02:29 - INFO: workflow_manager, submit_task
+	ffengine.FragmentationWorkflow: Submitting task: frag_CHEMBL3402764-90
+12-10-2022 10:02:29 - INFO: workflow_manager, submit_task
+	ffengine.FragmentationWorkflow: Submitting task: frag_CHEMBL3402751-2100
+12-10-2022 10:02:30 - INFO: workflow_manager, submit_task
+	ffengine.FragmentationWorkflow: Submitting task: frag_CHEMBL3402755-4200
+12-10-2022 10:02:30 - INFO: workflow_manager, submit_task
+	ffengine.FragmentationWorkflow: Submitting task: frag_CHEMBL3402761-1
+12-10-2022 10:02:30 - INFO: workflow_manager, submit_task
+	ffengine.FragmentationWorkflow: Submitting task: frag_CHEMBL3402744-300
+12-10-2022 10:02:31 - INFO: workflow_manager, submit_task
+	ffengine.FragmentationWorkflow: Submitting task: frag_CHEMBL3402741-400
+12-10-2022 10:02:31 - INFO: workflow_manager, submit_task
+	ffengine.FragmentationWorkflow: Submitting task: frag_CHEMBL3402757-6.5
+12-10-2022 10:02:31 - INFO: workflow_manager, submit_task
+	ffengine.FragmentationWorkflow: Submitting task: frag_CHEMBL3402765-11-charged-pKa-8.1
+12-10-2022 10:02:32 - INFO: workflow_manager, submit_task
+	ffengine.FragmentationWorkflow: Submitting task: frag_CHEMBL3402743-42
+12-10-2022 10:02:32 - INFO: workflow_manager, submit_task
+	ffengine.FragmentationWorkflow: Submitting task: frag_CHEMBL3402756-2.7
+12-10-2022 10:02:34 - INFO: workflow_manager, write_pass_task_log
+	ffengine.FragmentationWorkflow: COMPLETED: Fragmentation - frag_CHEMBL3402745-200, SLURM ID: 5085831
+12-10-2022 10:02:34 - INFO: workflow_manager, write_pass_task_log
+	ffengine.FragmentationWorkflow: COMPLETED: Fragmentation - frag_CHEMBL3402763-90, SLURM ID: 5085832
+12-10-2022 10:02:34 - INFO: workflow_manager, write_running_task_log
+	ffengine.FragmentationWorkflow: RUNNING: Fragmentation - frag_CHEMBL3402750-400, SLURM ID: 5085839
+12-10-2022 10:02:34 - INFO: workflow_manager, write_running_task_log
+	ffengine.FragmentationWorkflow: RUNNING: Fragmentation - frag_CHEMBL3402760-1, SLURM ID: 5085840
+12-10-2022 10:02:34 - INFO: workflow_manager, write_running_task_log
+	ffengine.FragmentationWorkflow: RUNNING: Fragmentation - frag_CHEMBL3402747-3400, SLURM ID: 5085841
+12-10-2022 10:02:34 - INFO: workflow_manager, write_running_task_log
+	ffengine.FragmentationWorkflow: RUNNING: Fragmentation - frag_CHEMBL3402764-90, SLURM ID: 5085842
+12-10-2022 10:02:34 - INFO: workflow_manager, write_running_task_log
+	ffengine.FragmentationWorkflow: RUNNING: Fragmentation - frag_CHEMBL3402751-2100, SLURM ID: 5085843
+12-10-2022 10:02:34 - INFO: workflow_manager, write_running_task_log
+	ffengine.FragmentationWorkflow: RUNNING: Fragmentation - frag_CHEMBL3402755-4200, SLURM ID: 5085844
+12-10-2022 10:02:34 - INFO: workflow_manager, write_running_task_log
+	ffengine.FragmentationWorkflow: RUNNING: Fragmentation - frag_CHEMBL3402761-1, SLURM ID: 5085845
+12-10-2022 10:02:34 - INFO: workflow_manager, write_running_task_log
+	ffengine.FragmentationWorkflow: RUNNING: Fragmentation - frag_CHEMBL3402744-300, SLURM ID: 5085846
+12-10-2022 10:02:34 - INFO: workflow_manager, write_running_task_log
+	ffengine.FragmentationWorkflow: RUNNING: Fragmentation - frag_CHEMBL3402741-400, SLURM ID: 5085847
+12-10-2022 10:02:34 - INFO: workflow_manager, write_running_task_log
+	ffengine.FragmentationWorkflow: RUNNING: Fragmentation - frag_CHEMBL3402757-6.5, SLURM ID: 5085848
+12-10-2022 10:02:34 - INFO: workflow_manager, write_running_task_log
+	ffengine.FragmentationWorkflow: RUNNING: Fragmentation - frag_CHEMBL3402765-11-charged-pKa-8.1, SLURM ID: 5085849
+12-10-2022 10:02:34 - INFO: workflow_manager, write_running_task_log
+	ffengine.FragmentationWorkflow: RUNNING: Fragmentation - frag_CHEMBL3402743-42, SLURM ID: 5085850
+12-10-2022 10:02:34 - INFO: workflow_manager, write_running_task_log
+	ffengine.FragmentationWorkflow: RUNNING: Fragmentation - frag_CHEMBL3402756-2.7, SLURM ID: 5085851
+12-10-2022 10:02:39 - INFO: workflow_manager, write_pass_task_log
+	ffengine.FragmentationWorkflow: COMPLETED: Fragmentation - frag_CHEMBL3402742-23, SLURM ID: 5085828
+12-10-2022 10:02:39 - INFO: workflow_manager, write_pass_task_log
+	ffengine.FragmentationWorkflow: COMPLETED: Fragmentation - frag_CHEMBL3402759-5.7, SLURM ID: 5085829
+12-10-2022 10:02:39 - INFO: workflow_manager, write_pass_task_log
+	ffengine.FragmentationWorkflow: COMPLETED: Fragmentation - frag_CHEMBL3402749-500, SLURM ID: 5085830
+12-10-2022 10:02:39 - INFO: workflow_manager, write_pass_task_log
+	ffengine.FragmentationWorkflow: COMPLETED: Fragmentation - frag_CHEMBL3402758-10, SLURM ID: 5085833
+12-10-2022 10:02:39 - INFO: workflow_manager, write_pass_task_log
+	ffengine.FragmentationWorkflow: COMPLETED: Fragmentation - frag_CHEMBL3402753-200, SLURM ID: 5085834
+12-10-2022 10:02:39 - INFO: workflow_manager, write_pass_task_log
+	ffengine.FragmentationWorkflow: COMPLETED: Fragmentation - frag_CHEMBL3402747-3400, SLURM ID: 5085841
+12-10-2022 10:02:39 - INFO: workflow_manager, write_pass_task_log
+	ffengine.FragmentationWorkflow: COMPLETED: Fragmentation - frag_CHEMBL3402764-90, SLURM ID: 5085842
+12-10-2022 10:02:39 - INFO: workflow_manager, write_pass_task_log
+	ffengine.FragmentationWorkflow: COMPLETED: Fragmentation - frag_CHEMBL3402751-2100, SLURM ID: 5085843
+12-10-2022 10:02:39 - INFO: workflow_manager, write_pass_task_log
+	ffengine.FragmentationWorkflow: COMPLETED: Fragmentation - frag_CHEMBL3402755-4200, SLURM ID: 5085844
+12-10-2022 10:02:39 - INFO: workflow_manager, write_pass_task_log
+	ffengine.FragmentationWorkflow: COMPLETED: Fragmentation - frag_CHEMBL3402761-1, SLURM ID: 5085845
+12-10-2022 10:02:39 - INFO: workflow_manager, write_pass_task_log
+	ffengine.FragmentationWorkflow: COMPLETED: Fragmentation - frag_CHEMBL3402744-300, SLURM ID: 5085846
+12-10-2022 10:02:39 - INFO: workflow_manager, write_pass_task_log
+	ffengine.FragmentationWorkflow: COMPLETED: Fragmentation - frag_CHEMBL3402741-400, SLURM ID: 5085847
+12-10-2022 10:02:39 - INFO: workflow_manager, write_pass_task_log
+	ffengine.FragmentationWorkflow: COMPLETED: Fragmentation - frag_CHEMBL3402757-6.5, SLURM ID: 5085848
+12-10-2022 10:02:39 - INFO: workflow_manager, write_pass_task_log
+	ffengine.FragmentationWorkflow: COMPLETED: Fragmentation - frag_CHEMBL3402765-11-charged-pKa-8.1, SLURM ID: 5085849
+12-10-2022 10:02:39 - INFO: workflow_manager, write_pass_task_log
+	ffengine.FragmentationWorkflow: COMPLETED: Fragmentation - frag_CHEMBL3402743-42, SLURM ID: 5085850
+12-10-2022 10:02:39 - INFO: workflow_manager, write_pass_task_log
+	ffengine.FragmentationWorkflow: COMPLETED: Fragmentation - frag_CHEMBL3402756-2.7, SLURM ID: 5085851
+12-10-2022 10:36:28 - INFO: workflow_manager, write_pass_task_log
+	ffengine.FragmentationWorkflow: COMPLETED: Fragmentation - frag_CHEMBL3402748-5300, SLURM ID: 5085835
+12-10-2022 10:36:28 - INFO: workflow_manager, write_pass_task_log
+	ffengine.FragmentationWorkflow: COMPLETED: Fragmentation - frag_CHEMBL3402754-40, SLURM ID: 5085836
+12-10-2022 10:36:28 - INFO: workflow_manager, write_pass_task_log
+	ffengine.FragmentationWorkflow: COMPLETED: Fragmentation - frag_CHEMBL3402762-1, SLURM ID: 5085837
+12-10-2022 10:36:28 - INFO: workflow_manager, write_pass_task_log
+	ffengine.FragmentationWorkflow: COMPLETED: Fragmentation - frag_CHEMBL3402752-30000, SLURM ID: 5085838
+12-10-2022 10:36:28 - INFO: workflow_manager, write_pass_task_log
+	ffengine.FragmentationWorkflow: COMPLETED: Fragmentation - frag_CHEMBL3402750-400, SLURM ID: 5085839
+12-10-2022 10:36:28 - INFO: workflow_manager, write_pass_task_log
+	ffengine.FragmentationWorkflow: COMPLETED: Fragmentation - frag_CHEMBL3402760-1, SLURM ID: 5085840
+12-10-2022 10:36:30 - INFO: workflow_manager, submit_task
+	ffengine.MoleFragsMappingWorkflow: Submitting task: mole_frag_mapping
+12-10-2022 10:36:35 - INFO: workflow_manager, write_running_task_log
+	ffengine.MoleFragsMappingWorkflow: RUNNING: MoleFrags - mole_frag_mapping, SLURM ID: 5086815
+12-10-2022 10:36:40 - INFO: workflow_manager, write_pass_task_log
+	ffengine.MoleFragsMappingWorkflow: COMPLETED: MoleFrags - mole_frag_mapping, SLURM ID: 5086815
+12-10-2022 10:36:46 - INFO: workflow_manager, submit_task
+	ffengine.QMinWorkflow: Submitting task: qmin_mole_PPCTYYSLBWDGHQ-UHFFFAOYSA-O_6f3966193fd36568765ede5ccb8f5305
+12-10-2022 10:36:46 - INFO: workflow_manager, submit_task
+	ffengine.QMinWorkflow: Submitting task: qmin_mole_AHYMHWXQRWRBKT-UHFFFAOYSA-O_884be03d149d67abfe5e5e6acea421a2
+12-10-2022 10:36:46 - INFO: workflow_manager, submit_task
+	ffengine.QMinWorkflow: Submitting task: qmin_mole_TYQGWYQOYDYYSB-UHFFFAOYSA-N_039bebc4ead038c5d343b444289dbc35
+12-10-2022 10:36:47 - INFO: workflow_manager, submit_task
+	ffengine.QMinWorkflow: Submitting task: qmin_mole_XSINRHAIBWWSLP-UHFFFAOYSA-O_05691a5d87c0e404008e4020ee1e775d
+12-10-2022 10:36:47 - INFO: workflow_manager, submit_task
+	ffengine.QMinWorkflow: Submitting task: qmin_mole_BQDBPVWRXKKLEM-UHFFFAOYSA-N_a18ddcee0e2c2f4f0f19a04ba97a60a3
+12-10-2022 10:36:47 - INFO: workflow_manager, submit_task
+	ffengine.QMinWorkflow: Submitting task: qmin_mole_RTKBHBAMZLAVKQ-UHFFFAOYSA-O_07cd0268b1d3e9a553b5553c36739dac
+12-10-2022 10:36:48 - INFO: workflow_manager, submit_task
+	ffengine.QMinWorkflow: Submitting task: qmin_mole_WVYHFPSGWCCXMO-UHFFFAOYSA-O_65f559069e1a0d127ca070707705940b
+12-10-2022 10:36:48 - INFO: workflow_manager, submit_task
+	ffengine.QMinWorkflow: Submitting task: qmin_mole_HNZNLHMWBMCDNP-UHFFFAOYSA-N_32403601a8d662c5d3c2340bb78cb524
+12-10-2022 10:36:48 - INFO: workflow_manager, submit_task
+	ffengine.QMinWorkflow: Submitting task: qmin_mole_DNECYDMFUWXITK-UHFFFAOYSA-O_da89903402f775d37894595ba00e7fe1
+12-10-2022 10:36:49 - INFO: workflow_manager, submit_task
+	ffengine.QMinWorkflow: Submitting task: qmin_mole_KCAPWBJRKSKHSZ-UHFFFAOYSA-O_41ad237c4242023636650c1dcc7c40cd
+12-10-2022 10:36:49 - INFO: workflow_manager, submit_task
+	ffengine.QMinWorkflow: Submitting task: qmin_mole_UTRKTKXZUOHEGE-UHFFFAOYSA-O_62f107bb2f377a83b495df9c5bf0a858
+12-10-2022 10:36:49 - INFO: workflow_manager, submit_task
+	ffengine.QMinWorkflow: Submitting task: qmin_mole_YENMFPGGDSCGGT-UHFFFAOYSA-O_fecca93b7f1458809fa71782d0cc88cf
+12-10-2022 10:36:50 - INFO: workflow_manager, submit_task
+	ffengine.QMinWorkflow: Submitting task: qmin_mole_DALKKQZTVMLVDE-UHFFFAOYSA-N_0297eaa1e77d00db7fb73a54afabf4ee
+12-10-2022 10:36:50 - INFO: workflow_manager, submit_task
+	ffengine.QMinWorkflow: Submitting task: qmin_mole_DZAVNSDHPJBMQG-UHFFFAOYSA-O_7518da6587d46c1c4a694121c4099941
+12-10-2022 10:36:50 - INFO: workflow_manager, write_running_task_log
+	ffengine.QMinWorkflow: RUNNING: QMin - Molecule: CHEMBL3402760-1, PPCTYYSLBWDGHQ-UHFFFAOYSA-O, SLURM ID: 5086822
+12-10-2022 10:36:50 - INFO: workflow_manager, write_running_task_log
+	ffengine.QMinWorkflow: RUNNING: QMin - Molecule: CHEMBL3402762-1, AHYMHWXQRWRBKT-UHFFFAOYSA-O, SLURM ID: 5086823
+12-10-2022 10:36:50 - INFO: workflow_manager, write_running_task_log
+	ffengine.QMinWorkflow: RUNNING: QMin - Molecule: CHEMBL3402751-2100, TYQGWYQOYDYYSB-UHFFFAOYSA-N, SLURM ID: 5086824
+12-10-2022 10:36:50 - INFO: workflow_manager, write_running_task_log
+	ffengine.QMinWorkflow: RUNNING: QMin - Molecule: CHEMBL3402763-90, XSINRHAIBWWSLP-UHFFFAOYSA-O, SLURM ID: 5086825
+12-10-2022 10:36:50 - INFO: workflow_manager, write_running_task_log
+	ffengine.QMinWorkflow: RUNNING: QMin - Molecule: CHEMBL3402748-5300, BQDBPVWRXKKLEM-UHFFFAOYSA-N, SLURM ID: 5086826
+12-10-2022 10:36:50 - INFO: workflow_manager, write_running_task_log
+	ffengine.QMinWorkflow: RUNNING: QMin - Molecule: CHEMBL3402759-5.7, RTKBHBAMZLAVKQ-UHFFFAOYSA-O, SLURM ID: 5086827
+12-10-2022 10:36:50 - INFO: workflow_manager, write_running_task_log
+	ffengine.QMinWorkflow: RUNNING: QMin - Molecule: CHEMBL3402741-400, WVYHFPSGWCCXMO-UHFFFAOYSA-O, SLURM ID: 5086828
+12-10-2022 10:36:50 - INFO: workflow_manager, write_running_task_log
+	ffengine.QMinWorkflow: RUNNING: QMin - Molecule: CHEMBL3402749-500, HNZNLHMWBMCDNP-UHFFFAOYSA-N, SLURM ID: 5086829
+12-10-2022 10:36:50 - INFO: workflow_manager, write_running_task_log
+	ffengine.QMinWorkflow: RUNNING: QMin - Molecule: CHEMBL3402757-6.5, DNECYDMFUWXITK-UHFFFAOYSA-O, SLURM ID: 5086830
+12-10-2022 10:36:50 - INFO: workflow_manager, write_running_task_log
+	ffengine.QMinWorkflow: RUNNING: QMin - Molecule: CHEMBL3402764-90, KCAPWBJRKSKHSZ-UHFFFAOYSA-O, SLURM ID: 5086831
+12-10-2022 10:36:50 - INFO: workflow_manager, write_running_task_log
+	ffengine.QMinWorkflow: RUNNING: QMin - Molecule: CHEMBL3402758-10, UTRKTKXZUOHEGE-UHFFFAOYSA-O, SLURM ID: 5086832
+12-10-2022 10:36:50 - INFO: workflow_manager, write_running_task_log
+	ffengine.QMinWorkflow: RUNNING: QMin - Molecule: CHEMBL3402742-23, YENMFPGGDSCGGT-UHFFFAOYSA-O, SLURM ID: 5086833
+12-10-2022 10:36:50 - INFO: workflow_manager, write_running_task_log
+	ffengine.QMinWorkflow: RUNNING: QMin - Molecule: CHEMBL3402755-4200, DALKKQZTVMLVDE-UHFFFAOYSA-N, SLURM ID: 5086834
+12-10-2022 10:36:51 - INFO: workflow_manager, submit_task
+	ffengine.QMinWorkflow: Submitting task: qmin_mole_RSNJJEZRTWAPRV-UHFFFAOYSA-N_342fbe8f96cd7dbc53a4b1ac0bed46aa
+12-10-2022 10:36:51 - INFO: workflow_manager, submit_task
+	ffengine.QMinWorkflow: Submitting task: qmin_mole_OHNLONIUYBNNFP-UHFFFAOYSA-N_13faa4049a5e2a1a2be9c3f2bb322216
+12-10-2022 10:36:51 - INFO: workflow_manager, submit_task
+	ffengine.QMinWorkflow: Submitting task: qmin_mole_QWXKBTBMVIBWPV-UHFFFAOYSA-O_15e92db210d73f6d01e78bfac48422db
+12-10-2022 10:36:52 - INFO: workflow_manager, submit_task
+	ffengine.QMinWorkflow: Submitting task: qmin_mole_SAUCUXJYCROSSC-UHFFFAOYSA-O_2e1e2d599de75b57ff706974bfdd81c5
+12-10-2022 10:36:52 - INFO: workflow_manager, submit_task
+	ffengine.QMinWorkflow: Submitting task: qmin_mole_COBYLGKSTSIKLJ-UHFFFAOYSA-N_86c0362d632aa6b61993d5f0e4df5eed
+12-10-2022 10:36:52 - INFO: workflow_manager, submit_task
+	ffengine.QMinWorkflow: Submitting task: qmin_mole_DOHIURUDQLXXDT-UHFFFAOYSA-N_90599cf0686102dae52e00dd790e8175
+12-10-2022 10:36:53 - INFO: workflow_manager, submit_task
+	ffengine.QMinWorkflow: Submitting task: qmin_mole_XTGVJZYWWMZTBJ-UHFFFAOYSA-N_8c2d631583516c48e12e164084d33af0
+12-10-2022 10:36:53 - INFO: workflow_manager, submit_task
+	ffengine.QMinWorkflow: Submitting task: qmin_mole_RBGXXGMNBFTAKL-UHFFFAOYSA-N_ff7b750eb6b68d7b9a9b481b23f46567
+12-10-2022 10:36:54 - INFO: workflow_manager, submit_task
+	ffengine.QMinWorkflow: Submitting task: qmin_mole_QWPIOCUTERMEOV-UHFFFAOYSA-N_549b6a6108958b1194d25debd5dca17f
+12-10-2022 10:36:54 - INFO: workflow_manager, submit_task
+	ffengine.QMinWorkflow: Submitting task: qmin_mole_XWDNKEHWOTTWBY-UHFFFAOYSA-N_458947280ad4de657736b0e22db654b0
+12-10-2022 10:36:55 - INFO: workflow_manager, write_running_task_log
+	ffengine.QMinWorkflow: RUNNING: QMin - Molecule: CHEMBL3402743-42, DZAVNSDHPJBMQG-UHFFFAOYSA-O, SLURM ID: 5086839
+12-10-2022 10:36:55 - INFO: workflow_manager, write_running_task_log
+	ffengine.QMinWorkflow: RUNNING: QMin - Molecule: CHEMBL3402752-30000, RSNJJEZRTWAPRV-UHFFFAOYSA-N, SLURM ID: 5086840
+12-10-2022 10:36:55 - INFO: workflow_manager, write_running_task_log
+	ffengine.QMinWorkflow: RUNNING: QMin - Molecule: CHEMBL3402744-300, OHNLONIUYBNNFP-UHFFFAOYSA-N, SLURM ID: 5086841
+12-10-2022 10:36:55 - INFO: workflow_manager, write_running_task_log
+	ffengine.QMinWorkflow: RUNNING: QMin - Molecule: CHEMBL3402756-2.7, QWXKBTBMVIBWPV-UHFFFAOYSA-O, SLURM ID: 5086842
+12-10-2022 10:36:55 - INFO: workflow_manager, write_running_task_log
+	ffengine.QMinWorkflow: RUNNING: QMin - Molecule: CHEMBL3402765-11-charged-pKa-8.1, SAUCUXJYCROSSC-UHFFFAOYSA-O, SLURM ID: 5086843
+12-10-2022 10:36:55 - INFO: workflow_manager, write_running_task_log
+	ffengine.QMinWorkflow: RUNNING: QMin - Molecule: CHEMBL3402747-3400, COBYLGKSTSIKLJ-UHFFFAOYSA-N, SLURM ID: 5086844
+12-10-2022 10:36:55 - INFO: workflow_manager, write_running_task_log
+	ffengine.QMinWorkflow: RUNNING: QMin - Molecule: CHEMBL3402753-200, DOHIURUDQLXXDT-UHFFFAOYSA-N, SLURM ID: 5086845
+12-10-2022 10:36:55 - INFO: workflow_manager, write_running_task_log
+	ffengine.QMinWorkflow: RUNNING: QMin - Molecule: CHEMBL3402745-200, XTGVJZYWWMZTBJ-UHFFFAOYSA-N, SLURM ID: 5086846
+12-10-2022 10:37:00 - INFO: workflow_manager, write_pass_task_log
+	ffengine.QMinWorkflow: COMPLETED: QMin - Molecule: CHEMBL3402760-1, PPCTYYSLBWDGHQ-UHFFFAOYSA-O, SLURM ID: 5086822
+12-10-2022 10:37:00 - INFO: workflow_manager, write_pass_task_log
+	ffengine.QMinWorkflow: COMPLETED: QMin - Molecule: CHEMBL3402762-1, AHYMHWXQRWRBKT-UHFFFAOYSA-O, SLURM ID: 5086823
+12-10-2022 10:37:00 - INFO: workflow_manager, write_pass_task_log
+	ffengine.QMinWorkflow: COMPLETED: QMin - Molecule: CHEMBL3402751-2100, TYQGWYQOYDYYSB-UHFFFAOYSA-N, SLURM ID: 5086824
+12-10-2022 10:37:01 - INFO: workflow_manager, write_pass_task_log
+	ffengine.QMinWorkflow: COMPLETED: QMin - Molecule: CHEMBL3402763-90, XSINRHAIBWWSLP-UHFFFAOYSA-O, SLURM ID: 5086825
+12-10-2022 10:37:01 - INFO: workflow_manager, write_pass_task_log
+	ffengine.QMinWorkflow: COMPLETED: QMin - Molecule: CHEMBL3402748-5300, BQDBPVWRXKKLEM-UHFFFAOYSA-N, SLURM ID: 5086826
+12-10-2022 10:37:01 - INFO: workflow_manager, write_pass_task_log
+	ffengine.QMinWorkflow: COMPLETED: QMin - Molecule: CHEMBL3402759-5.7, RTKBHBAMZLAVKQ-UHFFFAOYSA-O, SLURM ID: 5086827
+12-10-2022 10:37:01 - INFO: workflow_manager, write_pass_task_log
+	ffengine.QMinWorkflow: COMPLETED: QMin - Molecule: CHEMBL3402741-400, WVYHFPSGWCCXMO-UHFFFAOYSA-O, SLURM ID: 5086828
+12-10-2022 10:37:01 - INFO: workflow_manager, write_pass_task_log
+	ffengine.QMinWorkflow: COMPLETED: QMin - Molecule: CHEMBL3402749-500, HNZNLHMWBMCDNP-UHFFFAOYSA-N, SLURM ID: 5086829
+12-10-2022 10:37:01 - INFO: workflow_manager, write_pass_task_log
+	ffengine.QMinWorkflow: COMPLETED: QMin - Molecule: CHEMBL3402757-6.5, DNECYDMFUWXITK-UHFFFAOYSA-O, SLURM ID: 5086830
+12-10-2022 10:37:01 - INFO: workflow_manager, write_pass_task_log
+	ffengine.QMinWorkflow: COMPLETED: QMin - Molecule: CHEMBL3402764-90, KCAPWBJRKSKHSZ-UHFFFAOYSA-O, SLURM ID: 5086831
+12-10-2022 10:37:01 - INFO: workflow_manager, write_pass_task_log
+	ffengine.QMinWorkflow: COMPLETED: QMin - Molecule: CHEMBL3402756-2.7, QWXKBTBMVIBWPV-UHFFFAOYSA-O, SLURM ID: 5086842
+12-10-2022 10:37:01 - INFO: workflow_manager, write_pass_task_log
+	ffengine.QMinWorkflow: COMPLETED: QMin - Molecule: CHEMBL3402765-11-charged-pKa-8.1, SAUCUXJYCROSSC-UHFFFAOYSA-O, SLURM ID: 5086843
+12-10-2022 10:37:01 - INFO: workflow_manager, write_running_task_log
+	ffengine.QMinWorkflow: RUNNING: QMin - Molecule: CHEMBL3402750-400, RBGXXGMNBFTAKL-UHFFFAOYSA-N, SLURM ID: 5086849
+12-10-2022 10:37:01 - INFO: workflow_manager, write_running_task_log
+	ffengine.QMinWorkflow: RUNNING: QMin - Molecule: CHEMBL3402761-1, QWPIOCUTERMEOV-UHFFFAOYSA-N, SLURM ID: 5086850
+12-10-2022 10:37:01 - INFO: workflow_manager, write_running_task_log
+	ffengine.QMinWorkflow: RUNNING: QMin - Molecule: CHEMBL3402754-40, XWDNKEHWOTTWBY-UHFFFAOYSA-N, SLURM ID: 5086851
+12-10-2022 10:37:05 - INFO: workflow_manager, submit_task
+	ffengine.EspWorkflow: Submitting task: esp_mole_PPCTYYSLBWDGHQ-UHFFFAOYSA-O_6f3966193fd36568765ede5ccb8f5305
+12-10-2022 10:37:06 - INFO: workflow_manager, write_pass_task_log
+	ffengine.QMinWorkflow: COMPLETED: QMin - Molecule: CHEMBL3402752-30000, RSNJJEZRTWAPRV-UHFFFAOYSA-N, SLURM ID: 5086840
+12-10-2022 10:37:06 - INFO: workflow_manager, write_pass_task_log
+	ffengine.QMinWorkflow: COMPLETED: QMin - Molecule: CHEMBL3402744-300, OHNLONIUYBNNFP-UHFFFAOYSA-N, SLURM ID: 5086841
+12-10-2022 10:37:06 - INFO: workflow_manager, write_pass_task_log
+	ffengine.QMinWorkflow: COMPLETED: QMin - Molecule: CHEMBL3402747-3400, COBYLGKSTSIKLJ-UHFFFAOYSA-N, SLURM ID: 5086844
+12-10-2022 10:37:06 - INFO: workflow_manager, write_pass_task_log
+	ffengine.QMinWorkflow: COMPLETED: QMin - Molecule: CHEMBL3402753-200, DOHIURUDQLXXDT-UHFFFAOYSA-N, SLURM ID: 5086845
+12-10-2022 10:37:06 - INFO: workflow_manager, write_pass_task_log
+	ffengine.QMinWorkflow: COMPLETED: QMin - Molecule: CHEMBL3402745-200, XTGVJZYWWMZTBJ-UHFFFAOYSA-N, SLURM ID: 5086846
+12-10-2022 10:37:06 - INFO: workflow_manager, write_pass_task_log
+	ffengine.QMinWorkflow: COMPLETED: QMin - Molecule: CHEMBL3402750-400, RBGXXGMNBFTAKL-UHFFFAOYSA-N, SLURM ID: 5086849
+12-10-2022 10:37:06 - INFO: workflow_manager, write_pass_task_log
+	ffengine.QMinWorkflow: COMPLETED: QMin - Molecule: CHEMBL3402761-1, QWPIOCUTERMEOV-UHFFFAOYSA-N, SLURM ID: 5086850
+12-10-2022 10:37:06 - INFO: workflow_manager, write_pass_task_log
+	ffengine.QMinWorkflow: COMPLETED: QMin - Molecule: CHEMBL3402754-40, XWDNKEHWOTTWBY-UHFFFAOYSA-N, SLURM ID: 5086851
+12-10-2022 10:37:06 - INFO: workflow_manager, submit_task
+	ffengine.ChargeFittingWorkflow: Submitting task: chg_frag_PPCTYYSLBWDGHQ-UHFFFAOYSA-O_6f3966193fd36568765ede5ccb8f5305
+12-10-2022 10:37:06 - INFO: workflow_manager, submit_task
+	ffengine.EspWorkflow: Submitting task: esp_mole_AHYMHWXQRWRBKT-UHFFFAOYSA-O_884be03d149d67abfe5e5e6acea421a2
+12-10-2022 10:37:07 - INFO: workflow_manager, submit_task
+	ffengine.ChargeFittingWorkflow: Submitting task: chg_frag_AHYMHWXQRWRBKT-UHFFFAOYSA-O_884be03d149d67abfe5e5e6acea421a2
+12-10-2022 10:37:07 - INFO: workflow_manager, submit_task
+	ffengine.EspWorkflow: Submitting task: esp_mole_TYQGWYQOYDYYSB-UHFFFAOYSA-N_039bebc4ead038c5d343b444289dbc35
+12-10-2022 10:37:07 - INFO: workflow_manager, submit_task
+	ffengine.ChargeFittingWorkflow: Submitting task: chg_frag_TYQGWYQOYDYYSB-UHFFFAOYSA-N_039bebc4ead038c5d343b444289dbc35
+12-10-2022 10:37:08 - INFO: workflow_manager, submit_task
+	ffengine.EspWorkflow: Submitting task: esp_mole_XSINRHAIBWWSLP-UHFFFAOYSA-O_05691a5d87c0e404008e4020ee1e775d
+12-10-2022 10:37:08 - INFO: workflow_manager, submit_task
+	ffengine.ChargeFittingWorkflow: Submitting task: chg_frag_XSINRHAIBWWSLP-UHFFFAOYSA-O_05691a5d87c0e404008e4020ee1e775d
+12-10-2022 10:37:08 - INFO: workflow_manager, submit_task
+	ffengine.EspWorkflow: Submitting task: esp_mole_BQDBPVWRXKKLEM-UHFFFAOYSA-N_a18ddcee0e2c2f4f0f19a04ba97a60a3
+12-10-2022 10:37:09 - INFO: workflow_manager, submit_task
+	ffengine.ChargeFittingWorkflow: Submitting task: chg_frag_BQDBPVWRXKKLEM-UHFFFAOYSA-N_a18ddcee0e2c2f4f0f19a04ba97a60a3
+12-10-2022 10:37:09 - INFO: workflow_manager, submit_task
+	ffengine.EspWorkflow: Submitting task: esp_mole_RTKBHBAMZLAVKQ-UHFFFAOYSA-O_07cd0268b1d3e9a553b5553c36739dac
+12-10-2022 10:37:09 - INFO: workflow_manager, submit_task
+	ffengine.ChargeFittingWorkflow: Submitting task: chg_frag_RTKBHBAMZLAVKQ-UHFFFAOYSA-O_07cd0268b1d3e9a553b5553c36739dac
+12-10-2022 10:37:10 - INFO: workflow_manager, submit_task
+	ffengine.EspWorkflow: Submitting task: esp_mole_WVYHFPSGWCCXMO-UHFFFAOYSA-O_65f559069e1a0d127ca070707705940b
+12-10-2022 10:37:10 - INFO: workflow_manager, submit_task
+	ffengine.ChargeFittingWorkflow: Submitting task: chg_frag_WVYHFPSGWCCXMO-UHFFFAOYSA-O_65f559069e1a0d127ca070707705940b
+12-10-2022 10:37:10 - INFO: workflow_manager, write_running_task_log
+	ffengine.EspWorkflow: RUNNING: ConformationEsp - Molecule: CHEMBL3402760-1, PPCTYYSLBWDGHQ-UHFFFAOYSA-O, SLURM ID: 5086852
+12-10-2022 10:37:10 - INFO: workflow_manager, write_running_task_log
+	ffengine.ChargeFittingWorkflow: RUNNING: ChargeFitting - Fragment: PPCTYYSLBWDGHQ-UHFFFAOYSA-O, Parent Molecules: [], SLURM ID: 5086853
+12-10-2022 10:37:10 - INFO: workflow_manager, write_running_task_log
+	ffengine.EspWorkflow: RUNNING: ConformationEsp - Molecule: CHEMBL3402762-1, AHYMHWXQRWRBKT-UHFFFAOYSA-O, SLURM ID: 5086854
+12-10-2022 10:37:10 - INFO: workflow_manager, write_running_task_log
+	ffengine.ChargeFittingWorkflow: RUNNING: ChargeFitting - Fragment: AHYMHWXQRWRBKT-UHFFFAOYSA-O, Parent Molecules: [], SLURM ID: 5086855
+12-10-2022 10:37:10 - INFO: workflow_manager, write_running_task_log
+	ffengine.EspWorkflow: RUNNING: ConformationEsp - Molecule: CHEMBL3402751-2100, TYQGWYQOYDYYSB-UHFFFAOYSA-N, SLURM ID: 5086856
+12-10-2022 10:37:10 - INFO: workflow_manager, write_running_task_log
+	ffengine.ChargeFittingWorkflow: RUNNING: ChargeFitting - Fragment: TYQGWYQOYDYYSB-UHFFFAOYSA-N, Parent Molecules: [], SLURM ID: 5086857
+12-10-2022 10:37:10 - INFO: workflow_manager, write_running_task_log
+	ffengine.EspWorkflow: RUNNING: ConformationEsp - Molecule: CHEMBL3402763-90, XSINRHAIBWWSLP-UHFFFAOYSA-O, SLURM ID: 5086858
+12-10-2022 10:37:10 - INFO: workflow_manager, write_running_task_log
+	ffengine.ChargeFittingWorkflow: RUNNING: ChargeFitting - Fragment: XSINRHAIBWWSLP-UHFFFAOYSA-O, Parent Molecules: [], SLURM ID: 5086859
+12-10-2022 10:37:11 - INFO: workflow_manager, submit_task
+	ffengine.EspWorkflow: Submitting task: esp_mole_HNZNLHMWBMCDNP-UHFFFAOYSA-N_32403601a8d662c5d3c2340bb78cb524
+12-10-2022 10:37:11 - INFO: workflow_manager, submit_task
+	ffengine.ChargeFittingWorkflow: Submitting task: chg_frag_HNZNLHMWBMCDNP-UHFFFAOYSA-N_32403601a8d662c5d3c2340bb78cb524
+12-10-2022 10:37:11 - INFO: workflow_manager, submit_task
+	ffengine.EspWorkflow: Submitting task: esp_mole_DNECYDMFUWXITK-UHFFFAOYSA-O_da89903402f775d37894595ba00e7fe1
+12-10-2022 10:37:12 - INFO: workflow_manager, submit_task
+	ffengine.ChargeFittingWorkflow: Submitting task: chg_frag_DNECYDMFUWXITK-UHFFFAOYSA-O_da89903402f775d37894595ba00e7fe1
+12-10-2022 10:37:12 - INFO: workflow_manager, submit_task
+	ffengine.EspWorkflow: Submitting task: esp_mole_KCAPWBJRKSKHSZ-UHFFFAOYSA-O_41ad237c4242023636650c1dcc7c40cd
+12-10-2022 10:37:12 - INFO: workflow_manager, submit_task
+	ffengine.ChargeFittingWorkflow: Submitting task: chg_frag_KCAPWBJRKSKHSZ-UHFFFAOYSA-O_41ad237c4242023636650c1dcc7c40cd
+12-10-2022 10:37:13 - INFO: workflow_manager, submit_task
+	ffengine.EspWorkflow: Submitting task: esp_mole_QWXKBTBMVIBWPV-UHFFFAOYSA-O_15e92db210d73f6d01e78bfac48422db
+12-10-2022 10:37:13 - INFO: workflow_manager, submit_task
+	ffengine.ChargeFittingWorkflow: Submitting task: chg_frag_UTRKTKXZUOHEGE-UHFFFAOYSA-O_62f107bb2f377a83b495df9c5bf0a858
+12-10-2022 10:37:14 - INFO: workflow_manager, submit_task
+	ffengine.EspWorkflow: Submitting task: esp_mole_SAUCUXJYCROSSC-UHFFFAOYSA-O_2e1e2d599de75b57ff706974bfdd81c5
+12-10-2022 10:37:14 - INFO: workflow_manager, submit_task
+	ffengine.ChargeFittingWorkflow: Submitting task: chg_frag_YENMFPGGDSCGGT-UHFFFAOYSA-O_fecca93b7f1458809fa71782d0cc88cf
+12-10-2022 10:37:14 - INFO: workflow_manager, submit_task
+	ffengine.EspWorkflow: Submitting task: esp_mole_RSNJJEZRTWAPRV-UHFFFAOYSA-N_342fbe8f96cd7dbc53a4b1ac0bed46aa
+12-10-2022 10:37:15 - INFO: workflow_manager, submit_task
+	ffengine.ChargeFittingWorkflow: Submitting task: chg_frag_DALKKQZTVMLVDE-UHFFFAOYSA-N_0297eaa1e77d00db7fb73a54afabf4ee
+12-10-2022 10:37:15 - INFO: workflow_manager, submit_task
+	ffengine.EspWorkflow: Submitting task: esp_mole_OHNLONIUYBNNFP-UHFFFAOYSA-N_13faa4049a5e2a1a2be9c3f2bb322216
+12-10-2022 10:37:15 - INFO: workflow_manager, submit_task
+	ffengine.ChargeFittingWorkflow: Submitting task: chg_frag_DZAVNSDHPJBMQG-UHFFFAOYSA-O_7518da6587d46c1c4a694121c4099941
+12-10-2022 10:37:15 - INFO: workflow_manager, write_pass_task_log
+	ffengine.EspWorkflow: COMPLETED: ConformationEsp - Molecule: CHEMBL3402762-1, AHYMHWXQRWRBKT-UHFFFAOYSA-O, SLURM ID: 5086854
+12-10-2022 10:37:15 - INFO: workflow_manager, write_pass_task_log
+	ffengine.ChargeFittingWorkflow: COMPLETED: ChargeFitting - Fragment: PPCTYYSLBWDGHQ-UHFFFAOYSA-O, Parent Molecules: [], SLURM ID: 5086853
+12-10-2022 10:37:15 - INFO: workflow_manager, write_pass_task_log
+	ffengine.EspWorkflow: COMPLETED: ConformationEsp - Molecule: CHEMBL3402751-2100, TYQGWYQOYDYYSB-UHFFFAOYSA-N, SLURM ID: 5086856
+12-10-2022 10:37:15 - INFO: workflow_manager, write_pass_task_log
+	ffengine.ChargeFittingWorkflow: COMPLETED: ChargeFitting - Fragment: AHYMHWXQRWRBKT-UHFFFAOYSA-O, Parent Molecules: [], SLURM ID: 5086855
+12-10-2022 10:37:15 - INFO: workflow_manager, write_running_task_log
+	ffengine.EspWorkflow: RUNNING: ConformationEsp - Molecule: CHEMBL3402748-5300, BQDBPVWRXKKLEM-UHFFFAOYSA-N, SLURM ID: 5086860
+12-10-2022 10:37:15 - INFO: workflow_manager, write_pass_task_log
+	ffengine.ChargeFittingWorkflow: COMPLETED: ChargeFitting - Fragment: TYQGWYQOYDYYSB-UHFFFAOYSA-N, Parent Molecules: [], SLURM ID: 5086857
+12-10-2022 10:37:15 - INFO: workflow_manager, write_running_task_log
+	ffengine.EspWorkflow: RUNNING: ConformationEsp - Molecule: CHEMBL3402759-5.7, RTKBHBAMZLAVKQ-UHFFFAOYSA-O, SLURM ID: 5086862
+12-10-2022 10:37:15 - INFO: workflow_manager, write_running_task_log
+	ffengine.EspWorkflow: RUNNING: ConformationEsp - Molecule: CHEMBL3402741-400, WVYHFPSGWCCXMO-UHFFFAOYSA-O, SLURM ID: 5086864
+12-10-2022 10:37:15 - INFO: workflow_manager, write_pass_task_log
+	ffengine.ChargeFittingWorkflow: COMPLETED: ChargeFitting - Fragment: XSINRHAIBWWSLP-UHFFFAOYSA-O, Parent Molecules: [], SLURM ID: 5086859
+12-10-2022 10:37:15 - INFO: workflow_manager, write_running_task_log
+	ffengine.EspWorkflow: RUNNING: ConformationEsp - Molecule: CHEMBL3402749-500, HNZNLHMWBMCDNP-UHFFFAOYSA-N, SLURM ID: 5086866
+12-10-2022 10:37:15 - INFO: workflow_manager, write_pass_task_log
+	ffengine.ChargeFittingWorkflow: COMPLETED: ChargeFitting - Fragment: BQDBPVWRXKKLEM-UHFFFAOYSA-N, Parent Molecules: [], SLURM ID: 5086861
+12-10-2022 10:37:15 - INFO: workflow_manager, write_running_task_log
+	ffengine.EspWorkflow: RUNNING: ConformationEsp - Molecule: CHEMBL3402757-6.5, DNECYDMFUWXITK-UHFFFAOYSA-O, SLURM ID: 5086868
+12-10-2022 10:37:15 - INFO: workflow_manager, write_pass_task_log
+	ffengine.ChargeFittingWorkflow: COMPLETED: ChargeFitting - Fragment: RTKBHBAMZLAVKQ-UHFFFAOYSA-O, Parent Molecules: [], SLURM ID: 5086863
+12-10-2022 10:37:15 - INFO: workflow_manager, write_running_task_log
+	ffengine.EspWorkflow: RUNNING: ConformationEsp - Molecule: CHEMBL3402764-90, KCAPWBJRKSKHSZ-UHFFFAOYSA-O, SLURM ID: 5086870
+12-10-2022 10:37:15 - INFO: workflow_manager, write_pass_task_log
+	ffengine.ChargeFittingWorkflow: COMPLETED: ChargeFitting - Fragment: WVYHFPSGWCCXMO-UHFFFAOYSA-O, Parent Molecules: [], SLURM ID: 5086865
+12-10-2022 10:37:15 - INFO: workflow_manager, write_running_task_log
+	ffengine.EspWorkflow: RUNNING: ConformationEsp - Molecule: CHEMBL3402756-2.7, QWXKBTBMVIBWPV-UHFFFAOYSA-O, SLURM ID: 5086872
+12-10-2022 10:37:15 - INFO: workflow_manager, write_running_task_log
+	ffengine.ChargeFittingWorkflow: RUNNING: ChargeFitting - Fragment: HNZNLHMWBMCDNP-UHFFFAOYSA-N, Parent Molecules: [], SLURM ID: 5086867
+12-10-2022 10:37:15 - INFO: workflow_manager, write_running_task_log
+	ffengine.EspWorkflow: RUNNING: ConformationEsp - Molecule: CHEMBL3402765-11-charged-pKa-8.1, SAUCUXJYCROSSC-UHFFFAOYSA-O, SLURM ID: 5086874
+12-10-2022 10:37:15 - INFO: workflow_manager, write_running_task_log
+	ffengine.ChargeFittingWorkflow: RUNNING: ChargeFitting - Fragment: DNECYDMFUWXITK-UHFFFAOYSA-O, Parent Molecules: [], SLURM ID: 5086869
+12-10-2022 10:37:15 - INFO: workflow_manager, write_running_task_log
+	ffengine.ChargeFittingWorkflow: RUNNING: ChargeFitting - Fragment: KCAPWBJRKSKHSZ-UHFFFAOYSA-O, Parent Molecules: [], SLURM ID: 5086871
+12-10-2022 10:37:15 - INFO: workflow_manager, write_running_task_log
+	ffengine.ChargeFittingWorkflow: RUNNING: ChargeFitting - Fragment: UTRKTKXZUOHEGE-UHFFFAOYSA-O, Parent Molecules: [], SLURM ID: 5086873
+12-10-2022 10:37:15 - INFO: workflow_manager, write_running_task_log
+	ffengine.ChargeFittingWorkflow: RUNNING: ChargeFitting - Fragment: YENMFPGGDSCGGT-UHFFFAOYSA-O, Parent Molecules: [], SLURM ID: 5086875
+12-10-2022 10:37:16 - INFO: workflow_manager, write_pass_task_log
+	ffengine.QMinWorkflow: COMPLETED: QMin - Molecule: CHEMBL3402758-10, UTRKTKXZUOHEGE-UHFFFAOYSA-O, SLURM ID: 5086832
+12-10-2022 10:37:16 - INFO: workflow_manager, write_pass_task_log
+	ffengine.QMinWorkflow: COMPLETED: QMin - Molecule: CHEMBL3402742-23, YENMFPGGDSCGGT-UHFFFAOYSA-O, SLURM ID: 5086833
+12-10-2022 10:37:16 - INFO: workflow_manager, write_pass_task_log
+	ffengine.QMinWorkflow: COMPLETED: QMin - Molecule: CHEMBL3402755-4200, DALKKQZTVMLVDE-UHFFFAOYSA-N, SLURM ID: 5086834
+12-10-2022 10:37:16 - INFO: workflow_manager, write_pass_task_log
+	ffengine.QMinWorkflow: COMPLETED: QMin - Molecule: CHEMBL3402743-42, DZAVNSDHPJBMQG-UHFFFAOYSA-O, SLURM ID: 5086839
+12-10-2022 10:37:16 - INFO: workflow_manager, submit_task
+	ffengine.EspWorkflow: Submitting task: esp_mole_COBYLGKSTSIKLJ-UHFFFAOYSA-N_86c0362d632aa6b61993d5f0e4df5eed
+12-10-2022 10:37:16 - INFO: workflow_manager, submit_task
+	ffengine.ChargeFittingWorkflow: Submitting task: chg_frag_RSNJJEZRTWAPRV-UHFFFAOYSA-N_342fbe8f96cd7dbc53a4b1ac0bed46aa
+12-10-2022 10:37:16 - INFO: workflow_manager, submit_task
+	ffengine.EspWorkflow: Submitting task: esp_mole_DOHIURUDQLXXDT-UHFFFAOYSA-N_90599cf0686102dae52e00dd790e8175
+12-10-2022 10:37:17 - INFO: workflow_manager, submit_task
+	ffengine.ChargeFittingWorkflow: Submitting task: chg_frag_OHNLONIUYBNNFP-UHFFFAOYSA-N_13faa4049a5e2a1a2be9c3f2bb322216
+12-10-2022 10:37:17 - INFO: workflow_manager, submit_task
+	ffengine.EspWorkflow: Submitting task: esp_mole_XTGVJZYWWMZTBJ-UHFFFAOYSA-N_8c2d631583516c48e12e164084d33af0
+12-10-2022 10:37:17 - INFO: workflow_manager, submit_task
+	ffengine.ChargeFittingWorkflow: Submitting task: chg_frag_QWXKBTBMVIBWPV-UHFFFAOYSA-O_15e92db210d73f6d01e78bfac48422db
+12-10-2022 10:37:18 - INFO: workflow_manager, submit_task
+	ffengine.EspWorkflow: Submitting task: esp_mole_RBGXXGMNBFTAKL-UHFFFAOYSA-N_ff7b750eb6b68d7b9a9b481b23f46567
+12-10-2022 10:37:18 - INFO: workflow_manager, submit_task
+	ffengine.ChargeFittingWorkflow: Submitting task: chg_frag_SAUCUXJYCROSSC-UHFFFAOYSA-O_2e1e2d599de75b57ff706974bfdd81c5
+12-10-2022 10:37:18 - INFO: workflow_manager, submit_task
+	ffengine.EspWorkflow: Submitting task: esp_mole_QWPIOCUTERMEOV-UHFFFAOYSA-N_549b6a6108958b1194d25debd5dca17f
+12-10-2022 10:37:19 - INFO: workflow_manager, submit_task
+	ffengine.ChargeFittingWorkflow: Submitting task: chg_frag_COBYLGKSTSIKLJ-UHFFFAOYSA-N_86c0362d632aa6b61993d5f0e4df5eed
+12-10-2022 10:37:19 - INFO: workflow_manager, submit_task
+	ffengine.EspWorkflow: Submitting task: esp_mole_XWDNKEHWOTTWBY-UHFFFAOYSA-N_458947280ad4de657736b0e22db654b0
+12-10-2022 10:37:20 - INFO: workflow_manager, submit_task
+	ffengine.ChargeFittingWorkflow: Submitting task: chg_frag_DOHIURUDQLXXDT-UHFFFAOYSA-N_90599cf0686102dae52e00dd790e8175
+12-10-2022 10:37:20 - INFO: workflow_manager, submit_task
+	ffengine.EspWorkflow: Submitting task: esp_mole_UTRKTKXZUOHEGE-UHFFFAOYSA-O_62f107bb2f377a83b495df9c5bf0a858
+12-10-2022 10:37:20 - INFO: workflow_manager, submit_task
+	ffengine.ChargeFittingWorkflow: Submitting task: chg_frag_XTGVJZYWWMZTBJ-UHFFFAOYSA-N_8c2d631583516c48e12e164084d33af0
+12-10-2022 10:37:21 - INFO: workflow_manager, write_pass_task_log
+	ffengine.ChargeFittingWorkflow: COMPLETED: ChargeFitting - Fragment: HNZNLHMWBMCDNP-UHFFFAOYSA-N, Parent Molecules: [], SLURM ID: 5086867
+12-10-2022 10:37:21 - INFO: workflow_manager, write_pass_task_log
+	ffengine.EspWorkflow: COMPLETED: ConformationEsp - Molecule: CHEMBL3402760-1, PPCTYYSLBWDGHQ-UHFFFAOYSA-O, SLURM ID: 5086852
+12-10-2022 10:37:21 - INFO: workflow_manager, write_pass_task_log
+	ffengine.ChargeFittingWorkflow: COMPLETED: ChargeFitting - Fragment: DNECYDMFUWXITK-UHFFFAOYSA-O, Parent Molecules: [], SLURM ID: 5086869
+12-10-2022 10:37:21 - INFO: workflow_manager, write_pass_task_log
+	ffengine.EspWorkflow: COMPLETED: ConformationEsp - Molecule: CHEMBL3402763-90, XSINRHAIBWWSLP-UHFFFAOYSA-O, SLURM ID: 5086858
+12-10-2022 10:37:21 - INFO: workflow_manager, write_pass_task_log
+	ffengine.ChargeFittingWorkflow: COMPLETED: ChargeFitting - Fragment: KCAPWBJRKSKHSZ-UHFFFAOYSA-O, Parent Molecules: [], SLURM ID: 5086871
+12-10-2022 10:37:21 - INFO: workflow_manager, write_pass_task_log
+	ffengine.EspWorkflow: COMPLETED: ConformationEsp - Molecule: CHEMBL3402748-5300, BQDBPVWRXKKLEM-UHFFFAOYSA-N, SLURM ID: 5086860
+12-10-2022 10:37:21 - INFO: workflow_manager, write_pass_task_log
+	ffengine.ChargeFittingWorkflow: COMPLETED: ChargeFitting - Fragment: UTRKTKXZUOHEGE-UHFFFAOYSA-O, Parent Molecules: [], SLURM ID: 5086873
+12-10-2022 10:37:21 - INFO: workflow_manager, write_pass_task_log
+	ffengine.EspWorkflow: COMPLETED: ConformationEsp - Molecule: CHEMBL3402759-5.7, RTKBHBAMZLAVKQ-UHFFFAOYSA-O, SLURM ID: 5086862
+12-10-2022 10:37:21 - INFO: workflow_manager, write_pass_task_log
+	ffengine.ChargeFittingWorkflow: COMPLETED: ChargeFitting - Fragment: YENMFPGGDSCGGT-UHFFFAOYSA-O, Parent Molecules: [], SLURM ID: 5086875
+12-10-2022 10:37:21 - INFO: workflow_manager, write_pass_task_log
+	ffengine.EspWorkflow: COMPLETED: ConformationEsp - Molecule: CHEMBL3402741-400, WVYHFPSGWCCXMO-UHFFFAOYSA-O, SLURM ID: 5086864
+12-10-2022 10:37:21 - INFO: workflow_manager, write_pass_task_log
+	ffengine.ChargeFittingWorkflow: COMPLETED: ChargeFitting - Fragment: RSNJJEZRTWAPRV-UHFFFAOYSA-N, Parent Molecules: [], SLURM ID: 5086881
+12-10-2022 10:37:21 - INFO: workflow_manager, write_pass_task_log
+	ffengine.EspWorkflow: COMPLETED: ConformationEsp - Molecule: CHEMBL3402749-500, HNZNLHMWBMCDNP-UHFFFAOYSA-N, SLURM ID: 5086866
+12-10-2022 10:37:21 - INFO: workflow_manager, write_pass_task_log
+	ffengine.ChargeFittingWorkflow: COMPLETED: ChargeFitting - Fragment: OHNLONIUYBNNFP-UHFFFAOYSA-N, Parent Molecules: [], SLURM ID: 5086883
+12-10-2022 10:37:21 - INFO: workflow_manager, write_pass_task_log
+	ffengine.EspWorkflow: COMPLETED: ConformationEsp - Molecule: CHEMBL3402757-6.5, DNECYDMFUWXITK-UHFFFAOYSA-O, SLURM ID: 5086868
+12-10-2022 10:37:21 - INFO: workflow_manager, write_running_task_log
+	ffengine.ChargeFittingWorkflow: RUNNING: ChargeFitting - Fragment: QWXKBTBMVIBWPV-UHFFFAOYSA-O, Parent Molecules: [], SLURM ID: 5086885
+12-10-2022 10:37:21 - INFO: workflow_manager, write_pass_task_log
+	ffengine.EspWorkflow: COMPLETED: ConformationEsp - Molecule: CHEMBL3402764-90, KCAPWBJRKSKHSZ-UHFFFAOYSA-O, SLURM ID: 5086870
+12-10-2022 10:37:21 - INFO: workflow_manager, write_running_task_log
+	ffengine.ChargeFittingWorkflow: RUNNING: ChargeFitting - Fragment: SAUCUXJYCROSSC-UHFFFAOYSA-O, Parent Molecules: [], SLURM ID: 5086887
+12-10-2022 10:37:21 - INFO: workflow_manager, write_pass_task_log
+	ffengine.EspWorkflow: COMPLETED: ConformationEsp - Molecule: CHEMBL3402756-2.7, QWXKBTBMVIBWPV-UHFFFAOYSA-O, SLURM ID: 5086872
+12-10-2022 10:37:21 - INFO: workflow_manager, write_running_task_log
+	ffengine.ChargeFittingWorkflow: RUNNING: ChargeFitting - Fragment: COBYLGKSTSIKLJ-UHFFFAOYSA-N, Parent Molecules: [], SLURM ID: 5086889
+12-10-2022 10:37:21 - INFO: workflow_manager, submit_task
+	ffengine.EspWorkflow: Submitting task: esp_mole_YENMFPGGDSCGGT-UHFFFAOYSA-O_fecca93b7f1458809fa71782d0cc88cf
+12-10-2022 10:37:21 - INFO: workflow_manager, write_pass_task_log
+	ffengine.EspWorkflow: COMPLETED: ConformationEsp - Molecule: CHEMBL3402765-11-charged-pKa-8.1, SAUCUXJYCROSSC-UHFFFAOYSA-O, SLURM ID: 5086874
+12-10-2022 10:37:21 - INFO: workflow_manager, write_running_task_log
+	ffengine.ChargeFittingWorkflow: RUNNING: ChargeFitting - Fragment: DOHIURUDQLXXDT-UHFFFAOYSA-N, Parent Molecules: [], SLURM ID: 5086891
+12-10-2022 10:37:21 - INFO: workflow_manager, write_running_task_log
+	ffengine.EspWorkflow: RUNNING: ConformationEsp - Molecule: CHEMBL3402752-30000, RSNJJEZRTWAPRV-UHFFFAOYSA-N, SLURM ID: 5086876
+12-10-2022 10:37:21 - INFO: workflow_manager, write_running_task_log
+	ffengine.EspWorkflow: RUNNING: ConformationEsp - Molecule: CHEMBL3402744-300, OHNLONIUYBNNFP-UHFFFAOYSA-N, SLURM ID: 5086878
+12-10-2022 10:37:21 - INFO: workflow_manager, write_running_task_log
+	ffengine.EspWorkflow: RUNNING: ConformationEsp - Molecule: CHEMBL3402747-3400, COBYLGKSTSIKLJ-UHFFFAOYSA-N, SLURM ID: 5086880
+12-10-2022 10:37:21 - INFO: workflow_manager, write_running_task_log
+	ffengine.EspWorkflow: RUNNING: ConformationEsp - Molecule: CHEMBL3402753-200, DOHIURUDQLXXDT-UHFFFAOYSA-N, SLURM ID: 5086882
+12-10-2022 10:37:21 - INFO: workflow_manager, write_running_task_log
+	ffengine.EspWorkflow: RUNNING: ConformationEsp - Molecule: CHEMBL3402745-200, XTGVJZYWWMZTBJ-UHFFFAOYSA-N, SLURM ID: 5086884
+12-10-2022 10:37:21 - INFO: workflow_manager, write_running_task_log
+	ffengine.EspWorkflow: RUNNING: ConformationEsp - Molecule: CHEMBL3402750-400, RBGXXGMNBFTAKL-UHFFFAOYSA-N, SLURM ID: 5086886
+12-10-2022 10:37:21 - INFO: workflow_manager, write_running_task_log
+	ffengine.EspWorkflow: RUNNING: ConformationEsp - Molecule: CHEMBL3402761-1, QWPIOCUTERMEOV-UHFFFAOYSA-N, SLURM ID: 5086888
+12-10-2022 10:37:21 - INFO: workflow_manager, write_running_task_log
+	ffengine.EspWorkflow: RUNNING: ConformationEsp - Molecule: CHEMBL3402754-40, XWDNKEHWOTTWBY-UHFFFAOYSA-N, SLURM ID: 5086890
+12-10-2022 10:37:21 - INFO: workflow_manager, write_running_task_log
+	ffengine.EspWorkflow: RUNNING: ConformationEsp - Molecule: CHEMBL3402758-10, UTRKTKXZUOHEGE-UHFFFAOYSA-O, SLURM ID: 5086892
+12-10-2022 10:37:21 - INFO: workflow_manager, submit_task
+	ffengine.ChargeFittingWorkflow: Submitting task: chg_frag_RBGXXGMNBFTAKL-UHFFFAOYSA-N_ff7b750eb6b68d7b9a9b481b23f46567
+12-10-2022 10:37:21 - INFO: workflow_manager, submit_task
+	ffengine.EspWorkflow: Submitting task: esp_mole_DALKKQZTVMLVDE-UHFFFAOYSA-N_0297eaa1e77d00db7fb73a54afabf4ee
+12-10-2022 10:37:22 - INFO: workflow_manager, submit_task
+	ffengine.ChargeFittingWorkflow: Submitting task: chg_frag_QWPIOCUTERMEOV-UHFFFAOYSA-N_549b6a6108958b1194d25debd5dca17f
+12-10-2022 10:37:22 - INFO: workflow_manager, submit_task
+	ffengine.EspWorkflow: Submitting task: esp_mole_DZAVNSDHPJBMQG-UHFFFAOYSA-O_7518da6587d46c1c4a694121c4099941
+12-10-2022 10:37:22 - INFO: workflow_manager, submit_task
+	ffengine.ChargeFittingWorkflow: Submitting task: chg_frag_XWDNKEHWOTTWBY-UHFFFAOYSA-N_458947280ad4de657736b0e22db654b0
+12-10-2022 10:37:23 - INFO: workflow_manager, submit_task
+	ffengine.ChargeFittingWorkflow: Submitting task: chg_mole_AHYMHWXQRWRBKT-UHFFFAOYSA-O_884be03d149d67abfe5e5e6acea421a2
+12-10-2022 10:37:23 - INFO: workflow_manager, submit_task
+	ffengine.ChargeFittingWorkflow: Submitting task: chg_mole_TYQGWYQOYDYYSB-UHFFFAOYSA-N_039bebc4ead038c5d343b444289dbc35
+12-10-2022 10:37:23 - INFO: workflow_manager, submit_task
+	ffengine.ChargeFittingWorkflow: Submitting task: chg_mole_PPCTYYSLBWDGHQ-UHFFFAOYSA-O_6f3966193fd36568765ede5ccb8f5305
+12-10-2022 10:37:24 - INFO: workflow_manager, submit_task
+	ffengine.ChargeFittingWorkflow: Submitting task: chg_mole_XSINRHAIBWWSLP-UHFFFAOYSA-O_05691a5d87c0e404008e4020ee1e775d
+12-10-2022 10:37:24 - INFO: workflow_manager, submit_task
+	ffengine.ChargeFittingWorkflow: Submitting task: chg_mole_BQDBPVWRXKKLEM-UHFFFAOYSA-N_a18ddcee0e2c2f4f0f19a04ba97a60a3
+12-10-2022 10:37:25 - INFO: workflow_manager, submit_task
+	ffengine.ChargeFittingWorkflow: Submitting task: chg_mole_RTKBHBAMZLAVKQ-UHFFFAOYSA-O_07cd0268b1d3e9a553b5553c36739dac
+12-10-2022 10:37:25 - INFO: workflow_manager, submit_task
+	ffengine.ChargeFittingWorkflow: Submitting task: chg_mole_WVYHFPSGWCCXMO-UHFFFAOYSA-O_65f559069e1a0d127ca070707705940b
+12-10-2022 10:37:25 - INFO: workflow_manager, submit_task
+	ffengine.ChargeFittingWorkflow: Submitting task: chg_mole_HNZNLHMWBMCDNP-UHFFFAOYSA-N_32403601a8d662c5d3c2340bb78cb524
+12-10-2022 10:37:26 - INFO: workflow_manager, submit_task
+	ffengine.ChargeFittingWorkflow: Submitting task: chg_mole_DNECYDMFUWXITK-UHFFFAOYSA-O_da89903402f775d37894595ba00e7fe1
+12-10-2022 10:37:26 - INFO: workflow_manager, write_pass_task_log
+	ffengine.EspWorkflow: COMPLETED: ConformationEsp - Molecule: CHEMBL3402752-30000, RSNJJEZRTWAPRV-UHFFFAOYSA-N, SLURM ID: 5086876
+12-10-2022 10:37:26 - INFO: workflow_manager, write_pass_task_log
+	ffengine.ChargeFittingWorkflow: COMPLETED: ChargeFitting - Fragment: DALKKQZTVMLVDE-UHFFFAOYSA-N, Parent Molecules: [], SLURM ID: 5086877
+12-10-2022 10:37:26 - INFO: workflow_manager, write_pass_task_log
+	ffengine.EspWorkflow: COMPLETED: ConformationEsp - Molecule: CHEMBL3402744-300, OHNLONIUYBNNFP-UHFFFAOYSA-N, SLURM ID: 5086878
+12-10-2022 10:37:26 - INFO: workflow_manager, write_pass_task_log
+	ffengine.ChargeFittingWorkflow: COMPLETED: ChargeFitting - Fragment: DZAVNSDHPJBMQG-UHFFFAOYSA-O, Parent Molecules: [], SLURM ID: 5086879
+12-10-2022 10:37:26 - INFO: workflow_manager, write_pass_task_log
+	ffengine.EspWorkflow: COMPLETED: ConformationEsp - Molecule: CHEMBL3402747-3400, COBYLGKSTSIKLJ-UHFFFAOYSA-N, SLURM ID: 5086880
+12-10-2022 10:37:26 - INFO: workflow_manager, write_pass_task_log
+	ffengine.ChargeFittingWorkflow: COMPLETED: ChargeFitting - Fragment: QWXKBTBMVIBWPV-UHFFFAOYSA-O, Parent Molecules: [], SLURM ID: 5086885
+12-10-2022 10:37:26 - INFO: workflow_manager, write_pass_task_log
+	ffengine.EspWorkflow: COMPLETED: ConformationEsp - Molecule: CHEMBL3402753-200, DOHIURUDQLXXDT-UHFFFAOYSA-N, SLURM ID: 5086882
+12-10-2022 10:37:26 - INFO: workflow_manager, write_pass_task_log
+	ffengine.ChargeFittingWorkflow: COMPLETED: ChargeFitting - Fragment: SAUCUXJYCROSSC-UHFFFAOYSA-O, Parent Molecules: [], SLURM ID: 5086887
+12-10-2022 10:37:26 - INFO: workflow_manager, write_pass_task_log
+	ffengine.EspWorkflow: COMPLETED: ConformationEsp - Molecule: CHEMBL3402761-1, QWPIOCUTERMEOV-UHFFFAOYSA-N, SLURM ID: 5086888
+12-10-2022 10:37:26 - INFO: workflow_manager, write_pass_task_log
+	ffengine.ChargeFittingWorkflow: COMPLETED: ChargeFitting - Fragment: COBYLGKSTSIKLJ-UHFFFAOYSA-N, Parent Molecules: [], SLURM ID: 5086889
+12-10-2022 10:37:26 - INFO: workflow_manager, write_running_task_log
+	ffengine.EspWorkflow: RUNNING: ConformationEsp - Molecule: CHEMBL3402742-23, YENMFPGGDSCGGT-UHFFFAOYSA-O, SLURM ID: 5086894
+12-10-2022 10:37:26 - INFO: workflow_manager, write_pass_task_log
+	ffengine.ChargeFittingWorkflow: COMPLETED: ChargeFitting - Fragment: DOHIURUDQLXXDT-UHFFFAOYSA-N, Parent Molecules: [], SLURM ID: 5086891
+12-10-2022 10:37:26 - INFO: workflow_manager, write_running_task_log
+	ffengine.ChargeFittingWorkflow: RUNNING: ChargeFitting - Fragment: XTGVJZYWWMZTBJ-UHFFFAOYSA-N, Parent Molecules: [], SLURM ID: 5086893
+12-10-2022 10:37:26 - INFO: workflow_manager, write_running_task_log
+	ffengine.ChargeFittingWorkflow: RUNNING: ChargeFitting - Fragment: RBGXXGMNBFTAKL-UHFFFAOYSA-N, Parent Molecules: [], SLURM ID: 5086895
+12-10-2022 10:37:26 - INFO: workflow_manager, write_running_task_log
+	ffengine.EspWorkflow: RUNNING: ConformationEsp - Molecule: CHEMBL3402755-4200, DALKKQZTVMLVDE-UHFFFAOYSA-N, SLURM ID: 5086896
+12-10-2022 10:37:26 - INFO: workflow_manager, write_running_task_log
+	ffengine.ChargeFittingWorkflow: RUNNING: ChargeFitting - Fragment: QWPIOCUTERMEOV-UHFFFAOYSA-N, Parent Molecules: [], SLURM ID: 5086897
+12-10-2022 10:37:26 - INFO: workflow_manager, write_running_task_log
+	ffengine.ChargeFittingWorkflow: RUNNING: ChargeFitting - Fragment: XWDNKEHWOTTWBY-UHFFFAOYSA-N, Parent Molecules: [], SLURM ID: 5086899
+12-10-2022 10:37:26 - INFO: workflow_manager, write_running_task_log
+	ffengine.EspWorkflow: RUNNING: ConformationEsp - Molecule: CHEMBL3402743-42, DZAVNSDHPJBMQG-UHFFFAOYSA-O, SLURM ID: 5086898
+12-10-2022 10:37:26 - INFO: workflow_manager, write_running_task_log
+	ffengine.ChargeFittingWorkflow: RUNNING: ChargeFitting - Molecule: CHEMBL3402762-1, AHYMHWXQRWRBKT-UHFFFAOYSA-O, SLURM ID: 5086900
+12-10-2022 10:37:26 - INFO: workflow_manager, submit_task
+	ffengine.ChargeFittingWorkflow: Submitting task: chg_mole_KCAPWBJRKSKHSZ-UHFFFAOYSA-O_41ad237c4242023636650c1dcc7c40cd
+12-10-2022 10:37:26 - INFO: workflow_manager, submit_task
+	ffengine.ChargeFittingWorkflow: Submitting task: chg_mole_QWXKBTBMVIBWPV-UHFFFAOYSA-O_15e92db210d73f6d01e78bfac48422db
+12-10-2022 10:37:27 - INFO: workflow_manager, submit_task
+	ffengine.ChargeFittingWorkflow: Submitting task: chg_mole_SAUCUXJYCROSSC-UHFFFAOYSA-O_2e1e2d599de75b57ff706974bfdd81c5
+12-10-2022 10:37:27 - INFO: workflow_manager, submit_task
+	ffengine.ChargeFittingWorkflow: Submitting task: chg_mole_RSNJJEZRTWAPRV-UHFFFAOYSA-N_342fbe8f96cd7dbc53a4b1ac0bed46aa
+12-10-2022 10:37:27 - INFO: workflow_manager, submit_task
+	ffengine.ChargeFittingWorkflow: Submitting task: chg_mole_OHNLONIUYBNNFP-UHFFFAOYSA-N_13faa4049a5e2a1a2be9c3f2bb322216
+12-10-2022 10:37:28 - INFO: workflow_manager, submit_task
+	ffengine.ChargeFittingWorkflow: Submitting task: chg_mole_COBYLGKSTSIKLJ-UHFFFAOYSA-N_86c0362d632aa6b61993d5f0e4df5eed
+12-10-2022 10:37:28 - INFO: workflow_manager, submit_task
+	ffengine.ChargeFittingWorkflow: Submitting task: chg_mole_DOHIURUDQLXXDT-UHFFFAOYSA-N_90599cf0686102dae52e00dd790e8175
+12-10-2022 10:37:29 - INFO: workflow_manager, submit_task
+	ffengine.ChargeFittingWorkflow: Submitting task: chg_mole_QWPIOCUTERMEOV-UHFFFAOYSA-N_549b6a6108958b1194d25debd5dca17f
+12-10-2022 10:37:31 - INFO: workflow_manager, write_pass_task_log
+	ffengine.EspWorkflow: COMPLETED: ConformationEsp - Molecule: CHEMBL3402745-200, XTGVJZYWWMZTBJ-UHFFFAOYSA-N, SLURM ID: 5086884
+12-10-2022 10:37:31 - INFO: workflow_manager, write_pass_task_log
+	ffengine.EspWorkflow: COMPLETED: ConformationEsp - Molecule: CHEMBL3402750-400, RBGXXGMNBFTAKL-UHFFFAOYSA-N, SLURM ID: 5086886
+12-10-2022 10:37:31 - INFO: workflow_manager, write_pass_task_log
+	ffengine.ChargeFittingWorkflow: COMPLETED: ChargeFitting - Fragment: XTGVJZYWWMZTBJ-UHFFFAOYSA-N, Parent Molecules: [], SLURM ID: 5086893
+12-10-2022 10:37:31 - INFO: workflow_manager, write_pass_task_log
+	ffengine.EspWorkflow: COMPLETED: ConformationEsp - Molecule: CHEMBL3402754-40, XWDNKEHWOTTWBY-UHFFFAOYSA-N, SLURM ID: 5086890
+12-10-2022 10:37:31 - INFO: workflow_manager, write_pass_task_log
+	ffengine.ChargeFittingWorkflow: COMPLETED: ChargeFitting - Fragment: RBGXXGMNBFTAKL-UHFFFAOYSA-N, Parent Molecules: [], SLURM ID: 5086895
+12-10-2022 10:37:31 - INFO: workflow_manager, write_pass_task_log
+	ffengine.EspWorkflow: COMPLETED: ConformationEsp - Molecule: CHEMBL3402758-10, UTRKTKXZUOHEGE-UHFFFAOYSA-O, SLURM ID: 5086892
+12-10-2022 10:37:31 - INFO: workflow_manager, write_pass_task_log
+	ffengine.ChargeFittingWorkflow: COMPLETED: ChargeFitting - Fragment: QWPIOCUTERMEOV-UHFFFAOYSA-N, Parent Molecules: [], SLURM ID: 5086897
+12-10-2022 10:37:31 - INFO: workflow_manager, write_pass_task_log
+	ffengine.EspWorkflow: COMPLETED: ConformationEsp - Molecule: CHEMBL3402742-23, YENMFPGGDSCGGT-UHFFFAOYSA-O, SLURM ID: 5086894
+12-10-2022 10:37:31 - INFO: workflow_manager, write_pass_task_log
+	ffengine.ChargeFittingWorkflow: COMPLETED: ChargeFitting - Fragment: XWDNKEHWOTTWBY-UHFFFAOYSA-N, Parent Molecules: [], SLURM ID: 5086899
+12-10-2022 10:37:31 - INFO: workflow_manager, write_pass_task_log
+	ffengine.EspWorkflow: COMPLETED: ConformationEsp - Molecule: CHEMBL3402755-4200, DALKKQZTVMLVDE-UHFFFAOYSA-N, SLURM ID: 5086896
+12-10-2022 10:37:31 - INFO: workflow_manager, write_running_task_log
+	ffengine.ChargeFittingWorkflow: RUNNING: ChargeFitting - Molecule: CHEMBL3402751-2100, TYQGWYQOYDYYSB-UHFFFAOYSA-N, SLURM ID: 5086901
+12-10-2022 10:37:31 - INFO: workflow_manager, write_pass_task_log
+	ffengine.EspWorkflow: COMPLETED: ConformationEsp - Molecule: CHEMBL3402743-42, DZAVNSDHPJBMQG-UHFFFAOYSA-O, SLURM ID: 5086898
+12-10-2022 10:37:31 - INFO: workflow_manager, write_running_task_log
+	ffengine.ChargeFittingWorkflow: RUNNING: ChargeFitting - Molecule: CHEMBL3402760-1, PPCTYYSLBWDGHQ-UHFFFAOYSA-O, SLURM ID: 5086902
+12-10-2022 10:37:31 - INFO: workflow_manager, write_running_task_log
+	ffengine.ChargeFittingWorkflow: RUNNING: ChargeFitting - Molecule: CHEMBL3402763-90, XSINRHAIBWWSLP-UHFFFAOYSA-O, SLURM ID: 5086903
+12-10-2022 10:37:31 - INFO: workflow_manager, write_running_task_log
+	ffengine.ChargeFittingWorkflow: RUNNING: ChargeFitting - Molecule: CHEMBL3402748-5300, BQDBPVWRXKKLEM-UHFFFAOYSA-N, SLURM ID: 5086904
+12-10-2022 10:37:31 - INFO: workflow_manager, write_running_task_log
+	ffengine.ChargeFittingWorkflow: RUNNING: ChargeFitting - Molecule: CHEMBL3402759-5.7, RTKBHBAMZLAVKQ-UHFFFAOYSA-O, SLURM ID: 5086905
+12-10-2022 10:37:31 - INFO: workflow_manager, write_running_task_log
+	ffengine.ChargeFittingWorkflow: RUNNING: ChargeFitting - Molecule: CHEMBL3402741-400, WVYHFPSGWCCXMO-UHFFFAOYSA-O, SLURM ID: 5086906
+12-10-2022 10:37:31 - INFO: workflow_manager, write_running_task_log
+	ffengine.ChargeFittingWorkflow: RUNNING: ChargeFitting - Molecule: CHEMBL3402749-500, HNZNLHMWBMCDNP-UHFFFAOYSA-N, SLURM ID: 5086907
+12-10-2022 10:37:31 - INFO: workflow_manager, write_running_task_log
+	ffengine.ChargeFittingWorkflow: RUNNING: ChargeFitting - Molecule: CHEMBL3402757-6.5, DNECYDMFUWXITK-UHFFFAOYSA-O, SLURM ID: 5086908
+12-10-2022 10:37:31 - INFO: workflow_manager, write_running_task_log
+	ffengine.ChargeFittingWorkflow: RUNNING: ChargeFitting - Molecule: CHEMBL3402764-90, KCAPWBJRKSKHSZ-UHFFFAOYSA-O, SLURM ID: 5086909
+12-10-2022 10:37:31 - INFO: workflow_manager, write_running_task_log
+	ffengine.ChargeFittingWorkflow: RUNNING: ChargeFitting - Molecule: CHEMBL3402756-2.7, QWXKBTBMVIBWPV-UHFFFAOYSA-O, SLURM ID: 5086910
+12-10-2022 10:37:31 - INFO: workflow_manager, write_running_task_log
+	ffengine.ChargeFittingWorkflow: RUNNING: ChargeFitting - Molecule: CHEMBL3402765-11-charged-pKa-8.1, SAUCUXJYCROSSC-UHFFFAOYSA-O, SLURM ID: 5086911
+12-10-2022 10:37:31 - INFO: workflow_manager, write_running_task_log
+	ffengine.ChargeFittingWorkflow: RUNNING: ChargeFitting - Molecule: CHEMBL3402752-30000, RSNJJEZRTWAPRV-UHFFFAOYSA-N, SLURM ID: 5086912
+12-10-2022 10:37:31 - INFO: workflow_manager, write_running_task_log
+	ffengine.ChargeFittingWorkflow: RUNNING: ChargeFitting - Molecule: CHEMBL3402744-300, OHNLONIUYBNNFP-UHFFFAOYSA-N, SLURM ID: 5086913
+12-10-2022 10:37:31 - INFO: workflow_manager, write_running_task_log
+	ffengine.ChargeFittingWorkflow: RUNNING: ChargeFitting - Molecule: CHEMBL3402747-3400, COBYLGKSTSIKLJ-UHFFFAOYSA-N, SLURM ID: 5086914
+12-10-2022 10:37:31 - INFO: workflow_manager, write_running_task_log
+	ffengine.ChargeFittingWorkflow: RUNNING: ChargeFitting - Molecule: CHEMBL3402753-200, DOHIURUDQLXXDT-UHFFFAOYSA-N, SLURM ID: 5086915
+12-10-2022 10:37:31 - INFO: workflow_manager, write_running_task_log
+	ffengine.ChargeFittingWorkflow: RUNNING: ChargeFitting - Molecule: CHEMBL3402761-1, QWPIOCUTERMEOV-UHFFFAOYSA-N, SLURM ID: 5086916
+12-10-2022 10:37:34 - INFO: workflow_manager, submit_task
+	ffengine.ChargeFittingWorkflow: Submitting task: chg_mole_UTRKTKXZUOHEGE-UHFFFAOYSA-O_62f107bb2f377a83b495df9c5bf0a858
+12-10-2022 10:37:34 - INFO: workflow_manager, submit_task
+	ffengine.ChargeFittingWorkflow: Submitting task: chg_mole_YENMFPGGDSCGGT-UHFFFAOYSA-O_fecca93b7f1458809fa71782d0cc88cf
+12-10-2022 10:37:35 - INFO: workflow_manager, submit_task
+	ffengine.ChargeFittingWorkflow: Submitting task: chg_mole_DALKKQZTVMLVDE-UHFFFAOYSA-N_0297eaa1e77d00db7fb73a54afabf4ee
+12-10-2022 10:37:35 - INFO: workflow_manager, submit_task
+	ffengine.ChargeFittingWorkflow: Submitting task: chg_mole_DZAVNSDHPJBMQG-UHFFFAOYSA-O_7518da6587d46c1c4a694121c4099941
+12-10-2022 10:37:35 - INFO: workflow_manager, submit_task
+	ffengine.ChargeFittingWorkflow: Submitting task: chg_mole_XTGVJZYWWMZTBJ-UHFFFAOYSA-N_8c2d631583516c48e12e164084d33af0
+12-10-2022 10:37:36 - INFO: workflow_manager, submit_task
+	ffengine.ChargeFittingWorkflow: Submitting task: chg_mole_RBGXXGMNBFTAKL-UHFFFAOYSA-N_ff7b750eb6b68d7b9a9b481b23f46567
+12-10-2022 10:37:36 - INFO: workflow_manager, write_pass_task_log
+	ffengine.ChargeFittingWorkflow: COMPLETED: ChargeFitting - Molecule: CHEMBL3402751-2100, TYQGWYQOYDYYSB-UHFFFAOYSA-N, SLURM ID: 5086901
+12-10-2022 10:37:36 - INFO: workflow_manager, submit_task
+	ffengine.ChargeFittingWorkflow: Submitting task: chg_mole_XWDNKEHWOTTWBY-UHFFFAOYSA-N_458947280ad4de657736b0e22db654b0
+12-10-2022 10:37:36 - INFO: workflow_manager, write_pass_task_log
+	ffengine.ChargeFittingWorkflow: COMPLETED: ChargeFitting - Molecule: CHEMBL3402748-5300, BQDBPVWRXKKLEM-UHFFFAOYSA-N, SLURM ID: 5086904
+12-10-2022 10:37:36 - INFO: workflow_manager, write_pass_task_log
+	ffengine.ChargeFittingWorkflow: COMPLETED: ChargeFitting - Molecule: CHEMBL3402749-500, HNZNLHMWBMCDNP-UHFFFAOYSA-N, SLURM ID: 5086907
+12-10-2022 10:37:36 - INFO: workflow_manager, write_pass_task_log
+	ffengine.ChargeFittingWorkflow: COMPLETED: ChargeFitting - Molecule: CHEMBL3402752-30000, RSNJJEZRTWAPRV-UHFFFAOYSA-N, SLURM ID: 5086912
+12-10-2022 10:37:36 - INFO: workflow_manager, write_running_task_log
+	ffengine.ChargeFittingWorkflow: RUNNING: ChargeFitting - Molecule: CHEMBL3402758-10, UTRKTKXZUOHEGE-UHFFFAOYSA-O, SLURM ID: 5086920
+12-10-2022 10:37:36 - INFO: workflow_manager, write_running_task_log
+	ffengine.ChargeFittingWorkflow: RUNNING: ChargeFitting - Molecule: CHEMBL3402742-23, YENMFPGGDSCGGT-UHFFFAOYSA-O, SLURM ID: 5086921
+12-10-2022 10:37:36 - INFO: workflow_manager, write_running_task_log
+	ffengine.ChargeFittingWorkflow: RUNNING: ChargeFitting - Molecule: CHEMBL3402755-4200, DALKKQZTVMLVDE-UHFFFAOYSA-N, SLURM ID: 5086922
+12-10-2022 10:37:36 - INFO: workflow_manager, write_running_task_log
+	ffengine.ChargeFittingWorkflow: RUNNING: ChargeFitting - Molecule: CHEMBL3402743-42, DZAVNSDHPJBMQG-UHFFFAOYSA-O, SLURM ID: 5086923
+12-10-2022 10:37:41 - INFO: workflow_manager, submit_task
+	ffengine.BFEInputWorkflow: Submitting task: bfe_input_TYQGWYQOYDYYSB-UHFFFAOYSA-N_039bebc4ead038c5d343b444289dbc35
+12-10-2022 10:37:41 - INFO: workflow_manager, submit_task
+	ffengine.BFEInputWorkflow: Submitting task: bfe_input_BQDBPVWRXKKLEM-UHFFFAOYSA-N_a18ddcee0e2c2f4f0f19a04ba97a60a3
+12-10-2022 10:37:41 - INFO: workflow_manager, write_pass_task_log
+	ffengine.ChargeFittingWorkflow: COMPLETED: ChargeFitting - Molecule: CHEMBL3402744-300, OHNLONIUYBNNFP-UHFFFAOYSA-N, SLURM ID: 5086913
+12-10-2022 10:37:41 - INFO: workflow_manager, write_pass_task_log
+	ffengine.ChargeFittingWorkflow: COMPLETED: ChargeFitting - Molecule: CHEMBL3402747-3400, COBYLGKSTSIKLJ-UHFFFAOYSA-N, SLURM ID: 5086914
+12-10-2022 10:37:41 - INFO: workflow_manager, write_pass_task_log
+	ffengine.ChargeFittingWorkflow: COMPLETED: ChargeFitting - Molecule: CHEMBL3402753-200, DOHIURUDQLXXDT-UHFFFAOYSA-N, SLURM ID: 5086915
+12-10-2022 10:37:41 - INFO: workflow_manager, write_pass_task_log
+	ffengine.ChargeFittingWorkflow: COMPLETED: ChargeFitting - Molecule: CHEMBL3402761-1, QWPIOCUTERMEOV-UHFFFAOYSA-N, SLURM ID: 5086916
+12-10-2022 10:37:41 - INFO: workflow_manager, write_running_task_log
+	ffengine.ChargeFittingWorkflow: RUNNING: ChargeFitting - Molecule: CHEMBL3402745-200, XTGVJZYWWMZTBJ-UHFFFAOYSA-N, SLURM ID: 5086925
+12-10-2022 10:37:41 - INFO: workflow_manager, write_running_task_log
+	ffengine.ChargeFittingWorkflow: RUNNING: ChargeFitting - Molecule: CHEMBL3402750-400, RBGXXGMNBFTAKL-UHFFFAOYSA-N, SLURM ID: 5086926
+12-10-2022 10:37:41 - INFO: workflow_manager, write_running_task_log
+	ffengine.ChargeFittingWorkflow: RUNNING: ChargeFitting - Molecule: CHEMBL3402754-40, XWDNKEHWOTTWBY-UHFFFAOYSA-N, SLURM ID: 5086927
+12-10-2022 10:37:41 - INFO: workflow_manager, submit_task
+	ffengine.BFEInputWorkflow: Submitting task: bfe_input_HNZNLHMWBMCDNP-UHFFFAOYSA-N_32403601a8d662c5d3c2340bb78cb524
+12-10-2022 10:37:42 - INFO: workflow_manager, submit_task
+	ffengine.BFEInputWorkflow: Submitting task: bfe_input_RSNJJEZRTWAPRV-UHFFFAOYSA-N_342fbe8f96cd7dbc53a4b1ac0bed46aa
+12-10-2022 10:37:42 - INFO: workflow_manager, submit_task
+	ffengine.BFEInputWorkflow: Submitting task: bfe_input_OHNLONIUYBNNFP-UHFFFAOYSA-N_13faa4049a5e2a1a2be9c3f2bb322216
+12-10-2022 10:37:42 - INFO: workflow_manager, submit_task
+	ffengine.BFEInputWorkflow: Submitting task: bfe_input_COBYLGKSTSIKLJ-UHFFFAOYSA-N_86c0362d632aa6b61993d5f0e4df5eed
+12-10-2022 10:37:43 - INFO: workflow_manager, submit_task
+	ffengine.BFEInputWorkflow: Submitting task: bfe_input_DOHIURUDQLXXDT-UHFFFAOYSA-N_90599cf0686102dae52e00dd790e8175
+12-10-2022 10:37:43 - INFO: workflow_manager, submit_task
+	ffengine.BFEInputWorkflow: Submitting task: bfe_input_QWPIOCUTERMEOV-UHFFFAOYSA-N_549b6a6108958b1194d25debd5dca17f
+12-10-2022 10:37:45 - INFO: workflow_manager, write_running_task_log
+	ffengine.BFEInputWorkflow: RUNNING: BFEInput - Molecule: CHEMBL3402751-2100, TYQGWYQOYDYYSB-UHFFFAOYSA-N, SLURM ID: 5086928
+12-10-2022 10:37:45 - INFO: workflow_manager, write_running_task_log
+	ffengine.BFEInputWorkflow: RUNNING: BFEInput - Molecule: CHEMBL3402748-5300, BQDBPVWRXKKLEM-UHFFFAOYSA-N, SLURM ID: 5086929
+12-10-2022 10:37:45 - INFO: workflow_manager, write_running_task_log
+	ffengine.BFEInputWorkflow: RUNNING: BFEInput - Molecule: CHEMBL3402749-500, HNZNLHMWBMCDNP-UHFFFAOYSA-N, SLURM ID: 5086930
+12-10-2022 10:37:45 - INFO: workflow_manager, write_running_task_log
+	ffengine.BFEInputWorkflow: RUNNING: BFEInput - Molecule: CHEMBL3402752-30000, RSNJJEZRTWAPRV-UHFFFAOYSA-N, SLURM ID: 5086931
+12-10-2022 10:37:45 - INFO: workflow_manager, write_running_task_log
+	ffengine.BFEInputWorkflow: RUNNING: BFEInput - Molecule: CHEMBL3402744-300, OHNLONIUYBNNFP-UHFFFAOYSA-N, SLURM ID: 5086932
+12-10-2022 10:37:45 - INFO: workflow_manager, write_running_task_log
+	ffengine.BFEInputWorkflow: RUNNING: BFEInput - Molecule: CHEMBL3402747-3400, COBYLGKSTSIKLJ-UHFFFAOYSA-N, SLURM ID: 5086933
+12-10-2022 10:37:45 - INFO: workflow_manager, write_running_task_log
+	ffengine.BFEInputWorkflow: RUNNING: BFEInput - Molecule: CHEMBL3402753-200, DOHIURUDQLXXDT-UHFFFAOYSA-N, SLURM ID: 5086934
+12-10-2022 10:37:45 - INFO: workflow_manager, write_running_task_log
+	ffengine.BFEInputWorkflow: RUNNING: BFEInput - Molecule: CHEMBL3402761-1, QWPIOCUTERMEOV-UHFFFAOYSA-N, SLURM ID: 5086935
+12-10-2022 10:37:46 - INFO: workflow_manager, write_pass_task_log
+	ffengine.ChargeFittingWorkflow: COMPLETED: ChargeFitting - Molecule: CHEMBL3402762-1, AHYMHWXQRWRBKT-UHFFFAOYSA-O, SLURM ID: 5086900
+12-10-2022 10:37:46 - INFO: workflow_manager, write_pass_task_log
+	ffengine.ChargeFittingWorkflow: COMPLETED: ChargeFitting - Molecule: CHEMBL3402760-1, PPCTYYSLBWDGHQ-UHFFFAOYSA-O, SLURM ID: 5086902
+12-10-2022 10:37:46 - INFO: workflow_manager, write_pass_task_log
+	ffengine.ChargeFittingWorkflow: COMPLETED: ChargeFitting - Molecule: CHEMBL3402763-90, XSINRHAIBWWSLP-UHFFFAOYSA-O, SLURM ID: 5086903
+12-10-2022 10:37:46 - INFO: workflow_manager, write_pass_task_log
+	ffengine.ChargeFittingWorkflow: COMPLETED: ChargeFitting - Molecule: CHEMBL3402755-4200, DALKKQZTVMLVDE-UHFFFAOYSA-N, SLURM ID: 5086922
+12-10-2022 10:37:49 - INFO: workflow_manager, submit_task
+	ffengine.BFEInputWorkflow: Submitting task: bfe_input_PPCTYYSLBWDGHQ-UHFFFAOYSA-O_6f3966193fd36568765ede5ccb8f5305
+12-10-2022 10:37:49 - INFO: workflow_manager, submit_task
+	ffengine.BFEInputWorkflow: Submitting task: bfe_input_AHYMHWXQRWRBKT-UHFFFAOYSA-O_884be03d149d67abfe5e5e6acea421a2
+12-10-2022 10:37:49 - INFO: workflow_manager, submit_task
+	ffengine.BFEInputWorkflow: Submitting task: bfe_input_XSINRHAIBWWSLP-UHFFFAOYSA-O_05691a5d87c0e404008e4020ee1e775d
+12-10-2022 10:37:50 - INFO: workflow_manager, submit_task
+	ffengine.BFEInputWorkflow: Submitting task: bfe_input_DALKKQZTVMLVDE-UHFFFAOYSA-N_0297eaa1e77d00db7fb73a54afabf4ee
+12-10-2022 10:37:50 - INFO: workflow_manager, write_pass_task_log
+	ffengine.BFEInputWorkflow: COMPLETED: BFEInput - Molecule: CHEMBL3402751-2100, TYQGWYQOYDYYSB-UHFFFAOYSA-N, SLURM ID: 5086928
+12-10-2022 10:37:50 - INFO: workflow_manager, write_pass_task_log
+	ffengine.BFEInputWorkflow: COMPLETED: BFEInput - Molecule: CHEMBL3402748-5300, BQDBPVWRXKKLEM-UHFFFAOYSA-N, SLURM ID: 5086929
+12-10-2022 10:37:50 - INFO: workflow_manager, write_pass_task_log
+	ffengine.BFEInputWorkflow: COMPLETED: BFEInput - Molecule: CHEMBL3402749-500, HNZNLHMWBMCDNP-UHFFFAOYSA-N, SLURM ID: 5086930
+12-10-2022 10:37:50 - INFO: workflow_manager, write_pass_task_log
+	ffengine.BFEInputWorkflow: COMPLETED: BFEInput - Molecule: CHEMBL3402753-200, DOHIURUDQLXXDT-UHFFFAOYSA-N, SLURM ID: 5086934
+12-10-2022 10:37:50 - INFO: workflow_manager, write_running_task_log
+	ffengine.BFEInputWorkflow: RUNNING: BFEInput - Molecule: CHEMBL3402760-1, PPCTYYSLBWDGHQ-UHFFFAOYSA-O, SLURM ID: 5086936
+12-10-2022 10:37:50 - INFO: workflow_manager, write_running_task_log
+	ffengine.BFEInputWorkflow: RUNNING: BFEInput - Molecule: CHEMBL3402762-1, AHYMHWXQRWRBKT-UHFFFAOYSA-O, SLURM ID: 5086937
+12-10-2022 10:37:50 - INFO: workflow_manager, write_running_task_log
+	ffengine.BFEInputWorkflow: RUNNING: BFEInput - Molecule: CHEMBL3402763-90, XSINRHAIBWWSLP-UHFFFAOYSA-O, SLURM ID: 5086938
+12-10-2022 10:37:50 - INFO: workflow_manager, write_running_task_log
+	ffengine.BFEInputWorkflow: RUNNING: BFEInput - Molecule: CHEMBL3402755-4200, DALKKQZTVMLVDE-UHFFFAOYSA-N, SLURM ID: 5086939
+12-10-2022 10:37:51 - INFO: workflow_manager, write_pass_task_log
+	ffengine.ChargeFittingWorkflow: COMPLETED: ChargeFitting - Molecule: CHEMBL3402759-5.7, RTKBHBAMZLAVKQ-UHFFFAOYSA-O, SLURM ID: 5086905
+12-10-2022 10:37:51 - INFO: workflow_manager, write_pass_task_log
+	ffengine.ChargeFittingWorkflow: COMPLETED: ChargeFitting - Molecule: CHEMBL3402764-90, KCAPWBJRKSKHSZ-UHFFFAOYSA-O, SLURM ID: 5086909
+12-10-2022 10:37:51 - INFO: workflow_manager, write_pass_task_log
+	ffengine.ChargeFittingWorkflow: COMPLETED: ChargeFitting - Molecule: CHEMBL3402756-2.7, QWXKBTBMVIBWPV-UHFFFAOYSA-O, SLURM ID: 5086910
+12-10-2022 10:37:51 - INFO: workflow_manager, write_pass_task_log
+	ffengine.ChargeFittingWorkflow: COMPLETED: ChargeFitting - Molecule: CHEMBL3402765-11-charged-pKa-8.1, SAUCUXJYCROSSC-UHFFFAOYSA-O, SLURM ID: 5086911
+12-10-2022 10:37:55 - INFO: workflow_manager, submit_task
+	ffengine.BFEInputWorkflow: Submitting task: bfe_input_RTKBHBAMZLAVKQ-UHFFFAOYSA-O_07cd0268b1d3e9a553b5553c36739dac
+12-10-2022 10:37:55 - INFO: workflow_manager, submit_task
+	ffengine.BFEInputWorkflow: Submitting task: bfe_input_KCAPWBJRKSKHSZ-UHFFFAOYSA-O_41ad237c4242023636650c1dcc7c40cd
+12-10-2022 10:37:55 - INFO: workflow_manager, write_pass_task_log
+	ffengine.BFEInputWorkflow: COMPLETED: BFEInput - Molecule: CHEMBL3402752-30000, RSNJJEZRTWAPRV-UHFFFAOYSA-N, SLURM ID: 5086931
+12-10-2022 10:37:55 - INFO: workflow_manager, write_pass_task_log
+	ffengine.BFEInputWorkflow: COMPLETED: BFEInput - Molecule: CHEMBL3402744-300, OHNLONIUYBNNFP-UHFFFAOYSA-N, SLURM ID: 5086932
+12-10-2022 10:37:55 - INFO: workflow_manager, write_pass_task_log
+	ffengine.BFEInputWorkflow: COMPLETED: BFEInput - Molecule: CHEMBL3402747-3400, COBYLGKSTSIKLJ-UHFFFAOYSA-N, SLURM ID: 5086933
+12-10-2022 10:37:55 - INFO: workflow_manager, write_pass_task_log
+	ffengine.BFEInputWorkflow: COMPLETED: BFEInput - Molecule: CHEMBL3402761-1, QWPIOCUTERMEOV-UHFFFAOYSA-N, SLURM ID: 5086935
+12-10-2022 10:37:55 - INFO: workflow_manager, write_pass_task_log
+	ffengine.BFEInputWorkflow: COMPLETED: BFEInput - Molecule: CHEMBL3402760-1, PPCTYYSLBWDGHQ-UHFFFAOYSA-O, SLURM ID: 5086936
+12-10-2022 10:37:55 - INFO: workflow_manager, write_pass_task_log
+	ffengine.BFEInputWorkflow: COMPLETED: BFEInput - Molecule: CHEMBL3402762-1, AHYMHWXQRWRBKT-UHFFFAOYSA-O, SLURM ID: 5086937
+12-10-2022 10:37:55 - INFO: workflow_manager, write_pass_task_log
+	ffengine.BFEInputWorkflow: COMPLETED: BFEInput - Molecule: CHEMBL3402763-90, XSINRHAIBWWSLP-UHFFFAOYSA-O, SLURM ID: 5086938
+12-10-2022 10:37:56 - INFO: workflow_manager, submit_task
+	ffengine.BFEInputWorkflow: Submitting task: bfe_input_QWXKBTBMVIBWPV-UHFFFAOYSA-O_15e92db210d73f6d01e78bfac48422db
+12-10-2022 10:37:56 - INFO: workflow_manager, submit_task
+	ffengine.BFEInputWorkflow: Submitting task: bfe_input_SAUCUXJYCROSSC-UHFFFAOYSA-O_2e1e2d599de75b57ff706974bfdd81c5
+12-10-2022 10:37:56 - INFO: workflow_manager, write_pass_task_log
+	ffengine.ChargeFittingWorkflow: COMPLETED: ChargeFitting - Molecule: CHEMBL3402757-6.5, DNECYDMFUWXITK-UHFFFAOYSA-O, SLURM ID: 5086908
+12-10-2022 10:37:56 - INFO: workflow_manager, write_pass_task_log
+	ffengine.ChargeFittingWorkflow: COMPLETED: ChargeFitting - Molecule: CHEMBL3402758-10, UTRKTKXZUOHEGE-UHFFFAOYSA-O, SLURM ID: 5086920
+12-10-2022 10:37:56 - INFO: workflow_manager, write_pass_task_log
+	ffengine.ChargeFittingWorkflow: COMPLETED: ChargeFitting - Molecule: CHEMBL3402742-23, YENMFPGGDSCGGT-UHFFFAOYSA-O, SLURM ID: 5086921
+12-10-2022 10:38:00 - INFO: workflow_manager, write_pass_task_log
+	ffengine.BFEInputWorkflow: COMPLETED: BFEInput - Molecule: CHEMBL3402755-4200, DALKKQZTVMLVDE-UHFFFAOYSA-N, SLURM ID: 5086939
+12-10-2022 10:38:00 - INFO: workflow_manager, write_running_task_log
+	ffengine.BFEInputWorkflow: RUNNING: BFEInput - Molecule: CHEMBL3402759-5.7, RTKBHBAMZLAVKQ-UHFFFAOYSA-O, SLURM ID: 5086940
+12-10-2022 10:38:00 - INFO: workflow_manager, write_running_task_log
+	ffengine.BFEInputWorkflow: RUNNING: BFEInput - Molecule: CHEMBL3402764-90, KCAPWBJRKSKHSZ-UHFFFAOYSA-O, SLURM ID: 5086941
+12-10-2022 10:38:00 - INFO: workflow_manager, write_running_task_log
+	ffengine.BFEInputWorkflow: RUNNING: BFEInput - Molecule: CHEMBL3402756-2.7, QWXKBTBMVIBWPV-UHFFFAOYSA-O, SLURM ID: 5086942
+12-10-2022 10:38:00 - INFO: workflow_manager, write_running_task_log
+	ffengine.BFEInputWorkflow: RUNNING: BFEInput - Molecule: CHEMBL3402765-11-charged-pKa-8.1, SAUCUXJYCROSSC-UHFFFAOYSA-O, SLURM ID: 5086943
+12-10-2022 10:38:01 - INFO: workflow_manager, submit_task
+	ffengine.BFEInputWorkflow: Submitting task: bfe_input_DNECYDMFUWXITK-UHFFFAOYSA-O_da89903402f775d37894595ba00e7fe1
+12-10-2022 10:38:01 - INFO: workflow_manager, write_pass_task_log
+	ffengine.ChargeFittingWorkflow: COMPLETED: ChargeFitting - Molecule: CHEMBL3402741-400, WVYHFPSGWCCXMO-UHFFFAOYSA-O, SLURM ID: 5086906
+12-10-2022 10:38:01 - INFO: workflow_manager, write_pass_task_log
+	ffengine.ChargeFittingWorkflow: COMPLETED: ChargeFitting - Molecule: CHEMBL3402743-42, DZAVNSDHPJBMQG-UHFFFAOYSA-O, SLURM ID: 5086923
+12-10-2022 10:38:01 - INFO: workflow_manager, write_pass_task_log
+	ffengine.ChargeFittingWorkflow: COMPLETED: ChargeFitting - Molecule: CHEMBL3402745-200, XTGVJZYWWMZTBJ-UHFFFAOYSA-N, SLURM ID: 5086925
+12-10-2022 10:38:01 - INFO: workflow_manager, write_pass_task_log
+	ffengine.ChargeFittingWorkflow: COMPLETED: ChargeFitting - Molecule: CHEMBL3402750-400, RBGXXGMNBFTAKL-UHFFFAOYSA-N, SLURM ID: 5086926
+12-10-2022 10:38:01 - INFO: workflow_manager, write_pass_task_log
+	ffengine.ChargeFittingWorkflow: COMPLETED: ChargeFitting - Molecule: CHEMBL3402754-40, XWDNKEHWOTTWBY-UHFFFAOYSA-N, SLURM ID: 5086927
+12-10-2022 10:38:02 - INFO: workflow_manager, submit_task
+	ffengine.BFEInputWorkflow: Submitting task: bfe_input_UTRKTKXZUOHEGE-UHFFFAOYSA-O_62f107bb2f377a83b495df9c5bf0a858
+12-10-2022 10:38:02 - INFO: workflow_manager, submit_task
+	ffengine.BFEInputWorkflow: Submitting task: bfe_input_YENMFPGGDSCGGT-UHFFFAOYSA-O_fecca93b7f1458809fa71782d0cc88cf
+12-10-2022 10:38:02 - INFO: workflow_manager, submit_task
+	ffengine.BFEInputWorkflow: Submitting task: bfe_input_WVYHFPSGWCCXMO-UHFFFAOYSA-O_65f559069e1a0d127ca070707705940b
+12-10-2022 10:38:03 - INFO: workflow_manager, submit_task
+	ffengine.BFEInputWorkflow: Submitting task: bfe_input_DZAVNSDHPJBMQG-UHFFFAOYSA-O_7518da6587d46c1c4a694121c4099941
+12-10-2022 10:38:03 - INFO: workflow_manager, submit_task
+	ffengine.BFEInputWorkflow: Submitting task: bfe_input_XTGVJZYWWMZTBJ-UHFFFAOYSA-N_8c2d631583516c48e12e164084d33af0
+12-10-2022 10:38:03 - INFO: workflow_manager, submit_task
+	ffengine.BFEInputWorkflow: Submitting task: bfe_input_RBGXXGMNBFTAKL-UHFFFAOYSA-N_ff7b750eb6b68d7b9a9b481b23f46567
+12-10-2022 10:38:04 - INFO: workflow_manager, submit_task
+	ffengine.BFEInputWorkflow: Submitting task: bfe_input_XWDNKEHWOTTWBY-UHFFFAOYSA-N_458947280ad4de657736b0e22db654b0
+12-10-2022 10:38:06 - INFO: workflow_manager, write_pass_task_log
+	ffengine.BFEInputWorkflow: COMPLETED: BFEInput - Molecule: CHEMBL3402759-5.7, RTKBHBAMZLAVKQ-UHFFFAOYSA-O, SLURM ID: 5086940
+12-10-2022 10:38:06 - INFO: workflow_manager, write_pass_task_log
+	ffengine.BFEInputWorkflow: COMPLETED: BFEInput - Molecule: CHEMBL3402764-90, KCAPWBJRKSKHSZ-UHFFFAOYSA-O, SLURM ID: 5086941
+12-10-2022 10:38:06 - INFO: workflow_manager, write_pass_task_log
+	ffengine.BFEInputWorkflow: COMPLETED: BFEInput - Molecule: CHEMBL3402756-2.7, QWXKBTBMVIBWPV-UHFFFAOYSA-O, SLURM ID: 5086942
+12-10-2022 10:38:06 - INFO: workflow_manager, write_pass_task_log
+	ffengine.BFEInputWorkflow: COMPLETED: BFEInput - Molecule: CHEMBL3402765-11-charged-pKa-8.1, SAUCUXJYCROSSC-UHFFFAOYSA-O, SLURM ID: 5086943
+12-10-2022 10:38:06 - INFO: workflow_manager, write_running_task_log
+	ffengine.BFEInputWorkflow: RUNNING: BFEInput - Molecule: CHEMBL3402757-6.5, DNECYDMFUWXITK-UHFFFAOYSA-O, SLURM ID: 5086944
+12-10-2022 10:38:06 - INFO: workflow_manager, write_running_task_log
+	ffengine.BFEInputWorkflow: RUNNING: BFEInput - Molecule: CHEMBL3402758-10, UTRKTKXZUOHEGE-UHFFFAOYSA-O, SLURM ID: 5086945
+12-10-2022 10:38:06 - INFO: workflow_manager, write_running_task_log
+	ffengine.BFEInputWorkflow: RUNNING: BFEInput - Molecule: CHEMBL3402742-23, YENMFPGGDSCGGT-UHFFFAOYSA-O, SLURM ID: 5086946
+12-10-2022 10:38:06 - INFO: workflow_manager, write_running_task_log
+	ffengine.BFEInputWorkflow: RUNNING: BFEInput - Molecule: CHEMBL3402741-400, WVYHFPSGWCCXMO-UHFFFAOYSA-O, SLURM ID: 5086947
+12-10-2022 10:38:06 - INFO: workflow_manager, write_running_task_log
+	ffengine.BFEInputWorkflow: RUNNING: BFEInput - Molecule: CHEMBL3402743-42, DZAVNSDHPJBMQG-UHFFFAOYSA-O, SLURM ID: 5086948
+12-10-2022 10:38:06 - INFO: workflow_manager, write_running_task_log
+	ffengine.BFEInputWorkflow: RUNNING: BFEInput - Molecule: CHEMBL3402745-200, XTGVJZYWWMZTBJ-UHFFFAOYSA-N, SLURM ID: 5086949
+12-10-2022 10:38:06 - INFO: workflow_manager, write_running_task_log
+	ffengine.BFEInputWorkflow: RUNNING: BFEInput - Molecule: CHEMBL3402750-400, RBGXXGMNBFTAKL-UHFFFAOYSA-N, SLURM ID: 5086950
+12-10-2022 10:38:06 - INFO: workflow_manager, write_running_task_log
+	ffengine.BFEInputWorkflow: RUNNING: BFEInput - Molecule: CHEMBL3402754-40, XWDNKEHWOTTWBY-UHFFFAOYSA-N, SLURM ID: 5086951
+12-10-2022 10:38:11 - INFO: workflow_manager, write_pass_task_log
+	ffengine.BFEInputWorkflow: COMPLETED: BFEInput - Molecule: CHEMBL3402757-6.5, DNECYDMFUWXITK-UHFFFAOYSA-O, SLURM ID: 5086944
+12-10-2022 10:38:11 - INFO: workflow_manager, write_pass_task_log
+	ffengine.BFEInputWorkflow: COMPLETED: BFEInput - Molecule: CHEMBL3402758-10, UTRKTKXZUOHEGE-UHFFFAOYSA-O, SLURM ID: 5086945
+12-10-2022 10:38:11 - INFO: workflow_manager, write_pass_task_log
+	ffengine.BFEInputWorkflow: COMPLETED: BFEInput - Molecule: CHEMBL3402742-23, YENMFPGGDSCGGT-UHFFFAOYSA-O, SLURM ID: 5086946
+12-10-2022 10:38:11 - INFO: workflow_manager, write_pass_task_log
+	ffengine.BFEInputWorkflow: COMPLETED: BFEInput - Molecule: CHEMBL3402741-400, WVYHFPSGWCCXMO-UHFFFAOYSA-O, SLURM ID: 5086947
+12-10-2022 10:38:11 - INFO: workflow_manager, write_pass_task_log
+	ffengine.BFEInputWorkflow: COMPLETED: BFEInput - Molecule: CHEMBL3402743-42, DZAVNSDHPJBMQG-UHFFFAOYSA-O, SLURM ID: 5086948
+12-10-2022 10:38:11 - INFO: workflow_manager, write_pass_task_log
+	ffengine.BFEInputWorkflow: COMPLETED: BFEInput - Molecule: CHEMBL3402745-200, XTGVJZYWWMZTBJ-UHFFFAOYSA-N, SLURM ID: 5086949
+12-10-2022 10:38:11 - INFO: workflow_manager, write_pass_task_log
+	ffengine.BFEInputWorkflow: COMPLETED: BFEInput - Molecule: CHEMBL3402750-400, RBGXXGMNBFTAKL-UHFFFAOYSA-N, SLURM ID: 5086950
+12-10-2022 10:38:11 - INFO: workflow_manager, write_pass_task_log
+	ffengine.BFEInputWorkflow: COMPLETED: BFEInput - Molecule: CHEMBL3402754-40, XWDNKEHWOTTWBY-UHFFFAOYSA-N, SLURM ID: 5086951
+12-10-2022 10:38:18 - INFO: ffengine_master, post
+	ffengine.FFEngineWorkflow: 
+--------------------------------------------------
+All jobs were completed successfully
+--------------------------------------------------
+The ffengine workflow has finished
