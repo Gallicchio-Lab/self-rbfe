@@ -1,4 +1,4 @@
-# self-RBFE project
+# self-RBFE + torsional Metadynamics
 
 AToM-OpenMM input files for the calculations reported in the paper: [What to Make of Zero: Resolving the Statistical Noise from Conformational Reorganization in Alchemical Binding Free Energy Estimates with Metadynamics Sampling](https://pubs.acs.org/doi/10.1021/acs.jctc.3c01250)
 
