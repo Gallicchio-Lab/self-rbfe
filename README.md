@@ -1,12 +1,15 @@
-# self-rbfe
+# self-RBFE project
+
+AToM-OpenMM input files for the calculations reported in the paper: [What to Make of Zero: Resolving the Statistical Noise from Conformational Reorganization in Alchemical Binding Free Energy Estimates with Metadynamics Sampling](https://pubs.acs.org/doi/10.1021/acs.jctc.3c01250)
+
 ## atm 
-Includes inputs - protein, ligands and complexes directory for an ATM self-rbfe run 
+Includes inputs - protein, ligands, and complexes for ATM self-RBFE runs.
 
 ## atm-metaD 
-Includes inputs - protein, ligands and complexes containing the bias potential for the torsions of the ligand for an ATM-metaD self-rbfe run 
+Includes inputs - protein, ligands and complexes for ATM self-RBFE runs with metadynamics-derived torsional biasing potentials. 
 
 ## metaD
-Includes directories of the ligands for simulation in solution with the metadynamics (also contains the collected bias potential)
+Includes simulation input files for the metadynamics calculations in solution to obtain the torsional flattening biasing potentials (it contains the collected bias potentials as  well).
 
 ## delta-G-reorg
-Includes complexes with torsional restraints .cntl to calculate the ligand reorganization energy.
+Includes control files and structure inputs of the complexes with torsional restraints to calculate ligand reorganization free energies.
